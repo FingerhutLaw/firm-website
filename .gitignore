@@ -1,0 +1,49 @@
+# --- Privacy / sensitive content ---
+# Do not commit raw source material, personal reflections, or sensitive operational documents.
+# Even if the repo is private today, GitHub history is permanent. Keep these out entirely.
+
+# Audio source files (personal voice memos)
+*.m4a
+*.mp3
+*.wav
+*.aac
+*.flac
+
+# Audio transcripts (candid commentary about real people)
+**/transcripts/
+
+# Office documents (bio, retainer, operating agreements, letterhead, research, press PDFs)
+*.docx
+*.doc
+*.pdf
+*.odt
+*.rtf
+
+# Screenshots (may contain DNS records, account info, or other sensitive setup data)
+**/DNS Records Screenshot*.png
+**/*screenshot*.png
+
+# Scratch / build / preview files
+**/palette-preview*.html
+**/transcribe.py
+*.pyc
+__pycache__/
+
+# --- System & editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+.claude/
+
+# --- OneDrive sync metadata ---
+*.lnk
+~$*
+
+# --- Node / build artifacts (if Squarespace ever needs build tooling locally) ---
+node_modules/
+dist/
+build/
