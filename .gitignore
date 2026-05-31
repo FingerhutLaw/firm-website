@@ -25,6 +25,7 @@
 
 # Scratch / build / preview files
 **/palette-preview*.html
+**/bg-preview*.html
 **/transcribe.py
 *.pyc
 __pycache__/
