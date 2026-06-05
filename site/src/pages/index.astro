@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+
+const homepage = await getEntry('pages', 'homepage');
+const c = homepage!.data;
+---
+
+<Layout>
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-24 pb-28">
+    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-4xl">
+      {c.heroHeadline}
+    </h1>
+    <p class="mt-8 text-xl text-fl-ink-soft max-w-2xl leading-relaxed">
+      {c.heroSubheadline}
+    </p>
+    <div class="mt-12 flex flex-wrap items-center gap-6">
+      <a
+        href={c.heroCTAHref}
+        class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-fl-accent-2 transition-colors"
+      >
+        {c.heroCTAText}
+      </a>
+      <span class="text-fl-ink-soft text-sm">
+        or call
+        <a href={c.phoneHref} class="text-fl-accent font-medium hover:underline">
+          {c.phone}
+        </a>
+      </span>
+    </div>
+  </section>
+
+  <!-- Standing statement (placeholder spot — to live inside the holistic-approach section once authored) -->
+  <section class="mx-auto max-w-6xl px-6 pt-12 pb-16">
+    <p class="font-serif italic text-2xl md:text-3xl text-fl-ink-soft">
+      I stand with victims.
+    </p>
+  </section>
+
+  <!-- Steven section (no "Meet Steven" label) -->
+  <section class="mx-auto max-w-6xl px-6 py-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5">
+        <img
+          src={c.portraitImage}
+          alt={c.portraitAlt}
+          class="w-full max-w-md mx-auto md:mx-0 shadow-sm"
+          loading="lazy"
+        />
+      </div>
+      <div class="md:col-span-7">
+        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink">
+          {c.meetStevenName}
+        </h2>
+        <p class="mt-2 text-fl-ink-soft italic">{c.meetStevenTitle}</p>
+        <p class="mt-8 text-lg leading-relaxed text-fl-ink-soft max-w-xl">
+          {c.meetStevenTagline}
+        </p>
+        <a
+          href="/about"
+          class="inline-block mt-10 text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+        >
+          Read full bio &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stub: remaining sections still to build -->
+  <section class="mx-auto max-w-6xl px-6 py-12 border-t border-slate-200">
+    <p class="text-fl-ink-soft italic text-sm">
+      [Still to build: press strip · practice areas grid · results · firm values ·
+      in the news · final CTA. Drafted in <code>resources/content-homepage.md</code>.]
+    </p>
+  </section>
+</Layout>
