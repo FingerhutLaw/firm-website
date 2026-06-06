@@ -240,94 +240,13 @@ footer.sections * {
   padding-bottom: clamp(48px, 7vw, 96px) !important;
 }
 
-/* ---- 11. Dark / bold sections — force aubergine bg + white text ---- */
-/* Catches all dark theme variants in Squarespace 7.1:
-   dark-1, dark-2, darkest-1, darkest-2, bold-1, bold-2, dark-bold-1, etc. */
-
-/* Override Squarespace 7.1 section-theme CSS variables so text becomes white
-   regardless of which variable name the template's runtime applies. */
-[data-section-theme*="dark"],
-[data-section-theme*="bold"],
-[data-section-theme*="darkest"],
-.section-background.dark,
-.section-background.darkest,
-.section-background.bold,
-.page-section[class*="dark"],
-.page-section[class*="bold"] {
-  --siteBackgroundColor: var(--fl-accent);
-  --bgColor: var(--fl-accent);
-  --paragraphMediumColor: #ffffff;
-  --paragraphLargeColor: #ffffff;
-  --paragraphSmallColor: #ffffff;
-  --headingLargeColor: #ffffff;
-  --headingMediumColor: #ffffff;
-  --headingSmallColor: #ffffff;
-  --headingLargeFontColor: #ffffff;
-  --headingMediumFontColor: #ffffff;
-  --headingSmallFontColor: #ffffff;
-  --heading1Color: #ffffff;
-  --heading2Color: #ffffff;
-  --heading3Color: #ffffff;
-  --heading4Color: #ffffff;
-  --bodyColor: #ffffff;
-  --lightAccent: #ffffff;
-  --darkAccent: #ffffff;
-  --primaryButtonBackgroundColor: #ffffff;
-  --primaryButtonTextColor: var(--fl-accent);
-  background-color: var(--fl-accent) !important;
-}
-
-[data-section-theme*="dark"] *,
-[data-section-theme*="bold"] *,
-.section-background.dark *,
-.section-background.darkest *,
-.section-background.bold *,
-.page-section[class*="dark"] *,
-.page-section[class*="bold"] * {
-  color: var(--fl-white) !important;
-}
-
-/* H4 eyebrows on dark sections — keep them white-translucent, not full white */
-[data-section-theme*="dark"] h4,
-[data-section-theme*="bold"] h4,
-.page-section[class*="dark"] h4,
-.page-section[class*="bold"] h4 {
-  color: var(--fl-white) !important;
-  opacity: 0.7;
-}
-
-/* Links on dark sections — white with underline */
-[data-section-theme*="dark"] a,
-[data-section-theme*="bold"] a,
-.page-section[class*="dark"] a,
-.page-section[class*="bold"] a {
-  color: var(--fl-white) !important;
-  text-decoration: underline;
-  opacity: 0.95;
-}
-[data-section-theme*="dark"] a:hover,
-[data-section-theme*="bold"] a:hover,
-.page-section[class*="dark"] a:hover,
-.page-section[class*="bold"] a:hover {
-  opacity: 1;
-}
-
-/* Buttons inside dark sections — invert: white bg, aubergine text */
-[data-section-theme*="dark"] .sqs-block-button-element--primary,
-[data-section-theme*="bold"] .sqs-block-button-element--primary,
-[data-section-theme*="dark"] .sqs-button-element--primary,
-[data-section-theme*="bold"] .sqs-button-element--primary {
-  background-color: var(--fl-white) !important;
-  color: var(--fl-accent) !important;
-  border-color: var(--fl-white) !important;
-}
-[data-section-theme*="dark"] .sqs-block-button-element--primary:hover,
-[data-section-theme*="bold"] .sqs-block-button-element--primary:hover,
-[data-section-theme*="dark"] .sqs-button-element--primary:hover,
-[data-section-theme*="bold"] .sqs-button-element--primary:hover {
-  background-color: var(--fl-bg) !important;
-  color: var(--fl-accent) !important;
-}
+/* ---- 11. (removed 2026-06-02) ----
+   Previous Section 11 forced dark/bold sections to Oxford Blue + white text
+   + inverted buttons via universal selectors and CSS-variable overrides.
+   It fought Squarespace 7.1's native theme engine and caused the
+   invisible-CTA-button bug on the About page. Dark sections (footer, CTA
+   bands) are now configured via Site Styles → Colors → palette swatches
+   instead — let the native theme engine do its job. */
 
 /* ---- 12. Forms (contact form on Contact page) ---- */
 .form-wrapper input[type="text"],
@@ -373,4 +292,119 @@ blockquote {
   padding-left: 20px;
   margin: 24px 0;
   line-height: 1.45;
+}
+
+/* ============================================================
+   ---- 14. WARMTH PASS (added 2026-06-01) ----
+   Adds editorial ornament + image presence + section rhythm
+   to break up the all-white-with-blue-text feel. Applies
+   automatically — no per-section fiddling required.
+   ============================================================ */
+
+/* 14a. Decorative ornament above every H2 — small Oxford diamond.
+   Editorial / legal-journal feel. Sits centered, very subtle. */
+.sqs-block-html h2::before,
+.sqs-block-html h2.has-text-align-center::before {
+  content: "◆";
+  display: block;
+  font-size: 10px;
+  color: var(--fl-accent);
+  opacity: 0.55;
+  letter-spacing: 0.4em;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+/* 14b. Soft drop shadow + clean inner border on image blocks.
+   Makes photos sit on the page rather than float flatly. */
+.sqs-block-image .sqs-image,
+.sqs-block-image img,
+.image-block-outer-wrapper img {
+  box-shadow: 0 8px 24px rgba(10, 31, 68, 0.10),
+              0 2px 4px rgba(10, 31, 68, 0.06);
+  border-radius: var(--fl-radius);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.sqs-block-image:hover .sqs-image,
+.sqs-block-image:hover img {
+  box-shadow: 0 12px 32px rgba(10, 31, 68, 0.14),
+              0 3px 6px rgba(10, 31, 68, 0.08);
+}
+
+/* 14c. Zebra section tint — every even Light section gets a
+   barely-perceptible off-white background. Breaks up the
+   monolithic white without introducing a second color. */
+.page-section[data-section-theme*="light"]:nth-of-type(even),
+.page-section[data-section-theme="white"]:nth-of-type(even) {
+  background-color: #FAFBFC !important;
+}
+
+/* 14d. Subtle horizontal hairline between sections — very thin
+   Oxford Blue line with low opacity. Reads as editorial structure,
+   not visual noise. */
+.page-section + .page-section::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right,
+              transparent 0%,
+              rgba(10, 31, 68, 0.25) 50%,
+              transparent 100%);
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+
+/* 14e. Drop cap option — add class "fl-drop-cap" to a paragraph
+   to get a large Oxford Blue first letter (editorial feel).
+   Use sparingly: opening paragraph of bio, or lead-in on a
+   practice area page. */
+.fl-drop-cap::first-letter {
+  font-family: var(--fl-serif);
+  font-size: 4em;
+  font-weight: 600;
+  color: var(--fl-accent);
+  float: left;
+  line-height: 0.85;
+  padding-right: 12px;
+  padding-top: 4px;
+}
+
+/* 14f. Pull quote — add class "fl-pull-quote" to a paragraph or
+   blockquote for a centered editorial pull quote with thin
+   Oxford rules above and below. Use for client testimonials
+   or key statements. */
+.fl-pull-quote {
+  font-family: var(--fl-serif) !important;
+  font-size: 26px !important;
+  font-style: italic;
+  color: var(--fl-ink);
+  text-align: center;
+  border: none !important;
+  border-top: 1px solid rgba(10, 31, 68, 0.25) !important;
+  border-bottom: 1px solid rgba(10, 31, 68, 0.25) !important;
+  padding: 28px 40px !important;
+  margin: 36px auto !important;
+  max-width: 720px;
+  line-height: 1.4;
+}
+
+/* 14g. Hero overlay — when a section has a background image
+   (added via Squarespace section gear → Background → Image),
+   this adds a subtle dark gradient overlay so white text on
+   the image stays legible. */
+.page-section[data-section-theme*="dark"] .section-background img,
+.page-section[data-section-theme*="bold"] .section-background img {
+  filter: brightness(0.85);
+}
+.page-section[data-section-theme*="dark"] .section-background::after,
+.page-section[data-section-theme*="bold"] .section-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+              rgba(10, 31, 68, 0.55) 0%,
+              rgba(10, 31, 68, 0.35) 100%);
+  pointer-events: none;
 }

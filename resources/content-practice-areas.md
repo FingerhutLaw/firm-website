@@ -24,20 +24,28 @@ Below are the areas where I most often help clients. If your situation does not 
 
 ## Ordering Note for the Site Build
 
-When this page is built in Squarespace, **order the twelve areas below in the following priority** (reflects the firm's intake priorities — what Steven is actively seeking more of, vs. what the firm offers but does not market heavily). The section numbers in this document do not change, but the on-page rendering order should be:
+**Order the practice areas in the following priority** (reflects the firm's intake priorities — what Steven is actively seeking more of, vs. what the firm offers but does not market heavily). Each link points to the per-area source file in the Astro project's content directory (`site/src/content/practice-areas/`); live-site URLs mirror the slug (e.g., `practice-areas/sexual-harassment.md` → `/practice-areas/sexual-harassment`). Files are populated from Vincent (Clio AI) output — stats, case precedent, and per-area description — and dropped into the matching filename below.
 
-1. Sexual Harassment and Sexual Assault at Work
-2. Race Discrimination
-3. Retaliation
-4. Pregnancy Discrimination and Caregiver Retaliation
-5. Disability Discrimination and Failure to Accommodate
-6. Wrongful Termination
-7. Hostile Work Environment
-8. Age Discrimination
-9. LGBTQ+ Workplace Discrimination
-10. Wage Theft and Unpaid Overtime
-11. Severance Negotiation and Separation Agreements *(secondary)*
-12. New York Paid Family Leave (PFL) Violations *(gateway — see §3 reframing below)*
+*Astro scaffolding note: the `practice-areas` collection still needs to be defined in `site/src/content.config.ts` (only the `pages` collection exists today) — the other Claude tab handling the Astro build should add that before these files render.*
+
+1. [Sexual Harassment](../site/src/content/practice-areas/sexual-harassment.md)
+2. [Race Discrimination](../site/src/content/practice-areas/race-discrimination.md)
+3. [Sexual Assault](../site/src/content/practice-areas/sexual-assault.md)
+4. [Hostile Work Environment](../site/src/content/practice-areas/hostile-work-environment.md)
+5. [Wrongful Termination](../site/src/content/practice-areas/wrongful-termination.md)
+6. [Whistleblower Retaliation](../site/src/content/practice-areas/whistleblower-retaliation.md)
+7. [LGBTQ+ Discrimination](../site/src/content/practice-areas/lgbtq-discrimination.md)
+8. [Religious Discrimination](../site/src/content/practice-areas/religious-discrimination.md)
+9. [Disability Discrimination](../site/src/content/practice-areas/disability-discrimination.md)
+10. [Retaliation for Protected Activity](../site/src/content/practice-areas/retaliation-protected-activity.md)
+11. [New York Paid Family Leave Violations](../site/src/content/practice-areas/paid-family-leave-violations.md)
+12. [Unpaid Minimum Wage and Overtime](../site/src/content/practice-areas/unpaid-minimum-wage-overtime.md)
+13. [Breach of Employment Contract](../site/src/content/practice-areas/breach-of-employment-contract.md)
+14. [Wage Theft](../site/src/content/practice-areas/wage-theft.md)
+15. [Age Discrimination](../site/src/content/practice-areas/age-discrimination.md)
+16. [Failure to Provide a Religious Accommodation](../site/src/content/practice-areas/religious-accommodation-failure.md)
+17. [Prior Criminal Conviction Discrimination](../site/src/content/practice-areas/criminal-conviction-discrimination.md)
+18. [FMLA Retaliation and/or Interference](../site/src/content/practice-areas/fmla-retaliation.md)
 
 ---
 

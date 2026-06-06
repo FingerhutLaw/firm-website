@@ -1,6 +1,6 @@
 # DKIM + DMARC Follow-up — Fingerhut Law Group
 
-**Status as of 2026-05-26:** Email migration to Google Workspace is complete. SPF, MX, and a basic DMARC record are in place. **DKIM still needs to be added**, and DMARC should be tightened later once you've been monitoring it.
+**Status as of 2026-06-03:** DKIM is now live (verified PASS in test headers). DMARC remains at `p=none` (monitor-only). **Next action: tighten DMARC to `p=quarantine` no earlier than ~2026-07-01** (4 weeks of monitoring), then to `p=reject` after another 4–8 weeks.
 
 ---
 
@@ -12,11 +12,11 @@
 | SPF (TXT @) | Done | `v=spf1 include:_spf.google.com ~all` |
 | DMARC (TXT _dmarc) | Done — monitor only | `v=DMARC1; p=none` |
 | Google domain verification (TXT @) | Done | `google-site-verification=A5Mu85yviyMZB-aVdVAzg_ISsEyGOK5ULHBnj7Jyw7Y` |
-| DKIM | **NOT DONE** | — |
+| DKIM (TXT google._domainkey) | **Done 2026-06-03** | 2048-bit key generated in Google Workspace, published to Hostinger, verified PASS |
 
 ---
 
-## Step 1 — Add DKIM (15 min, do once site is live)
+## Step 1 — Add DKIM (15 min, do once site is live) — ✅ COMPLETED 2026-06-03
 
 DKIM cryptographically signs your outgoing mail so recipients can verify it really came from your domain. Without it, a portion of your emails to corporate recipients (especially Microsoft 365) may land in spam.
 
