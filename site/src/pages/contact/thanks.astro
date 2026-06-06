@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+---
+
+<Layout
+  title="Thank you — Fingerhut Law"
+  description="Your inquiry has been received."
+>
+  <section class="mx-auto max-w-3xl px-6 pt-32 pb-32 text-center">
+    <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-8">
+      Inquiry received
+    </p>
+    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight text-fl-ink mb-10">
+      Thank you.
+    </h1>
+    <p class="text-xl text-fl-ink-soft leading-relaxed max-w-2xl mx-auto mb-10">
+      Your inquiry has been received. Steven personally reviews every
+      submission and will respond within one business day.
+    </p>
+    <p class="text-lg text-fl-ink-soft leading-relaxed max-w-2xl mx-auto mb-12">
+      If your matter is time-sensitive, the fastest way to reach the firm is by phone:
+      <a href={h.phoneHref} class="text-fl-accent font-medium hover:underline whitespace-nowrap">
+        {h.phone}
+      </a>.
+    </p>
+    <a
+      href="/"
+      class="inline-block text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+    >
+      Return to the homepage &rarr;
+    </a>
+  </section>
+</Layout>

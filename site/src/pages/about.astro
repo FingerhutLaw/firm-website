@@ -1,0 +1,329 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+
+const page = await getEntry('pages', 'about');
+const c = page!.data;
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+---
+
+<Layout title={c.title} description={c.description}>
+  <!-- Hero: portrait + name + subhead -->
+  <section class="mx-auto max-w-6xl px-6 pt-24 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+      <div class="md:col-span-5">
+        {c.aboutPortraitImage && (
+          <img
+            src={c.aboutPortraitImage}
+            alt={c.aboutPortraitAlt}
+            class="w-full max-w-md mx-auto md:mx-0 shadow-sm"
+            loading="eager"
+          />
+        )}
+      </div>
+      <div class="md:col-span-7">
+        <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+          About
+        </p>
+        <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight text-fl-ink">
+          {c.aboutHeroName}
+        </h1>
+        <p class="mt-4 text-lg text-fl-ink-soft italic">{c.aboutHeroSubhead}</p>
+        {c.aboutBio && (
+          <div class="mt-10 space-y-6">
+            {c.aboutBio.map((para) => (
+              <p class="text-lg text-fl-ink-soft leading-relaxed">{para}</p>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Trial Record -->
+  {c.trialRecord && c.trialRecord.length > 0 && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-5xl px-6 py-20 md:py-24">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-4">
+          {c.trialRecordHeading}
+        </h2>
+        {c.trialRecordIntro && (
+          <p class="text-lg text-fl-ink-soft mb-12 max-w-3xl">{c.trialRecordIntro}</p>
+        )}
+        <ul class="space-y-8">
+          {c.trialRecord.map((v) => (
+            <li class="bg-white border border-slate-200 p-8 md:p-10">
+              {v.date && (
+                <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-3">
+                  {v.date}
+                </p>
+              )}
+              <p class="text-fl-ink-soft leading-relaxed mb-5">{v.summary}</p>
+              {v.caption && (
+                <p class="font-serif italic text-base text-fl-ink">{v.caption}</p>
+              )}
+              {v.court && (
+                <p class="text-sm text-fl-ink-soft">{v.court}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- Notable Settlements (dark band) -->
+  {c.aboutSettlements && c.aboutSettlements.length > 0 && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight mb-12">
+          {c.aboutSettlementsHeading}
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {c.aboutSettlements.map((s) => (
+            <li>
+              <p class="font-serif text-4xl font-medium tracking-tight mb-3">
+                {s.figure}
+              </p>
+              <p class="text-sm text-white/80 leading-relaxed">{s.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- Practice Areas list -->
+  {c.aboutPracticeAreasList && c.aboutPracticeAreasList.length > 0 && (
+    <section class="mx-auto max-w-4xl px-6 py-20 md:py-24">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-6">
+        {c.aboutPracticeAreasHeading}
+      </h2>
+      {c.aboutPracticeAreasIntro && (
+        <p class="text-lg text-fl-ink-soft mb-8">{c.aboutPracticeAreasIntro}</p>
+      )}
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 mb-8">
+        {c.aboutPracticeAreasList.map((item) => (
+          <li class="flex gap-3 text-lg text-fl-ink-soft leading-relaxed">
+            <span class="text-fl-accent flex-shrink-0">·</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+      {c.aboutPracticeAreasOutro && (
+        <p class="text-lg text-fl-ink-soft leading-relaxed">{c.aboutPracticeAreasOutro}</p>
+      )}
+      <a
+        href="/practice-areas"
+        class="inline-block mt-10 text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+      >
+        See all practice areas &rarr;
+      </a>
+    </section>
+  )}
+
+  <!-- Recent Commentary -->
+  {c.commentary && c.commentary.length > 0 && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-4xl px-6 py-20 md:py-24">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-12">
+          {c.commentaryHeading}
+        </h2>
+        <ul class="space-y-10">
+          {c.commentary.map((item) => (
+            <li class="bg-white border border-slate-200 p-8 md:p-10">
+              <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-3">
+                {item.outlet}{item.date ? ` · ${item.date}` : ''}
+              </p>
+              <h3 class="font-serif text-2xl text-fl-ink mb-2 leading-snug">
+                {item.headline}
+              </h3>
+              {item.author && (
+                <p class="text-sm text-fl-ink-soft italic mb-5">{item.author}</p>
+              )}
+              <p class="text-fl-ink-soft leading-relaxed">{item.summary}</p>
+              {item.pullQuotes && item.pullQuotes.length > 0 && (
+                <div class="mt-6 space-y-5">
+                  {item.pullQuotes.map((q) => (
+                    <blockquote class="border-l-2 border-fl-accent pl-6 font-serif italic text-lg text-fl-ink leading-snug">
+                      &ldquo;{q}&rdquo;
+                    </blockquote>
+                  ))}
+                </div>
+              )}
+              {item.href && (
+                <a
+                  href={item.href}
+                  class="inline-block mt-6 text-fl-accent font-medium hover:text-fl-accent-2 transition-colors text-sm"
+                >
+                  Read the full article on Law360 &rarr;
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- Speaking Engagements -->
+  {c.speakingEngagements && c.speakingEngagements.length > 0 && (
+    <section class="mx-auto max-w-5xl px-6 py-20 md:py-24">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-12">
+        {c.speakingHeading}
+      </h2>
+      <ul class="space-y-12">
+        {c.speakingEngagements.map((s) => (
+          <li>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <div class={s.image ? 'md:col-span-7' : 'md:col-span-12'}>
+                <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-3">
+                  {s.date}
+                </p>
+                <h3 class="font-serif text-2xl text-fl-ink mb-2 leading-snug">
+                  {s.event}
+                </h3>
+                {s.session && (
+                  <p class="font-serif italic text-lg text-fl-ink-soft mb-2 leading-snug">
+                    {s.session}
+                  </p>
+                )}
+                {s.location && (
+                  <p class="text-sm text-fl-ink-soft mb-5">{s.location}</p>
+                )}
+                <p class="text-fl-ink-soft leading-relaxed">{s.summary}</p>
+              </div>
+              {s.image && (
+                <div class="md:col-span-5">
+                  <img
+                    src={s.image}
+                    alt={s.imageCaption ?? s.event}
+                    class="w-full shadow-sm"
+                    loading="lazy"
+                  />
+                  {s.imageCaption && (
+                    <p class="text-xs text-fl-ink-soft italic mt-3 leading-relaxed">
+                      {s.imageCaption}
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <!-- Credentials -->
+  <section class="bg-slate-50 border-y border-slate-200">
+    <div class="mx-auto max-w-6xl px-6 py-20 md:py-24">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-12">
+        {c.credentialsHeading}
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Education -->
+        {c.credentialsEducation && c.credentialsEducation.length > 0 && (
+          <div>
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Education
+            </h3>
+            <ul class="space-y-2 mb-4">
+              {c.credentialsEducation.map((item) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+            {c.educationFootnote && (
+              <p class="text-sm text-fl-ink-soft italic leading-relaxed">
+                {c.educationFootnote}
+              </p>
+            )}
+          </div>
+        )}
+
+        <!-- Admissions -->
+        {c.credentialsAdmissions && c.credentialsAdmissions.length > 0 && (
+          <div>
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Admitted to Practice
+            </h3>
+            <ul class="space-y-2">
+              {c.credentialsAdmissions.map((item) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <!-- Memberships -->
+        {c.credentialsMemberships && c.credentialsMemberships.length > 0 && (
+          <div>
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Memberships
+            </h3>
+            <ul class="space-y-2">
+              {c.credentialsMemberships.map((item) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <!-- Recognition + badge row -->
+        {c.credentialsRecognition && c.credentialsRecognition.length > 0 && (
+          <div>
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Recognition
+            </h3>
+            <ul class="space-y-3">
+              {c.credentialsRecognition.map((item) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+            {c.badges && c.badges.length > 0 && (
+              <ul class="mt-8 flex flex-wrap items-center gap-x-8 gap-y-6">
+                {c.badges.map((b) => (
+                  <li class="flex items-center h-20">
+                    <img
+                      src={b.image}
+                      alt={b.alt}
+                      class="max-h-20 w-auto object-contain"
+                      loading="lazy"
+                    />
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  {c.aboutCTAHeading && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight mb-8">
+          {c.aboutCTAHeading}
+        </h2>
+        <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
+          {c.aboutCTABody}
+        </p>
+        {h.feeNote && (
+          <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
+            {h.feeNote}
+          </p>
+        )}
+        <a
+          href={c.aboutCTAHref}
+          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+        >
+          {c.aboutCTAButton}
+        </a>
+      </div>
+    </section>
+  )}
+</Layout>

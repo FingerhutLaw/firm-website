@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry, getCollection } from 'astro:content';
+
+const page = await getEntry('pages', 'content-practice-areas');
+const c = page!.data;
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+
+// Pull every practice area from the collection and sort by priority.
+const areas = (await getCollection('practiceAreas')).sort(
+  (a, b) => a.data.priority - b.data.priority,
+);
+---
+
+<Layout title="Practice Areas — Fingerhut Law" description={c.description}>
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-24 pb-16">
+    <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+      {c.practiceHeroLabel}
+    </p>
+    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-4xl">
+      {c.practiceHeroHeadline}
+    </h1>
+    <p class="mt-8 text-xl text-fl-ink-soft max-w-3xl leading-relaxed">
+      {c.practiceHeroSubheadline}
+    </p>
+  </section>
+
+  <!-- Intro prose -->
+  {c.practiceIntro && (
+    <section class="mx-auto max-w-3xl px-6 pb-20">
+      <p class="text-lg text-fl-ink-soft leading-relaxed">{c.practiceIntro}</p>
+    </section>
+  )}
+
+  <!-- Practice area cards (loops the collection) -->
+  {areas.length > 0 && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-px bg-slate-200 border border-slate-200">
+          {areas.map((area) => (
+            <li class="bg-white">
+              <a
+                href={`/practice-areas/${area.id}`}
+                class="block h-full px-8 py-10 md:px-10 md:py-12 hover:bg-slate-50 transition-colors group"
+              >
+                <h2 class="font-serif font-medium text-2xl md:text-3xl text-fl-ink mb-3 group-hover:text-fl-accent transition-colors">
+                  {area.data.name}
+                </h2>
+                <p class="text-fl-accent text-sm font-medium uppercase tracking-widest mb-4">
+                  {area.data.tagline}
+                </p>
+                <p class="text-fl-ink-soft leading-relaxed">{area.data.intakeSummary}</p>
+                <span class="inline-block mt-6 text-fl-accent font-medium text-sm border-b-2 border-fl-accent pb-1 group-hover:border-fl-accent-2 group-hover:text-fl-accent-2 transition-colors">
+                  Learn more &rarr;
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- "Has this happened to you?" scenarios -->
+  {c.scenarios && c.scenarios.length > 0 && (
+    <section class="mx-auto max-w-4xl px-6 py-24 md:py-32">
+      <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink mb-12 text-center">
+        {c.scenariosHeading}
+      </h2>
+      <ul class="space-y-6 max-w-3xl mx-auto">
+        {c.scenarios.map((s) => (
+          <li class="flex gap-4 text-lg text-fl-ink-soft leading-relaxed">
+            <span class="text-fl-accent flex-shrink-0 font-serif">—</span>
+            <span>{s}</span>
+          </li>
+        ))}
+      </ul>
+      {c.scenariosIntro && (
+        <p class="mt-12 text-center text-fl-ink-soft italic">{c.scenariosIntro}</p>
+      )}
+    </section>
+  )}
+
+  <!-- Final CTA -->
+  {c.practiceCTAHeading && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight mb-8">
+          {c.practiceCTAHeading}
+        </h2>
+        <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
+          {c.practiceCTABody}
+        </p>
+        {h.feeNote && (
+          <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
+            {h.feeNote}
+          </p>
+        )}
+        <a
+          href={c.practiceCTAHref}
+          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+        >
+          {c.practiceCTAButton}
+        </a>
+      </div>
+    </section>
+  )}
+</Layout>

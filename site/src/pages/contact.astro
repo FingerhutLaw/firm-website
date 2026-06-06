@@ -1,0 +1,219 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+
+const page = await getEntry('pages', 'contact');
+const c = page!.data;
+
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+---
+
+<Layout title={c.title} description={c.description}>
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-24 pb-12">
+    <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+      {c.contactHeroLabel}
+    </p>
+    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-4xl">
+      {c.contactHeroHeadline}
+    </h1>
+    <p class="mt-8 text-xl text-fl-ink-soft max-w-3xl leading-relaxed">
+      {c.contactHeroSubheadline}
+    </p>
+  </section>
+
+  <!-- Form + sidebar -->
+  <section class="mx-auto max-w-6xl px-6 pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+      <!-- Form column -->
+      <div class="md:col-span-7">
+        {c.contactIntro && (
+          <p class="text-lg text-fl-ink-soft leading-relaxed mb-10">
+            {c.contactIntro}
+          </p>
+        )}
+
+        <form
+          action={c.formAction}
+          method="POST"
+          class="space-y-6"
+        >
+          {/* Formspree config fields */}
+          {c.formSubject && (
+            <input type="hidden" name="_subject" value={c.formSubject} />
+          )}
+          {c.formSuccessRedirect && (
+            <input type="hidden" name="_next" value={c.formSuccessRedirect} />
+          )}
+
+          {/* Honeypot — bots fill this; humans do not */}
+          <input
+            type="text"
+            name="_gotcha"
+            tabindex="-1"
+            autocomplete="off"
+            style="position:absolute;left:-9999px;height:0;width:0;opacity:0;"
+            aria-hidden="true"
+          />
+
+          <div>
+            <label for="name" class="block text-sm font-medium text-fl-ink mb-2">
+              Your name <span class="text-fl-accent">*</span>
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              autocomplete="name"
+              class="w-full px-4 py-3 border border-slate-300 bg-white text-fl-ink focus:outline-none focus:border-fl-accent focus:ring-1 focus:ring-fl-accent transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-fl-ink mb-2">
+              Email <span class="text-fl-accent">*</span>
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              class="w-full px-4 py-3 border border-slate-300 bg-white text-fl-ink focus:outline-none focus:border-fl-accent focus:ring-1 focus:ring-fl-accent transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-medium text-fl-ink mb-2">
+              Phone <span class="text-fl-accent">*</span>
+            </label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              required
+              autocomplete="tel"
+              class="w-full px-4 py-3 border border-slate-300 bg-white text-fl-ink focus:outline-none focus:border-fl-accent focus:ring-1 focus:ring-fl-accent transition-colors"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-fl-ink mb-2">
+              Briefly describe what happened <span class="text-fl-accent">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              required
+              class="w-full px-4 py-3 border border-slate-300 bg-white text-fl-ink focus:outline-none focus:border-fl-accent focus:ring-1 focus:ring-fl-accent transition-colors resize-y"
+            ></textarea>
+            <p class="mt-2 text-xs text-fl-ink-soft italic">
+              A few sentences is enough — Steven will follow up to learn more.
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-fl-accent-2 transition-colors"
+          >
+            {c.formSubmitLabel ?? 'Send Inquiry'}
+          </button>
+
+          {h.feeNote && (
+            <p class="text-sm text-fl-ink italic leading-relaxed pt-4 border-t border-slate-200">
+              {h.feeNote}
+            </p>
+          )}
+
+          {c.contactDisclaimer && (
+            <p class="text-xs text-fl-ink-soft italic leading-relaxed">
+              {c.contactDisclaimer}
+            </p>
+          )}
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="md:col-span-5">
+        <div class="bg-slate-50 border border-slate-200 p-8 md:sticky md:top-8">
+          <h2 class="font-serif font-medium text-2xl text-fl-ink mb-8">
+            {c.contactSidebarHeading ?? 'Reach the firm'}
+          </h2>
+
+          <div class="space-y-6">
+            <div>
+              <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-2">
+                Phone
+              </p>
+              <a
+                href={h.phoneHref}
+                class="text-2xl font-serif text-fl-ink hover:text-fl-accent transition-colors"
+              >
+                {h.phone}
+              </a>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-2">
+                Email
+              </p>
+              <a
+                href="mailto:steven@fingerhutlawgroup.com"
+                class="text-fl-ink hover:text-fl-accent transition-colors break-all"
+              >
+                steven@fingerhutlawgroup.com
+              </a>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-2">
+                Office
+              </p>
+              <p class="text-fl-ink leading-relaxed">
+                469 7th Avenue, 12th Floor<br />
+                New York, NY 10018
+              </p>
+            </div>
+
+            <div>
+              <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-2">
+                Hours
+              </p>
+              <p class="text-fl-ink leading-relaxed">
+                Monday – Friday<br />
+                9:00 am – 6:00 pm ET<br />
+                <span class="text-fl-ink-soft italic">After-hours consultations by appointment.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- What happens next -->
+  {c.whatHappens && c.whatHappens.length > 0 && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-4xl px-6 py-20 md:py-24">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-12 text-center">
+          {c.whatHappensHeading}
+        </h2>
+        <ol class="space-y-8 max-w-3xl mx-auto">
+          {c.whatHappens.map((step, i) => (
+            <li class="flex gap-6">
+              <span class="flex-shrink-0 font-serif text-3xl font-medium text-fl-accent leading-none w-10">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <p class="text-lg text-fl-ink-soft leading-relaxed pt-1">
+                {step}
+              </p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+</Layout>

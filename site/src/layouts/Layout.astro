@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getEntry } from 'astro:content';
 
 interface Props {
   title?: string;
@@ -7,9 +8,14 @@ interface Props {
 }
 
 const {
-  title = 'Fingerhut Law — New York Employment Lawyer',
-  description = 'A focused employment law practice in New York City. Over $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases.',
+  title = 'Fingerhut Law — New York and New Jersey Employment Lawyer',
+  description = 'A focused employment law practice in New York and New Jersey. Over $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases.',
 } = Astro.props;
+
+// Site-wide config pulled from homepage.md (phone, fee note, etc.) so values
+// stay editable in one place.
+const homepage = await getEntry('pages', 'homepage');
+const site = homepage!.data;
 ---
 
 <!doctype html>
@@ -54,7 +60,7 @@ const {
     <footer class="mt-24 border-t border-slate-200 bg-slate-50">
       <div class="mx-auto max-w-6xl px-6 py-12 text-sm text-fl-ink-soft">
         <div class="font-serif text-xl text-fl-ink mb-2">
-          Fingerhut Law <span class="text-fl-ink-soft">· New York employment law</span>
+          Fingerhut Law <span class="text-fl-ink-soft">· New York and New Jersey Employment Law</span>
         </div>
         <p class="mb-4 italic">
           Fingerhut Law is a DBA of The Fingerhut Law Group, PLLC,
@@ -63,11 +69,14 @@ const {
         <p class="mb-4">
           469 7th Avenue, 12th Floor, New York, NY 10018 ·
           <a href="tel:+12126804040" class="text-fl-accent hover:underline">(212) 680-4040</a> ·
-          <a href="mailto:sfingerhut@fingerhutlawgroup.com" class="text-fl-accent hover:underline">sfingerhut@fingerhutlawgroup.com</a>
+          <a href="mailto:steven@fingerhutlawgroup.com" class="text-fl-accent hover:underline">steven@fingerhutlawgroup.com</a>
         </p>
         <p class="mb-4">
           Monday through Friday, 9:00 am – 6:00 pm ET. After-hours consultations by appointment.
         </p>
+        {site.feeNote && (
+          <p class="mb-4 italic">{site.feeNote}</p>
+        )}
         <p class="mb-4 text-xs">
           Admitted: New York · New Jersey · S.D.N.Y. · E.D.N.Y. · N.D.N.Y. · W.D.N.Y. · D.N.J. · Second Circuit Court of Appeals
         </p>

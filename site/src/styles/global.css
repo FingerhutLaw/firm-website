@@ -18,3 +18,21 @@ html {
   background: var(--color-fl-bg);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Body-copy prose rendered from markdown collections (e.g. firm-values.md) */
+.prose-fl p {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--color-fl-ink-soft);
+}
+.prose-fl p + p {
+  margin-top: 1.5rem;
+}
+.prose-fl strong {
+  color: var(--color-fl-ink);
+  font-weight: 600;
+}
+.prose-fl em {
+  font-style: italic;
+}

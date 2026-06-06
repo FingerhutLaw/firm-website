@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 
 const homepage = await getEntry('pages', 'homepage');
 const c = homepage!.data;
+
+const howIPractice = await getEntry('pages', 'firm-values');
+const { Content: HowIPracticeBody } = await render(howIPractice!);
 ---
 
 <Layout>
@@ -31,15 +34,116 @@ const c = homepage!.data;
     </div>
   </section>
 
-  <!-- Standing statement (placeholder spot — to live inside the holistic-approach section once authored) -->
-  <section class="mx-auto max-w-6xl px-6 pt-12 pb-16">
-    <p class="font-serif italic text-2xl md:text-3xl text-fl-ink-soft">
-      I stand with victims.
-    </p>
+  <!-- Press / trust strip -->
+  {c.pressLogos && c.pressLogos.length > 0 && (
+    <section class="border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-6 py-10">
+        <p class="text-xs uppercase tracking-widest text-fl-ink-soft text-center mb-6">
+          {c.pressLabel}
+        </p>
+        <ul class="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
+          {c.pressLogos.map((logo: string) => (
+            <li class="font-serif text-lg md:text-xl text-fl-ink-soft tracking-tight">
+              {logo}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <!-- How I Practice — body from src/content/pages/firm-values.md -->
+  <section class="bg-slate-50 border-y border-slate-200">
+    <div class="mx-auto max-w-4xl px-6 py-24 md:py-32">
+      <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-8">
+        {howIPractice!.data.title ?? 'How I Practice'}
+      </p>
+      <h2 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight text-fl-ink mb-12">
+        I stand with victims.
+      </h2>
+      <div class="prose-fl">
+        <HowIPracticeBody />
+      </div>
+    </div>
   </section>
 
+  <!-- Practice areas grid (3 x 2) -->
+  {c.practiceAreas && c.practiceAreas.length > 0 && (
+    <section class="mx-auto max-w-6xl px-6 py-24 md:py-32">
+      <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+        {c.practiceAreasLabel}
+      </p>
+      <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink max-w-3xl mb-16">
+        {c.practiceAreasHeading}
+      </h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
+        {c.practiceAreas.map((area) => (
+          <li class="bg-white">
+            <a
+              href={area.href}
+              class="block h-full px-8 py-10 hover:bg-slate-50 transition-colors group"
+            >
+              <h3 class="font-serif font-medium text-2xl text-fl-ink mb-3 group-hover:text-fl-accent transition-colors">
+                {area.name}
+              </h3>
+              <p class="text-fl-ink-soft leading-relaxed">
+                {area.tagline}
+              </p>
+            </a>
+          </li>
+        ))}
+      </ul>
+      {c.practiceAreasCTA && (
+        <div class="mt-12">
+          <a
+            href={c.practiceAreasCTAHref}
+            class="text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+          >
+            {c.practiceAreasCTA} &rarr;
+          </a>
+        </div>
+      )}
+    </section>
+  )}
+
+  <!-- Results strip (dark band) -->
+  {c.results && c.results.length > 0 && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
+        <p class="text-xs uppercase tracking-widest text-white/60 font-semibold mb-6">
+          {c.resultsLabel}
+        </p>
+        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight mb-16 max-w-3xl">
+          {c.resultsHeading}
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {c.results.map((result) => (
+            <li>
+              <p class="font-serif text-4xl md:text-5xl font-medium tracking-tight mb-4">
+                {result.figure}
+              </p>
+              <p class="text-sm md:text-base text-white/80 leading-relaxed">
+                {result.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+        {c.resultsCTA && (
+          <div class="mt-16">
+            <a
+              href={c.resultsCTAHref}
+              class="text-white font-medium border-b-2 border-white/60 pb-1 hover:border-white transition-colors"
+            >
+              {c.resultsCTA} &rarr;
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
   <!-- Steven section (no "Meet Steven" label) -->
-  <section class="mx-auto max-w-6xl px-6 py-24">
+  <section class="mx-auto max-w-6xl px-6 py-24 md:py-32">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
       <div class="md:col-span-5">
         <img
@@ -67,11 +171,81 @@ const c = homepage!.data;
     </div>
   </section>
 
-  <!-- Stub: remaining sections still to build -->
-  <section class="mx-auto max-w-6xl px-6 py-12 border-t border-slate-200">
-    <p class="text-fl-ink-soft italic text-sm">
-      [Still to build: press strip · practice areas grid · results · firm values ·
-      in the news · final CTA. Drafted in <code>resources/content-homepage.md</code>.]
-    </p>
-  </section>
+  <!-- In the news (3 cards) -->
+  {c.news && c.news.length > 0 && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
+        <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+          {c.newsLabel}
+        </p>
+        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink mb-16">
+          {c.newsHeading}
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {c.news.map((item) => (
+            <li class="bg-white border border-slate-200 p-8 flex flex-col">
+              <p class="text-xs uppercase tracking-widest text-fl-ink-soft mb-3">
+                {item.publication}{item.date ? ` · ${item.date}` : ''}
+              </p>
+              <h3 class="font-serif font-medium text-xl leading-snug text-fl-ink mb-4">
+                {item.headline}
+              </h3>
+              <p class="text-fl-ink-soft leading-relaxed flex-grow">
+                {item.excerpt}
+              </p>
+              <a
+                href={item.href}
+                class="mt-6 text-fl-accent font-medium hover:text-fl-accent-2 transition-colors text-sm"
+              >
+                Read article &rarr;
+              </a>
+            </li>
+          ))}
+        </ul>
+        {c.newsCTA && (
+          <div class="mt-12">
+            <a
+              href={c.newsCTAHref}
+              class="text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+            >
+              {c.newsCTA} &rarr;
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  <!-- Final CTA (dark band) -->
+  {c.finalCtaHeading && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight mb-8">
+          {c.finalCtaHeading}
+        </h2>
+        <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
+          {c.finalCtaBody}
+        </p>
+        {c.feeNote && (
+          <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
+            {c.feeNote}
+          </p>
+        )}
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <a
+            href={c.finalCtaHref}
+            class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+          >
+            {c.finalCtaButton}
+          </a>
+          <span class="text-white/80 text-sm">
+            or call
+            <a href={c.phoneHref} class="text-white font-medium hover:underline">
+              {c.phone}
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+  )}
 </Layout>
