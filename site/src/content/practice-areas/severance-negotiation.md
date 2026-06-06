@@ -13,7 +13,7 @@ seoDescription: "Before signing a severance agreement, speak with Fingerhut Law.
 seoTitle: "NYC Severance Negotiation Lawyer | Fingerhut Law"
 ---
 
-## Do Not Sign a Severance Agreement Without Understanding Your Rights
+### Do Not Sign a Severance Agreement Without Understanding Your Rights
 
 A severance agreement is more than a payment offer. It is usually a legal contract that asks an employee to give up claims against the employer in exchange for money or benefits. Once signed, it may waive discrimination, harassment, retaliation, wage, leave, contract, bonus, commission, equity, and other claims. It may also impose confidentiality, non-disparagement, cooperation, return-of-property, restrictive covenant, or clawback obligations.
 
@@ -21,7 +21,7 @@ Employees are often handed severance agreements at stressful moments: after bein
 
 Fingerhut Law helps employees evaluate severance agreements, identify leverage, negotiate better terms, and avoid signing away valuable rights without informed advice.
 
-## Why Severance Agreements Matter
+### Why Severance Agreements Matter
 
 A severance agreement may affect:
 
@@ -36,7 +36,7 @@ A severance agreement may affect:
 - Claims for discrimination, harassment, retaliation, whistleblowing, leave violations, or wage theft.
 - Employers usually draft severance agreements to protect themselves. The first offer is not always the best offer. Whether severance can be improved depends on the facts, the employee’s claims, the employer’s risk, the employee’s compensation, the circumstances of separation, and the language of existing agreements.
 
-## Common Severance Negotiation Issues
+### Common Severance Negotiation Issues
 
 Severance negotiations may involve more than asking for additional weeks of pay. Important issues can include:
 
@@ -53,7 +53,7 @@ Severance negotiations may involve more than asking for additional weeks of pay.
 - Avoiding admissions of wrongdoing.
 - Preserving indemnification or D&O coverage for executives.
 
-## When Employees May Have Leverage
+### When Employees May Have Leverage
 
 Employees may have leverage when the separation followed or involved:
 
@@ -68,7 +68,7 @@ Employees may have leverage when the separation followed or involved:
 - A layoff that may have targeted older workers or protected groups.
 - The goal is not only to negotiate more money. The goal is to understand what legal rights may exist before releasing them.
 
-## Legal Standards and Waivers
+### Legal Standards and Waivers
 
 Severance agreements often include a release of claims under federal, state, and local employment laws, including the **New York City Human Rights Law**, N.Y.C. Admin. Code § 8-107, the **New York State Human Rights Law**, N.Y. Exec. Law § 296, **Title VII**, the **ADA**, the **ADEA**, the **FMLA**, the **FLSA**, the **New York Labor Law**, the **NJ LAD**, and **CEPA**, depending on the employee and employer.
 
@@ -76,13 +76,13 @@ Special rules apply to certain age-discrimination waivers. The **Older Workers B
 
 Employees should also be careful with wage claims. Federal and state wage rights may raise special issues, and employees should not assume that every release provision is enforceable exactly as written.
 
-## Severance for Executives, Managers, and High-Level Employees
+### Severance for Executives, Managers, and High-Level Employees
 
 Executives and senior employees often have additional severance issues. They may have employment agreements, equity documents, bonus plans, deferred compensation, restrictive covenants, fiduciary obligations, indemnification rights, or board-level concerns. A termination may be labeled “for cause” to avoid paying severance, bonus, equity, or other compensation.
 
 For C-suite employees, founders, physicians, finance professionals, sales leaders, media employees, and senior managers, severance negotiation often requires reviewing multiple documents together, not just the separation agreement. These may include offer letters, employment agreements, stock option plans, operating agreements, commission plans, bonus plans, handbooks, and prior amendments.
 
-## Before You Sign
+### Before You Sign
 
 Before signing a severance agreement, employees should consider:
 
@@ -96,11 +96,11 @@ Before signing a severance agreement, employees should consider:
 - Does it give me enough time to review and revoke if age claims are involved?
 - Do not assume that an employer’s deadline is the final word. In many cases, counsel can ask for more time and negotiate terms.
 
-## Related Fingerhut Law Pages
+### Related Fingerhut Law Pages
 
-Suggested internal links: **Wrongful Termination**, **Sexual Harassment**, **Sexual Assault**, **Retaliation for Protected Activity**, **Whistleblower Retaliation**, **Breach of Employment Contract**, **Wage Theft**, **Age Discrimination**.
+[Wrongful Termination](/practice-areas/wrongful-termination), [Sexual Harassment](/practice-areas/sexual-harassment), [Workplace Sexual Assault](/practice-areas/sexual-assault), [Retaliation for Protected Activity](/practice-areas/retaliation), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation), [Breach of Employment Contract](/practice-areas/breach-of-employment-contract), [Wage Theft](/practice-areas/wage-theft), [Age Discrimination](/practice-areas/age-discrimination).
 
-## Contact Fingerhut Law
+### Contact Fingerhut Law
 
 If you received a severance agreement or were asked to sign a release after termination, layoff, harassment, discrimination, retaliation, or whistleblowing, contact **Fingerhut Law** for a confidential consultation before signing.
 

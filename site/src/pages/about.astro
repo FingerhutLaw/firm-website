@@ -11,13 +11,13 @@ const h = homepage!.data;
 <Layout title={c.title} description={c.description}>
   <!-- Hero: portrait + name + subhead -->
   <section class="mx-auto max-w-6xl px-6 pt-24 pb-20">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
       <div class="md:col-span-5">
         {c.aboutPortraitImage && (
           <img
             src={c.aboutPortraitImage}
             alt={c.aboutPortraitAlt}
-            class="w-full max-w-md mx-auto md:mx-0 shadow-sm"
+            class="w-full max-w-md mx-auto md:mx-0 rounded-2xl shadow-xl aspect-[4/5] object-cover object-center"
             loading="eager"
           />
         )}
@@ -40,38 +40,6 @@ const h = homepage!.data;
       </div>
     </div>
   </section>
-
-  <!-- Trial Record -->
-  {c.trialRecord && c.trialRecord.length > 0 && (
-    <section class="bg-slate-50 border-y border-slate-200">
-      <div class="mx-auto max-w-5xl px-6 py-20 md:py-24">
-        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-4">
-          {c.trialRecordHeading}
-        </h2>
-        {c.trialRecordIntro && (
-          <p class="text-lg text-fl-ink-soft mb-12 max-w-3xl">{c.trialRecordIntro}</p>
-        )}
-        <ul class="space-y-8">
-          {c.trialRecord.map((v) => (
-            <li class="bg-white border border-slate-200 p-8 md:p-10">
-              {v.date && (
-                <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-3">
-                  {v.date}
-                </p>
-              )}
-              <p class="text-fl-ink-soft leading-relaxed mb-5">{v.summary}</p>
-              {v.caption && (
-                <p class="font-serif italic text-base text-fl-ink">{v.caption}</p>
-              )}
-              {v.court && (
-                <p class="text-sm text-fl-ink-soft">{v.court}</p>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )}
 
   <!-- Notable Settlements (dark band) -->
   {c.aboutSettlements && c.aboutSettlements.length > 0 && (

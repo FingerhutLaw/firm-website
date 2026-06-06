@@ -1,7 +1,7 @@
 ---
 name: "Paid Family Leave Violations"
 tagline: "Often the visible symptom of a much larger case."
-intakeSummary: "Standalone PFL retaliation matters proceed through the Workers' Compensation Board with capped attorneys' fees. But a PFL violation rarely happens in isolation — it is often a symptom of pregnancy discrimination, disability discrimination, FMLA retaliation, or hostile work environment, with significantly stronger remedies."
+intakeSummary: "A PFL violation rarely happens in isolation — it is often a symptom of pregnancy discrimination, disability discrimination, FMLA retaliation, or a broader hostile work environment. Looking at the full picture often reveals significantly stronger claims."
 priority: 12
 statutes:
   - "New York Workers' Compensation Law § 200 et seq."

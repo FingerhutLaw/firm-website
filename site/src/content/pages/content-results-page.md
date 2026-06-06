@@ -79,6 +79,13 @@ trialSettlements:
 # =============================================================
 motionsSectionLabel: "Motion Victories"
 motions:
+  - outcome: "Defaults Vacated Only on Condition Defense Pays Plaintiff's Costs"
+    date: "October 2023"
+    caption: "Ruiz v. AF Trucking USA Inc., et al."
+    court: "(S.D.N.Y.) — Hon. Cathy Seibel"
+    summary: "Defense counsel did not respond when asked whether he would accept service of the complaint. After Steven paid for personal service and entered the defendants' defaults, counsel finally appeared and represented to the court that he had never heard from plaintiff's counsel before — a representation the record contradicted. At a show-cause hearing, the court vacated the defaults only on the condition that defense counsel personally pay the fees and costs the plaintiff had incurred in pursuing default judgment."
+    tags: "Default Judgment · Fee-Shifting"
+
   - outcome: "Motion to Dismiss Denied"
     date: "November 2023"
     caption: "Roudabush v. Albert Einstein College of Medicine of Yeshiva University"
@@ -120,6 +127,20 @@ motions:
 # =============================================================
 discoverySectionLabel: "Discovery Decisions"
 discoveryDecisions:
+  - outcome: "Subpoenas to Prior Employers Quashed"
+    date: "July 2021"
+    caption: "Smith-Carrington v. Eli Lilly and Company, et al."
+    court: "Case No. 1:20-cv-02377 (MKB)(CLP) (E.D.N.Y.)"
+    summary: "Defendants noticed two subpoenas to plaintiff's former employers seeking application materials, performance reviews, attendance, discipline, and complaint history — arguing the records would establish a 'habit' of the same conduct that allegedly led to her termination. The court rejected the framing: prior-employer performance records were inadmissible propensity evidence rather than admissible 'habit' under Rule 406; the defense had no independent basis to expect responsive complaint records existed; and any narrowed inquiry was limited to specific named coworkers identified in a single exhibit. Years of unrelated employment history stayed out of the case."
+    tags: "Rule 45 · Rule 406 · Prior Employer Records"
+
+  - outcome: "Defendant Ordered to Be Deposed First"
+    date: "March 2021"
+    caption: "Kamal v. G E R Industries, Inc., et al."
+    court: "Case No. 7:20-cv-05671-VB-VR (S.D.N.Y.)"
+    summary: "Steven noticed the defendant's deposition early and pressed each notice as scheduling slipped. When the defendant moved to extend fact discovery and asked the court to require the plaintiff to be deposed first, Steven opposed. The court denied the extension and ordered the defendant himself to appear first — finding that although the Federal Rules do not provide a particular priority of depositions, the plaintiff's diligent efforts and the defendant's evident decision to make himself unavailable during the court-ordered fact-discovery period entitled the plaintiff to depose him first."
+    tags: "Deposition Priority · Discovery Schedule"
+
   - outcome: "Ex Parte Access to Former Supervisor Preserved"
     date: "March 2019"
     caption: "Lozama v. Samaritan Daytop Village, Inc., et al."
@@ -148,7 +169,6 @@ settlements:
     description: "Gender discrimination and wrongful termination settlement for a physician."
 
 # --- CLOSING ---
-resultsClosing: "These results reflect a sample of the firm's work. They do not include matters resolved before litigation, matters that resolved without monetary compensation, or matters subject to confidentiality clauses that prevent their inclusion."
 
 resultsCTAHeading: "If your rights at work have been violated, do not wait."
 resultsCTABody: "Employment claims in New York have short deadlines — sometimes as short as 180 days. Contact Fingerhut Law for a free, confidential consultation."

@@ -16,7 +16,7 @@ seoDescription: "Pregnant workers have rights. Fingerhut Law represents employee
 seoTitle: "NYC Pregnancy Discrimination Lawyer | Fingerhut Law"
 ---
 
-## Pregnancy Discrimination at Work
+### Pregnancy Discrimination at Work
 
 Pregnancy discrimination happens when an employer treats an employee worse because of pregnancy, childbirth, lactation, fertility treatment, pregnancy-related medical conditions, miscarriage, abortion, or plans to become pregnant. It can happen during hiring, scheduling, job assignments, promotions, discipline, leave, return-to-work decisions, layoffs, or termination.
 
@@ -24,7 +24,7 @@ Pregnancy discrimination is often disguised as concern. An employer may say it i
 
 Pregnancy discrimination can also involve powerful decision-makers. A CEO, owner, founder, partner, manager, or executive may assume that an employee will be less committed after becoming pregnant or having a child. The law does not allow employers to make employment decisions based on those assumptions.
 
-## Laws That Protect Pregnant Employees
+### Laws That Protect Pregnant Employees
 
 New York City employees are protected by the **New York City Human Rights Law**, including N.Y.C. Admin. Code § 8-107. The NYCHRL prohibits discrimination based on pregnancy, childbirth, and related medical conditions and is interpreted broadly in favor of protecting employees. New York employees may also be protected by the **New York State Human Rights Law**, N.Y. Exec. Law § 296, and federal law, including **Title VII** and the **Pregnancy Discrimination Act**.
 
@@ -32,7 +32,7 @@ Under federal law, the Pregnancy Discrimination Act amended Title VII to make cl
 
 New Jersey employees may have claims under the **New Jersey Law Against Discrimination**, N.J.S.A. 10:5-12, which protects employees from pregnancy discrimination and may require reasonable accommodations related to pregnancy, childbirth, and related medical conditions.
 
-## Examples of Pregnancy Discrimination
+### Examples of Pregnancy Discrimination
 
 Pregnancy discrimination may include:
 
@@ -49,23 +49,23 @@ Pregnancy discrimination may include:
 
 Pregnancy discrimination may overlap with disability discrimination, leave retaliation, caregiver discrimination, sex discrimination, and hostile work environment claims. For example, an employee who is denied a temporary accommodation for pregnancy-related restrictions may also have rights under disability accommodation laws depending on the facts.
 
-## Pregnancy Accommodations
+### Pregnancy Accommodations
 
 Pregnant employees may need reasonable accommodations to keep working safely and effectively. Examples can include modified schedules, breaks, permission to sit, lifting restrictions, temporary reassignment, remote work, leave, uniform modifications, or time for medical appointments. Employers should not automatically deny accommodation requests or force an employee out of work when a reasonable adjustment would allow the employee to continue working.
 
 Employees should try to document requests clearly. Helpful evidence may include emails to HR, doctor’s notes, text messages, schedule changes, written denials, witness names, and performance reviews before and after pregnancy disclosure.
 
-## Retaliation for Requesting Pregnancy Rights
+### Retaliation for Requesting Pregnancy Rights
 
 An employer cannot punish an employee for requesting a pregnancy accommodation, complaining about pregnancy discrimination, taking protected leave, or opposing discrimination against another pregnant employee. Retaliation may include termination, demotion, reduced hours, negative reviews, loss of responsibilities, hostility, or pressure to resign.
 
 Suspicious timing can matter. If an employee has strong performance reviews and is suddenly criticized, demoted, or fired shortly after announcing pregnancy or requesting leave, that timing may support a pregnancy discrimination or retaliation claim.
 
-## Related Fingerhut Law Pages
+### Related Fingerhut Law Pages
 
-Suggested internal links: **Disability Discrimination**, **FMLA Retaliation and Interference**, **NY Paid Family Leave Violations**, **Wrongful Termination**, **Retaliation for Protected Activity**, **Sexual Harassment**, **NJ LAD**.
+[Disability Discrimination](/practice-areas/disability-discrimination), [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [NY Paid Family Leave Violations](/practice-areas/paid-family-leave-violations), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Sexual Harassment](/practice-areas/sexual-harassment), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-## Contact Fingerhut Law
+### Contact Fingerhut Law
 
 If you were denied accommodations, demoted, harassed, pushed out, or fired because of pregnancy, childbirth, fertility treatment, lactation, or a related medical condition, contact **Fingerhut Law** for a confidential consultation.
 

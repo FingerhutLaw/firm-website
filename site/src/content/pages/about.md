@@ -19,27 +19,6 @@ aboutBio:
   - "Before founding Fingerhut Law, Steven spent a decade as a partner at one of New York's largest plaintiffs-only employment firms, where he built a trial-focused practice representing employees against employers ranging from Fortune 100 companies to small businesses. He launched Fingerhut Law to bring that same trial-tested representation to a more direct, personalized client experience — without the constraints of a large institutional firm."
   - "His approach is grounded in three principles: prepare every case as if it will be tried, value every claim as if a jury will decide it, and stay personally accessible to every client he represents."
 
-# --- TRIAL RECORD ---
-trialRecordHeading: "Trial Record"
-trialRecordIntro: "Steven is an experienced trial attorney who takes cases to verdict."
-trialRecord:
-  - date: "January 2024"
-    summary: "Jury verdict in federal court after successfully trying hostile work environment, retaliation, and defamation claims for a client subjected to unlawful discrimination based on her sex and race and then terminated in retaliation for objecting to the harassment. With statutory attorneys' fees and accrued post-judgment interest, the judgment now exceeds $500,000."
-    caption: "Smart v. USA Labor for Hire, Inc., et al."
-    court: "Case No. 1:20-cv-5594 (E.D.N.Y.)"
-  - date: "May 2025"
-    summary: "Prevailed on each of the six grounds asserted by the defense on appeal, securing an affirmed judgment at the Second Circuit Court of Appeals."
-    caption: "Smart v. USA Labor for Hire, Inc., et al."
-    court: "Case No. 24-1791 (2d Cir.)"
-  - date: "March 2022"
-    summary: "Unanimous jury verdict in Queens County Supreme Court for a client subjected to sexual harassment, assault, battery, and unlawful constructive discharge — all within fewer than two weeks of employment. With no texts, photographs, or video — only competing testimony — the case turned entirely on credibility, and the jury returned a substantial six-figure verdict, answering every question on a 30-page verdict sheet in the plaintiff's favor and rejecting both defense counterclaims."
-    caption: "Grant v. Pexie Enterprises, Inc."
-    court: "Index No. 704041/2015 (Queens County Supreme Court)"
-  - date: "May 2021"
-    summary: "Prevailed in one of New York's first Paid Family Leave cases, securing monetary compensation for a client wrongfully terminated from Vassar Brothers Medical Center while on approved leave caring for her infant son undergoing emergency surgery."
-    caption: "In Regard to Stacey E. Johnson"
-    court: "PFL Case No. 000009"
-
 # --- NOTABLE SETTLEMENTS (anonymized) ---
 aboutSettlementsHeading: "Notable Settlements"
 aboutSettlements:
@@ -60,16 +39,16 @@ aboutSettlements:
 aboutPracticeAreasHeading: "Practice Areas"
 aboutPracticeAreasIntro: "Steven represents employees in cases involving:"
 aboutPracticeAreasList:
-  - "Sexual harassment and gender discrimination"
-  - "Race discrimination"
-  - "Pregnancy discrimination and wrongful termination"
-  - "Age discrimination"
-  - "Disability discrimination"
-  - "LGBT+ workplace discrimination and hostile work environments"
-  - "Retaliation for protected activity"
-  - "New York Paid Family Leave violations"
-  - "Wage theft"
-aboutPracticeAreasOutro: "He advocates for workers across every industry — from financial services and healthcare to construction, hospitality, education, and government."
+  - "Sexual Harassment"
+  - "Race Discrimination"
+  - "Pregnancy Discrimination"
+  - "Whistleblower Retaliation"
+  - "Disability Discrimination"
+  - "LGBTQ+ Discrimination"
+  - "Workplace Sexual Assault"
+  - "Age Discrimination"
+  - "Gender Motivated Violence"
+aboutPracticeAreasOutro: "He advocates for workers across every industry — from finance and tech startups to hospitality, manufacturing, and retail."
 
 # --- COMMENTARY ---
 commentaryHeading: "Recent Commentary"
@@ -104,9 +83,8 @@ speakingEngagements:
 # --- CREDENTIALS / AT A GLANCE ---
 credentialsHeading: "Credentials"
 credentialsEducation:
-  - "B.S., Mathematics (Minor: Art History) — The College of New Jersey, 2010"
-  - "J.D. — Albany Law School, 2013"
-educationFootnote: "During law school, Steven served as a judicial intern in the chambers of the Hon. Lawrence E. Kahn, U.S. District Court, Northern District of New York."
+  - "B.S., The College of New Jersey"
+  - "J.D., Albany Law School"
 
 credentialsAdmissions:
   - "State of New York"
@@ -116,22 +94,25 @@ credentialsAdmissions:
   - "U.S. Court of Appeals — Second Circuit"
 
 credentialsMemberships:
-  - "National Employment Lawyers Association (NELA)"
+  - "National Employment Lawyers Association, NY"
+  - "National Employment Lawyers Association, NJ"
   - "New Jersey Association for Justice"
+  - "New Jersey State Bar Association"
+  - "New York County Lawyers Association"
 
 credentialsRecognition:
-  - "Super Lawyers Rising Star — New York (2018, 2019, 2020, 2021, 2024, 2025)"
   - "Lifetime Member — Multi-Million Dollar Advocates Forum (invitation-only; membership limited to less than 1% of U.S. attorneys)"
+  - "Super Lawyers Rising Star — New York (2018–2026)"
   - "Best Labor & Employment Attorney — American Institute of Legal Counsel"
   - "Lead Counsel Rated — Thomson Reuters"
 
 # Badges rendered as a small row below the Recognition list.
 # Order matches the recognition lines above.
 badges:
-  - image: "/images/about/badges/super-lawyers-rising-stars.png"
-    alt: "Super Lawyers Rising Stars"
   - image: "/images/about/badges/multi-million-dollar-advocates-forum.png"
     alt: "Multi-Million Dollar Advocates Forum lifetime member"
+  - image: "/images/about/badges/super-lawyers-rising-stars.png"
+    alt: "Super Lawyers Rising Stars"
   - image: "/images/about/badges/american-institute-10-best.png"
     alt: "American Institute of Legal Counsel — 10 Best"
   - image: "/images/about/badges/lead-counsel-rated.png"

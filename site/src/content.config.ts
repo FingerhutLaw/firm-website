@@ -170,6 +170,18 @@ const pages = defineCollection({
           }),
         )
         .optional(),
+      pretrialWinsHeading: z.string().optional(),
+      pretrialWinsIntro: z.string().optional(),
+      pretrialWins: z
+        .array(
+          z.object({
+            date: z.string().optional(),
+            summary: z.string(),
+            caption: z.string().optional(),
+            court: z.string().optional(),
+          }),
+        )
+        .optional(),
       aboutSettlementsHeading: z.string().optional(),
       aboutSettlements: z
         .array(

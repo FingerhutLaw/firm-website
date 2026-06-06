@@ -33,7 +33,7 @@ pressLogos:
 
 # --- PRACTICE AREAS GRID (3 x 2 tiles) ---
 practiceAreasLabel: "Practice Areas"
-practiceAreasHeading: "What I handle for New York employees."
+practiceAreasHeading: "What I handle for New York and New Jersey employees."
 practiceAreasCTA: "See all practice areas"
 practiceAreasCTAHref: "/practice-areas"
 practiceAreas:

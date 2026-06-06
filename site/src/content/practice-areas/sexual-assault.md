@@ -14,7 +14,7 @@ seoDescription: "If you were sexually assaulted by a boss, CEO, owner, executive
 seoTitle: "NYC Workplace Sexual Assault Lawyer | Fingerhut Law"
 ---
 
-## Workplace Sexual Assault Is Not “Just an HR Issue”
+### Workplace Sexual Assault Is Not “Just an HR Issue”
 
 Sexual assault connected to work can be both a traumatic personal violation and a serious employment law issue. It may involve unwanted sexual touching, groping, grabbing, forced kissing, coerced sexual contact, assault during business travel, assault at a work event, or sexual contact obtained through threats to an employee’s job, schedule, pay, promotion, or career.
 
@@ -22,7 +22,7 @@ The person responsible may be a supervisor, CEO, founder, owner, partner, execut
 
 Fingerhut Law represents employees who were sexually assaulted, harassed, retaliated against, or forced out after workplace sexual misconduct.
 
-## Laws That May Apply
+### Laws That May Apply
 
 In New York City, workplace sexual assault may violate the **New York City Human Rights Law**, N.Y.C. Admin. Code § 8-107, when the conduct is connected to sex, gender, sexual orientation, gender identity, or another protected characteristic. The NYCHRL is intentionally broad and must be interpreted separately from narrower federal standards. In Mihalik v. Credit Agricole Cheuvreux N. Am., Inc., 715 F.3d 102 (2d Cir. 2013), the Second Circuit explained that New York City discrimination claims require independent and liberal analysis.
 
@@ -32,13 +32,13 @@ In New Jersey, employees may have claims under the **New Jersey Law Against Disc
 
 A workplace sexual assault may also involve other civil claims depending on the facts. The legal analysis depends on who committed the assault, where it happened, what the employer knew, how the employer responded, and whether the employee was retaliated against.
 
-## Sexual Assault by a CEO, Owner, Executive, or Supervisor
+### Sexual Assault by a CEO, Owner, Executive, or Supervisor
 
 Cases involving senior leaders are often especially difficult. A CEO, owner, founder, managing partner, board member, physician, rainmaker, or executive may control the employee’s pay, promotion, references, work assignments, immigration sponsorship, equity, or ability to stay employed. The company may protect the powerful person because of money, reputation, client relationships, or fear of public exposure.
 
 That does not mean the employee has no rights. If an employer knew or should have known about sexual misconduct and failed to act, or if it retaliated after a report, the employer’s response may become important evidence. In some cases, the fact that the harasser had authority over the employee is central to liability.
 
-## Examples of Workplace Sexual Assault and Related Misconduct
+### Examples of Workplace Sexual Assault and Related Misconduct
 
 Workplace sexual assault or related sexual misconduct may include:
 
@@ -52,7 +52,7 @@ Workplace sexual assault or related sexual misconduct may include:
 - The company firing, demoting, isolating, or discrediting the employee after a report.
 - Sexual assault can occur in the office, after-hours, at a conference, at a company party, during a client dinner, on a business trip, in a rideshare, at a hotel, or through any setting connected to work.
 
-## What Evidence Should Employees Preserve?
+### What Evidence Should Employees Preserve?
 
 If possible, preserve evidence. Helpful evidence may include:
 
@@ -65,17 +65,17 @@ If possible, preserve evidence. Helpful evidence may include:
 - Performance reviews and records showing retaliation after reporting.
 - Employees do not need every category of evidence to have a claim. But preserving contemporaneous records can help show what happened, when it happened, who knew, and how the employer responded.
 
-## Retaliation After Reporting Sexual Assault
+### Retaliation After Reporting Sexual Assault
 
 Retaliation after reporting sexual assault is unlawful. Retaliation may include termination, demotion, reduced hours, loss of accounts, negative reviews, exclusion from meetings, threats, pressure to resign, or efforts to make the employee look unstable or unreliable.
 
 A common pattern is that the company says it takes the complaint seriously but then shifts blame to the employee. The employer may question why the employee waited to report, criticize the employee’s work, isolate the employee from coworkers, or suggest a “mutual separation.” Those facts can matter.
 
-## Related Fingerhut Law Pages
+### Related Fingerhut Law Pages
 
-Suggested internal links: **Sexual Harassment**, **Hostile Work Environment**, **Retaliation for Protected Activity**, **Wrongful Termination**, **Severance Negotiation**, **LGBTQ+ Discrimination**, **NJ LAD**.
+[Sexual Harassment](/practice-areas/sexual-harassment), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wrongful Termination](/practice-areas/wrongful-termination), [Severance Negotiation](/practice-areas/severance-negotiation), [LGBTQ+ Discrimination](/practice-areas/lgbtq-discrimination), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-## Contact Fingerhut Law
+### Contact Fingerhut Law
 
 If you were sexually assaulted, harassed, or retaliated against by a CEO, owner, executive, supervisor, coworker, client, or vendor, contact **Fingerhut Law** for a confidential consultation.
 

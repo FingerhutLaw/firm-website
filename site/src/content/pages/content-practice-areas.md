@@ -11,11 +11,11 @@ description: "Workplace discrimination, harassment, retaliation, and wrongful te
 
 # --- HERO ---
 practiceHeroLabel: "Practice Areas"
-practiceHeroHeadline: "What I handle for New York employees."
+practiceHeroHeadline: "What I handle for New York and New Jersey employees."
 practiceHeroSubheadline: "Discrimination, harassment, retaliation, and wrongful termination — at Fortune 500 companies and small businesses alike."
 
 # --- INTRO PROSE ---
-practiceIntro: "Fingerhut Law represents New York employees in cases involving workplace discrimination, harassment, retaliation, and wrongful termination. I have litigated for workers in financial services, healthcare, construction, hospitality, education, technology, media, and government. The areas below are where I most often help clients. If your situation does not fit neatly into one of these categories, that does not mean you do not have a case. Contact the firm for a free, confidential consultation."
+practiceIntro: "Fingerhut Law represents New York and New Jersey employees in cases involving workplace discrimination, harassment, retaliation, and wrongful termination. The practice has litigated on behalf of workers in financial services, healthcare, film, tech startups, construction, hospitality, education, media, and government. The categories below are the most common — they are not exhaustive. If your situation does not fit neatly within them, that does not mean you do not have a claim. Contact the firm for a free, confidential consultation."
 
 # =============================================================
 # PRACTICE AREA TILES
@@ -85,7 +85,7 @@ practiceAreasList:
 
 # --- "HAS THIS HAPPENED TO YOU?" SCENARIO PROMPTS ---
 # Conversion-focused prompts per the Outten & Golden pattern (competitive-research.md §5).
-scenariosHeading: "Has this happened to you?"
+scenariosHeading: "Worth a phone call"
 scenariosIntro: "If any of these sound familiar, contact Fingerhut Law for a free, confidential consultation."
 scenarios:
   - "Were you fired within weeks of disclosing a pregnancy?"

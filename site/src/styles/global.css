@@ -36,3 +36,123 @@ html {
 .prose-fl em {
   font-style: italic;
 }
+
+/* Article body styling for practice-area pages. Applied via the
+   `.prose-fl-page` class on the <article> wrapper in pages/practice-areas/[slug].astro.
+   Targets the elements that markdown produces in those bodies (h2/h3/h4 headings,
+   ul/ol/li lists, blockquotes, and links) so authors can structure articles with
+   plain markdown and get consistent, on-brand typography. */
+.prose-fl-page h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-fl-ink);
+}
+.prose-fl-page h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  color: var(--color-fl-ink);
+}
+.prose-fl-page h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--color-fl-ink);
+}
+/* Tighten the gap when a heading is the very first body element. */
+.prose-fl-page > :first-child {
+  margin-top: 0;
+}
+.prose-fl-page ul,
+.prose-fl-page ol {
+  margin: 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+.prose-fl-page ul li,
+.prose-fl-page ol li {
+  position: relative;
+  padding-left: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-fl-ink-soft);
+  margin-top: 0.5rem;
+}
+.prose-fl-page ul li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-fl-accent);
+  font-size: 0.75rem;
+  line-height: 2.5;
+}
+.prose-fl-page ol {
+  counter-reset: fl-ol;
+}
+.prose-fl-page ol li {
+  counter-increment: fl-ol;
+}
+.prose-fl-page ol li::before {
+  content: counter(fl-ol) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-fl-accent);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+.prose-fl-page a {
+  color: var(--color-fl-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s;
+}
+.prose-fl-page a:hover {
+  color: var(--color-fl-accent-2);
+}
+.prose-fl-page blockquote {
+  margin: 2rem 0;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  border-left: 2px solid var(--color-fl-accent);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--color-fl-ink);
+}
+
+/* Left-to-right badge marquee on the homepage. Pauses on hover; respects
+   prefers-reduced-motion. The track holds the badge list duplicated twice,
+   then animates between -50% (showing the second copy) and 0% (showing the
+   first copy) so the loop is seamless and the visible items shift rightward. */
+@keyframes fl-marquee-rtl-to-ltr {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.fl-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: fl-marquee-rtl-to-ltr 55s linear infinite;
+}
+.fl-marquee-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fl-marquee-track { animation: none; }
+}

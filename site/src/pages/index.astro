@@ -11,46 +11,66 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
 
 <Layout>
   <!-- Hero -->
-  <section class="mx-auto max-w-6xl px-6 pt-24 pb-28">
-    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-4xl">
-      {c.heroHeadline}
-    </h1>
-    <p class="mt-8 text-xl text-fl-ink-soft max-w-2xl leading-relaxed">
-      {c.heroSubheadline}
-    </p>
-    <div class="mt-12 flex flex-wrap items-center gap-6">
-      <a
-        href={c.heroCTAHref}
-        class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-fl-accent-2 transition-colors"
-      >
-        {c.heroCTAText}
-      </a>
-      <span class="text-fl-ink-soft text-sm">
-        or call
-        <a href={c.phoneHref} class="text-fl-accent font-medium hover:underline">
-          {c.phone}
+  <section
+    class="relative bg-cover bg-right min-h-[55vh] flex items-center"
+    style="background-image: url('/images/hero/home-hero.jpg');"
+  >
+    <div class="absolute inset-0 bg-slate-900/60"></div>
+    <div class="relative mx-auto max-w-6xl px-6 py-20 w-full">
+      <h1 class="text-white font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-4xl">
+        {c.heroHeadline}
+      </h1>
+      <p class="mt-8 text-xl text-white/85 max-w-2xl leading-relaxed">
+        {c.heroSubheadline}
+      </p>
+      <div class="mt-12 flex flex-wrap items-center gap-6">
+        <a
+          href={c.heroCTAHref}
+          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+        >
+          {c.heroCTAText}
         </a>
-      </span>
+        <span class="text-white/80 text-sm">
+          or call
+          <a href={c.phoneHref} class="text-white font-medium underline underline-offset-4 hover:text-white/80">
+            {c.phone}
+          </a>
+        </span>
+      </div>
     </div>
   </section>
 
-  <!-- Press / trust strip -->
-  {c.pressLogos && c.pressLogos.length > 0 && (
-    <section class="border-y border-slate-200">
-      <div class="mx-auto max-w-6xl px-6 py-10">
-        <p class="text-xs uppercase tracking-widest text-fl-ink-soft text-center mb-6">
-          {c.pressLabel}
-        </p>
-        <ul class="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
-          {c.pressLogos.map((logo: string) => (
-            <li class="font-serif text-lg md:text-xl text-fl-ink-soft tracking-tight">
-              {logo}
+  <!-- Recognition marquee -->
+  <section class="border-y border-slate-200 overflow-hidden">
+    <div class="mx-auto max-w-6xl px-6 pt-10 pb-2">
+      <p class="text-xs uppercase tracking-widest text-fl-ink-soft text-center">
+        Recognition
+      </p>
+    </div>
+    <div class="overflow-hidden py-8">
+      <div class="fl-marquee-track">
+        {[0, 1].map((copy) => (
+          <ul
+            class="flex items-center gap-28 px-14 shrink-0"
+            aria-hidden={copy === 1 ? 'true' : undefined}
+          >
+            <li class="flex items-center h-28 shrink-0">
+              <img src="/images/about/badges/super-lawyers-rising-stars.png" alt="Super Lawyers Rising Stars" class="max-h-20 w-auto object-contain" loading="lazy" />
             </li>
-          ))}
-        </ul>
+            <li class="flex items-center h-28 shrink-0">
+              <img src="/images/about/badges/multi-million-dollar-advocates-forum.png" alt="Multi-Million Dollar Advocates Forum lifetime member" class="max-h-28 w-auto object-contain" loading="lazy" />
+            </li>
+            <li class="flex items-center h-28 shrink-0">
+              <img src="/images/about/badges/american-institute-10-best.png" alt="American Institute of Legal Counsel — 10 Best" class="max-h-20 w-auto object-contain" loading="lazy" />
+            </li>
+            <li class="flex items-center h-28 shrink-0">
+              <img src="/images/about/badges/lead-counsel-rated.png" alt="Lead Counsel Rated" class="max-h-20 w-auto object-contain" loading="lazy" />
+            </li>
+          </ul>
+        ))}
       </div>
-    </section>
-  )}
+    </div>
+  </section>
 
   <!-- How I Practice — body from src/content/pages/firm-values.md -->
   <section class="bg-slate-50 border-y border-slate-200">
@@ -149,7 +169,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
         <img
           src={c.portraitImage}
           alt={c.portraitAlt}
-          class="w-full max-w-md mx-auto md:mx-0 shadow-sm"
+          class="w-full max-w-md mx-auto md:mx-0 rounded-2xl shadow-xl aspect-[4/5] object-cover object-center"
           loading="lazy"
         />
       </div>
