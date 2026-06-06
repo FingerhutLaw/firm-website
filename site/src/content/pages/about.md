@@ -16,7 +16,7 @@ aboutPortraitAlt: "Portrait of Steven Fingerhut"
 # --- BIO INTRO PARAGRAPHS ---
 aboutBio:
   - "Steven Fingerhut is a New York and New Jersey employment lawyer who has recovered more than $30 million for workers — through jury verdicts, settlements, and appellate wins — in cases involving discrimination, harassment, retaliation, wage theft, and wrongful termination."
-  - "Before founding Fingerhut Law, Steven spent a decade as a partner at one of New York's largest plaintiffs-only employment firms, where he built a trial-focused practice representing employees against employers ranging from Fortune 100 companies to small businesses. He launched Fingerhut Law to bring that same trial-tested representation to a more direct, personalized client experience — without the constraints of a large institutional firm."
+  - "Before founding Fingerhut Law, Steven spent over ten years at one of New York's largest plaintiffs-only employment firms, rising to partner and building a trial-focused practice representing employees against employers ranging from Fortune 100 companies to small businesses. He launched Fingerhut Law to bring that same trial-tested representation to a more direct, personalized client experience — without the constraints of a large institutional firm."
   - "His approach is grounded in three principles: prepare every case as if it will be tried, value every claim as if a jury will decide it, and stay personally accessible to every client he represents."
 
 # --- NOTABLE SETTLEMENTS (anonymized) ---
