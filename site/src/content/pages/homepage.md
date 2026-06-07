@@ -102,7 +102,7 @@ news:
 
 # --- FINAL CTA (dark band, closes the page) ---
 finalCtaHeading: "If your rights at work have been violated, do not wait."
-finalCtaBody: "Employment claims in New York have short deadlines — sometimes as short as 180 days. Contact Fingerhut Law for a free, confidential consultation."
+finalCtaBody: "Employment claims in New York and New Jersey have short deadlines — sometimes as short as 180 days. Contact Fingerhut Law for a free, confidential consultation."
 finalCtaButton: "Schedule a Consultation"
 finalCtaHref: "/contact"
 ---
