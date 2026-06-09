@@ -73,7 +73,7 @@ A common pattern is that the company says it takes the complaint seriously but t
 
 ### Adult Survivors Act Experience
 
-Steven Fingerhut represented survivors during New York’s Adult Survivors Act (CPLR 214-j) lookback window, which revived otherwise time-barred civil claims for adult-survivor sexual offenses between November 24, 2022 and November 24, 2023, while he was an attorney at his prior firm. The window has now closed, but that experience handling ASA matters — including claims involving senior executives and long-delayed reporting — continues to inform how the firm evaluates and litigates workplace sexual assault cases under the human rights laws, Title VII, and the New Jersey LAD.
+Steven Fingerhut represented survivors during New York’s Adult Survivors Act (CPLR 214-j) lookback window, which revived otherwise time-barred civil claims for adult-survivor sexual offenses between November 24, 2022 and November 24, 2023. The window has now closed, but that experience handling ASA matters — including claims involving senior executives and long-delayed reporting — continues to inform how the firm evaluates and litigates workplace sexual assault cases under the human rights laws, Title VII, and the New Jersey LAD.
 
 ### Related Fingerhut Law Pages
 
