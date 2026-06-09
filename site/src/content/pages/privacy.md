@@ -24,7 +24,7 @@ Information you submit is used only to:
 - Communicate with you about your matter once representation begins, if applicable
 - Comply with our legal, regulatory, and professional-responsibility obligations as New York and New Jersey attorneys
 
-We do not sell your information, and we do not share it with marketing partners.
+We do not sell your information, and we do not share it with marketing partners. No mobile opt-in or text message consent will be shared with 3rd parties or affiliates.
 
 ## Service providers
 
