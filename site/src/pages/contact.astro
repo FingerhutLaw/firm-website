@@ -115,6 +115,19 @@ const h = homepage!.data;
             </p>
           </div>
 
+          <div class="flex items-start gap-3 pt-2">
+            <input
+              id="sms_consent"
+              name="sms_consent"
+              type="checkbox"
+              value="yes"
+              class="mt-1 h-4 w-4 flex-shrink-0 border-slate-300 text-fl-accent focus:outline-none focus:ring-1 focus:ring-fl-accent cursor-pointer"
+            />
+            <label for="sms_consent" class="text-sm text-fl-ink-soft leading-relaxed cursor-pointer">
+              I consent to receive informational and conversational SMS texts from Fingerhut Law. Reply STOP to opt out; reply HELP for support. Message and data rates may apply. Messaging frequency may vary. See our <a href="/privacy" class="underline hover:text-fl-accent transition-colors">Privacy Policy</a>.
+            </label>
+          </div>
+
           <button
             type="submit"
             class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-fl-accent-2 transition-colors"

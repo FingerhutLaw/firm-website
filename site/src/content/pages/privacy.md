@@ -26,6 +26,14 @@ Information you submit is used only to:
 
 We do not sell your information, and we do not share it with marketing partners. No mobile opt-in or text message consent will be shared with 3rd parties or affiliates.
 
+## SMS terms
+
+If you consent to receive conversational and informational text messages from Fingerhut Law, you agree to receive appointment reminders, case status updates, and replies to inquiries you have initiated from us.
+
+- Reply STOP to opt out; reply HELP for support
+- Message and data rates may apply
+- Messaging frequency may vary
+
 ## Service providers
 
 We use a small number of vendors to operate the site and the firm's communications. Each vendor receives only the information necessary to provide its service:
