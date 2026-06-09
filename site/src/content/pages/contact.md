@@ -40,7 +40,7 @@ formSuccessRedirect: "https://fingerhutlawgroup.com/contact/thanks"
 whatHappensHeading: "What happens after you submit"
 whatHappens:
   - "Steven personally reviews every inquiry within one business day."
-  - "If the firm may be able to help, Steven will reach out by phone or email to schedule a free, confidential consultation."
+  - "Steven will reach out by phone or email to schedule a free, confidential consultation."
   - "All inquiries are kept confidential, whether or not the firm takes the matter."
 
 # --- SIDEBAR (office info) ---

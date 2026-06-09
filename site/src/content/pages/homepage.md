@@ -19,7 +19,7 @@ phoneHref: "tel:+12126804040"
 # --- FEE NOTE (canonical — rendered site-wide on every closing CTA + footer) ---
 # Edit this line and it updates everywhere. Honor the "where appropriate"
 # framing — not every matter is contingency-eligible.
-feeNote: "Where appropriate, cases are handled on a contingency-fee basis — no fee unless the firm obtains a recovery."
+feeNote: "Cases are typically handled on a contingency-fee basis — no fee unless the firm obtains a recovery."
 
 # --- PRESS STRIP (just below the hero) ---
 # Text-only treatment until clean publication logos are sourced.
@@ -58,7 +58,7 @@ practiceAreas:
 
 # --- RESULTS STRIP (dark band, 4 callouts) ---
 resultsLabel: "Results"
-resultsHeading: "Real cases. Real numbers."
+resultsHeading: "A track record of recoveries."
 resultsCTA: "See more results"
 resultsCTAHref: "/results"
 results:

@@ -1,7 +1,7 @@
 ---
 name: "Workplace Sexual Assault"
-tagline: "Civil claims under New York's Adult Survivor Act."
-intakeSummary: "Civil claims arising from forcible touching, sexual assault, and other Penal Law article 130 offenses at work. New York's Adult Survivor Act revives otherwise time-barred claims."
+tagline: "Civil claims for sexual assault and related misconduct at work."
+intakeSummary: "Civil claims arising from forcible touching, sexual assault, and other Penal Law article 130 offenses connected to work — under the New York City and State Human Rights Laws, Title VII, the New Jersey Law Against Discrimination, and related common-law theories."
 priority: 4
 statutes:
   - "New York Adult Survivor Act (CPLR 214-j)"
@@ -70,6 +70,10 @@ If possible, preserve evidence. Helpful evidence may include:
 Retaliation after reporting sexual assault is unlawful. Retaliation may include termination, demotion, reduced hours, loss of accounts, negative reviews, exclusion from meetings, threats, pressure to resign, or efforts to make the employee look unstable or unreliable.
 
 A common pattern is that the company says it takes the complaint seriously but then shifts blame to the employee. The employer may question why the employee waited to report, criticize the employee’s work, isolate the employee from coworkers, or suggest a “mutual separation.” Those facts can matter.
+
+### Adult Survivors Act Experience
+
+Fingerhut Law represented survivors during New York’s Adult Survivors Act (CPLR 214-j) lookback window, which revived otherwise time-barred civil claims for adult-survivor sexual offenses between November 24, 2022 and November 24, 2023. The window has now closed, but the firm’s experience handling ASA matters — including claims involving senior executives and long-delayed reporting — continues to inform how the firm evaluates and litigates workplace sexual assault cases under the human rights laws, Title VII, and the New Jersey LAD.
 
 ### Related Fingerhut Law Pages
 

@@ -15,7 +15,7 @@ practiceHeroHeadline: "What I handle for New York and New Jersey employees."
 practiceHeroSubheadline: "Discrimination, harassment, retaliation, and wrongful termination — at Fortune 500 companies and small businesses alike."
 
 # --- INTRO PROSE ---
-practiceIntro: "Fingerhut Law represents New York and New Jersey employees in cases involving workplace discrimination, harassment, retaliation, and wrongful termination. The practice has litigated on behalf of workers in financial services, healthcare, film, tech startups, construction, hospitality, education, media, and government. The categories below are the most common — they are not exhaustive. If your situation does not fit neatly within them, that does not mean you do not have a claim. Contact the firm for a free, confidential consultation."
+practiceIntro: "Fingerhut Law represents New York and New Jersey employees in cases involving workplace discrimination, harassment, retaliation, and wrongful termination. The practice has litigated on behalf of workers in financial services, tech startups, advertising and marketing, film and media, hospitality, construction, real estate, fashion and retail, and professional services. The categories below are the most common — they are not exhaustive. If your situation does not fit neatly within them, that does not mean you do not have a claim. Contact the firm for a free, confidential consultation."
 
 # =============================================================
 # PRACTICE AREA TILES
