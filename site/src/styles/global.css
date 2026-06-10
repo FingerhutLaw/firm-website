@@ -156,3 +156,40 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .fl-marquee-track { animation: none; }
 }
+
+/* Homepage hero reveal (kinetic serif) + credibility stats band.
+   All hidden initial states live inside `no-preference`, so users with
+   reduced-motion enabled see fully visible, static content by default. */
+@media (prefers-reduced-motion: no-preference) {
+  .fl-mask {
+    display: block;
+    overflow: hidden;
+    padding: 0.06em 0.03em;
+    margin: -0.06em -0.03em;
+  }
+  .fl-rise {
+    display: block;
+    transform: translateY(110%);
+    animation: fl-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s forwards;
+  }
+  .fl-fade {
+    opacity: 0;
+    animation: fl-fade 1s ease forwards;
+  }
+  .fl-fade-1 { animation-delay: 0.7s; }
+  .fl-fade-2 { animation-delay: 0.95s; }
+  @keyframes fl-rise { to { transform: translateY(0); } }
+  @keyframes fl-fade { to { opacity: 1; } }
+
+  .fl-stat {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  .fl-stats.fl-in .fl-stat {
+    animation: fl-fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  }
+  .fl-stats.fl-in .fl-stat:nth-child(2) { animation-delay: 0.1s; }
+  .fl-stats.fl-in .fl-stat:nth-child(3) { animation-delay: 0.2s; }
+  .fl-stats.fl-in .fl-stat:nth-child(4) { animation-delay: 0.3s; }
+  @keyframes fl-fade-up { to { opacity: 1; transform: translateY(0); } }
+}

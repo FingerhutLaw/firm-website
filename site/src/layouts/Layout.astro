@@ -26,6 +26,9 @@ const site = homepage!.data;
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,8 +40,8 @@ const site = homepage!.data;
   <body class="min-h-screen bg-fl-bg text-fl-ink font-sans antialiased">
     <header class="border-b border-slate-200">
       <nav class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
-        <a href="/" class="font-serif text-3xl md:text-4xl font-medium tracking-tight text-fl-ink">
-          Fingerhut Law
+        <a href="/" class="inline-flex items-center" aria-label="Fingerhut Law — home">
+          <img src="/brand/wordmark-navy.svg" alt="Fingerhut Law" class="h-7 md:h-9 w-auto" />
         </a>
         <ul class="hidden md:flex items-center gap-8 text-sm text-fl-ink-soft">
           <li><a href="/about" class="hover:text-fl-accent">About</a></li>
@@ -98,8 +101,9 @@ const site = homepage!.data;
 
     <footer class="mt-24 border-t border-slate-200 bg-slate-50">
       <div class="mx-auto max-w-6xl px-6 py-12 text-sm text-fl-ink-soft">
-        <div class="font-serif text-xl text-fl-ink mb-2">
-          Fingerhut Law <span class="text-fl-ink-soft">· New York and New Jersey Employment Law</span>
+        <div class="mb-2 flex items-center gap-3 flex-wrap">
+          <img src="/brand/wordmark-navy.svg" alt="Fingerhut Law" class="h-6 w-auto" />
+          <span class="font-serif text-base text-fl-ink-soft">· New York and New Jersey Employment Law</span>
         </div>
         <p class="mb-4 italic">
           Fingerhut Law is a DBA of The Fingerhut Law Group, PLLC,
