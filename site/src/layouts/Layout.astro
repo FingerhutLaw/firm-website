@@ -5,17 +5,72 @@ import { getEntry } from 'astro:content';
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   title = 'Fingerhut Law — New York and New Jersey Employment Lawyer',
   description = 'A focused employment law practice in New York and New Jersey. Over $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases.',
+  image = '/images/steven-fingerhut.jpg',
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site).toString();
 
 // Site-wide config pulled from homepage.md (phone, fee note, etc.) so values
 // stay editable in one place.
 const homepage = await getEntry('pages', 'homepage');
 const site = homepage!.data;
+
+// JSON-LD structured data — tells Google this is a law firm with these
+// service areas, hours, address, and practice focus. Drives local-pack
+// eligibility for "NYC employment lawyer" style queries.
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  name: 'Fingerhut Law',
+  alternateName: 'The Fingerhut Law Group, PLLC',
+  url: 'https://fingerhutlawgroup.com',
+  logo: 'https://fingerhutlawgroup.com/brand/wordmark-navy.svg',
+  image: 'https://fingerhutlawgroup.com/images/steven-fingerhut.jpg',
+  telephone: '+1-212-680-4040',
+  email: 'steven@fingerhutlawgroup.com',
+  priceRange: 'Contingency fee where appropriate — no fee unless we recover',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '469 7th Avenue, 12th Floor',
+    addressLocality: 'New York',
+    addressRegion: 'NY',
+    postalCode: '10018',
+    addressCountry: 'US',
+  },
+  areaServed: [
+    { '@type': 'State', name: 'New York' },
+    { '@type': 'State', name: 'New Jersey' },
+  ],
+  founder: {
+    '@type': 'Person',
+    name: 'Steven Fingerhut',
+    jobTitle: 'Attorney',
+    image: 'https://fingerhutlawgroup.com/images/steven-fingerhut.jpg',
+  },
+  knowsAbout: [
+    'Employment Discrimination',
+    'Workplace Sexual Harassment',
+    'Wrongful Termination',
+    'Workplace Retaliation',
+    'Wage and Hour Violations',
+    'FMLA Retaliation',
+    'Whistleblower Protection',
+    'Severance Negotiation',
+  ],
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '18:00',
+  },
+};
 ---
 
 <!doctype html>
@@ -25,6 +80,21 @@ const site = homepage!.data;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fingerhut Law" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
@@ -36,6 +106,7 @@ const site = homepage!.data;
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
     />
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
   <body class="min-h-screen bg-fl-bg text-fl-ink font-sans antialiased">
     <header class="border-b border-slate-200">
@@ -43,14 +114,14 @@ const site = homepage!.data;
         <a href="/" class="inline-flex items-center" aria-label="Fingerhut Law — home">
           <img src="/brand/wordmark-navy.svg" alt="Fingerhut Law" class="h-7 md:h-9 w-auto" />
         </a>
-        <ul class="hidden md:flex items-center gap-8 text-sm text-fl-ink-soft">
-          <li><a href="/about" class="hover:text-fl-accent">About</a></li>
-          <li><a href="/practice-areas" class="hover:text-fl-accent">Practice Areas</a></li>
-          <li><a href="/results" class="hover:text-fl-accent">Results</a></li>
-          <li><a href="/press" class="hover:text-fl-accent">Press</a></li>
-          <li><a href="/contact" class="hover:text-fl-accent">Contact</a></li>
+        <ul class="hidden md:flex items-center gap-8 text-sm font-semibold text-fl-ink">
+          <li><a href="/about" class="hover:text-fl-accent transition-colors">About</a></li>
+          <li><a href="/practice-areas" class="hover:text-fl-accent transition-colors">Practice Areas</a></li>
+          <li><a href="/results" class="hover:text-fl-accent transition-colors">Results</a></li>
+          <li><a href="/press" class="hover:text-fl-accent transition-colors">Press</a></li>
+          <li><a href="/contact" class="hover:text-fl-accent transition-colors">Contact</a></li>
         </ul>
-        <a href="tel:+12126804040" class="hidden md:inline text-sm font-medium text-fl-accent hover:text-fl-accent-2">
+        <a href="tel:+12126804040" class="hidden md:inline text-sm font-semibold text-fl-accent hover:text-fl-accent-2 transition-colors">
           (212) 680-4040
         </a>
         <button
@@ -70,13 +141,13 @@ const site = homepage!.data;
         </button>
       </nav>
       <div id="fl-mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white">
-        <ul class="mx-auto max-w-6xl px-6 py-4 flex flex-col divide-y divide-slate-100 text-base text-fl-ink">
-          <li><a href="/about" class="block py-3 hover:text-fl-accent">About</a></li>
-          <li><a href="/practice-areas" class="block py-3 hover:text-fl-accent">Practice Areas</a></li>
-          <li><a href="/results" class="block py-3 hover:text-fl-accent">Results</a></li>
-          <li><a href="/press" class="block py-3 hover:text-fl-accent">Press</a></li>
-          <li><a href="/contact" class="block py-3 hover:text-fl-accent">Contact</a></li>
-          <li><a href="tel:+12126804040" class="block py-3 font-medium text-fl-accent">Call (212) 680-4040</a></li>
+        <ul class="mx-auto max-w-6xl px-6 py-4 flex flex-col divide-y divide-slate-100 text-base font-semibold text-fl-ink">
+          <li><a href="/about" class="block py-3 hover:text-fl-accent transition-colors">About</a></li>
+          <li><a href="/practice-areas" class="block py-3 hover:text-fl-accent transition-colors">Practice Areas</a></li>
+          <li><a href="/results" class="block py-3 hover:text-fl-accent transition-colors">Results</a></li>
+          <li><a href="/press" class="block py-3 hover:text-fl-accent transition-colors">Press</a></li>
+          <li><a href="/contact" class="block py-3 hover:text-fl-accent transition-colors">Contact</a></li>
+          <li><a href="tel:+12126804040" class="block py-3 text-fl-accent">Call (212) 680-4040</a></li>
         </ul>
       </div>
     </header>

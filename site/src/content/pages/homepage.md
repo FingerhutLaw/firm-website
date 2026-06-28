@@ -53,7 +53,7 @@ practiceAreas:
     tagline: "When an accommodation request became a termination."
     href: "/practice-areas/disability-discrimination"
   - name: "Wrongful Termination"
-    tagline: "Fired for the wrong reason — and the right framework matters."
+    tagline: "Not every firing is legal."
     href: "/practice-areas/wrongful-termination"
 
 # --- RESULTS STRIP (dark band, 4 callouts) ---
@@ -76,7 +76,7 @@ meetStevenName: "Steven Fingerhut"
 meetStevenTitle: "Founder, Fingerhut Law"
 meetStevenTagline: "New York employment law attorney representing workers in discrimination, harassment, retaliation, and wrongful termination cases."
 portraitImage: "/images/steven-fingerhut.jpg"
-portraitAlt: "Portrait of Steven Fingerhut"
+portraitAlt: "Steven Fingerhut, New York and New Jersey employment lawyer"
 
 # --- IN THE NEWS (3 press cards) ---
 newsLabel: "Press"

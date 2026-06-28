@@ -1,6 +1,6 @@
 ---
 name: "Wrongful Termination"
-tagline: "Fired for the wrong reason — and the right framework matters."
+tagline: "Not every firing is legal."
 intakeSummary: "Terminations that violate anti-discrimination, anti-retaliation, leave, or whistleblower statutes. If something about your firing does not feel right, talk to an attorney before signing anything."
 priority: 6
 featured: true
