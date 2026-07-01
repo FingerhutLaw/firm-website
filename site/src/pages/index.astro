@@ -9,7 +9,10 @@ const howIPractice = await getEntry('pages', 'firm-values');
 const { Content: HowIPracticeBody } = await render(howIPractice!);
 ---
 
-<Layout>
+<Layout
+  title="New York & New Jersey Employment Lawyer | Fingerhut Law"
+  description="Fingerhut Law represents New York and New Jersey employees in workplace discrimination, harassment, retaliation, and wrongful termination claims. Over $30 million recovered. Free confidential consultation."
+>
   <!-- Hero — portrait LEFT, copy RIGHT, very faded courthouse photo -->
   <section
     class="relative bg-white bg-cover bg-center border-b border-slate-200"
@@ -73,15 +76,15 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
     </div>
     <div id="fl-stats" class="fl-stats mx-auto max-w-6xl px-6 pt-12 pb-16 md:pb-20 grid grid-cols-2 md:grid-cols-4 gap-10">
       <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="30" data-pre="$" data-suf="M+">$0M+</span></div>
+        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="30" data-pre="$" data-suf="M+">$30M+</span></div>
         <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Recovered for workers</div>
       </div>
       <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="10" data-suf="+">0+</span></div>
+        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="10" data-suf="+">10+</span></div>
         <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Years litigating</div>
       </div>
       <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="100" data-suf="%">0%</span></div>
+        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="100" data-suf="%">100%</span></div>
         <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Workers, never employers</div>
       </div>
       <div class="fl-stat">
@@ -95,9 +98,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
     if (flStats) {
       const counts = flStats.querySelectorAll('.fl-count');
       const fmt = (el, v) => (el.dataset.pre || '') + v + (el.dataset.suf || '');
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        counts.forEach((el) => { el.textContent = fmt(el, Number(el.dataset.to)); });
-      } else {
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const run = () => counts.forEach((el) => {
           const to = Number(el.dataset.to), start = performance.now(), dur = 1100;
           const tick = (now) => {
@@ -108,7 +109,14 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
           requestAnimationFrame(tick);
         });
         new IntersectionObserver((entries, obs) => {
-          entries.forEach((e) => { if (e.isIntersecting) { flStats.classList.add('fl-in'); run(); obs.disconnect(); } });
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              counts.forEach((el) => { el.textContent = fmt(el, 0); });
+              flStats.classList.add('fl-in');
+              run();
+              obs.disconnect();
+            }
+          });
         }, { threshold: 0.4 }).observe(flStats);
       }
     }

@@ -11,7 +11,7 @@ description: "Steven Fingerhut is a New York and New Jersey employment lawyer wh
 aboutHeroName: "Steven Fingerhut"
 aboutHeroSubhead: "Employment Law Attorney · Founder, Fingerhut Law"
 aboutPortraitImage: "/images/steven-fingerhut.jpg"
-aboutPortraitAlt: "Portrait of Steven Fingerhut"
+aboutPortraitAlt: "Steven Fingerhut, New York and New Jersey employment lawyer"
 
 # --- BIO INTRO PARAGRAPHS ---
 aboutBio:

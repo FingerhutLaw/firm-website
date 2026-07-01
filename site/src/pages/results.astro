@@ -42,14 +42,14 @@ const h = homepage!.data;
 
   <!-- Trial verdicts & appellate -->
   {c.verdicts && c.verdicts.length > 0 && (
-    <section class="bg-slate-50 border-y border-slate-200">
+    <section class="bg-slate-200 border-y border-slate-300">
       <div class="mx-auto max-w-5xl px-6 py-20 md:py-24">
         <h2 class="font-serif font-medium text-2xl md:text-3xl leading-tight tracking-tight text-fl-ink mb-8">
           {c.verdictsSectionLabel}
         </h2>
         <ul class="space-y-8">
           {c.verdicts.map((v) => (
-            <li class="bg-white border border-slate-200 p-8 md:p-10">
+            <li class="bg-white border border-slate-300 shadow-sm p-8 md:p-10">
               <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 mb-4">
                 <p class="font-serif text-2xl md:text-3xl font-medium text-fl-accent tracking-tight">
                   {v.outcome}
