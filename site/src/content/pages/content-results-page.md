@@ -17,7 +17,7 @@ resultsHeroSubheadline: "Trial verdicts, appellate affirmations, and notable set
 resultsIntro: "Over the course of more than a decade representing employees, Steven Fingerhut has recovered more than $30 million for workers — through jury verdicts, appellate affirmations, settlements, and agency hearings. The matters below are a representative selection."
 
 # Disclaimer shown directly under the intro (and again near the closing CTA).
-resultsDisclaimer: "Prior results do not guarantee a similar outcome. Every case turns on its own facts."
+resultsDisclaimer: "Prior results do not guarantee a similar outcome. Each matter is decided on its own facts."
 
 # =============================================================
 # TRIAL VERDICTS AND APPELLATE RESULTS

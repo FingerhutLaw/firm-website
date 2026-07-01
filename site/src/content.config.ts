@@ -297,6 +297,33 @@ const pages = defineCollection({
       pressInquiriesEmail: z.string().optional(),
       pressInquiriesCTAText: z.string().optional(),
       pressInquiriesCTAHref: z.string().optional(),
+
+      // FAQ page (/faq)
+      faqHeroLabel: z.string().optional(),
+      faqHeroHeadline: z.string().optional(),
+      faqHeroSubheadline: z.string().optional(),
+      faqIntro: z.string().optional(),
+      faqDisclaimer: z.string().optional(),
+      faqCategories: z
+        .array(
+          z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            items: z.array(
+              z.object({
+                q: z.string(),
+                a: z.string(),
+                linkText: z.string().optional(),
+                linkHref: z.string().optional(),
+              }),
+            ),
+          }),
+        )
+        .optional(),
+      faqCTAHeading: z.string().optional(),
+      faqCTABody: z.string().optional(),
+      faqCTAButton: z.string().optional(),
+      faqCTAHref: z.string().optional(),
     })
     .passthrough(),
 });

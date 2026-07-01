@@ -36,7 +36,7 @@ Wage theft may include:
 
 The **Fair Labor Standards Act**, 29 U.S.C. §§ 206 and 207, provides federal minimum wage and overtime rights. New York employees may also have claims under the **New York Labor Law**, including Article 6 and Article 19. The NYLL may allow employees to recover unpaid wages, liquidated damages, interest, statutory penalties, and attorneys’ fees, depending on the claim.
 
-New York courts regularly address wage theft claims involving unpaid minimum wages, overtime, wage notices, wage statements, and related violations. Cases such as Yunganaula v. D.P. Grp. Gen. Contractors/Developers reflect the types of NYLL wage claims employees may bring, though every case depends on its facts.
+New York courts regularly address wage theft claims involving unpaid minimum wages, overtime, wage notices, wage statements, and related violations. Cases such as Yunganaula v. D.P. Grp. Gen. Contractors/Developers reflect the types of NYLL wage claims employees may bring, though each matter is decided on its own facts.
 
 ### Wage Theft and Retaliation
 
