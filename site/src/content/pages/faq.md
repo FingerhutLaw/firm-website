@@ -86,6 +86,8 @@ faqCategories:
           fair-employment agencies that trigger the extended filing period. State-law claims
           under the NYSHRL, NYCHRL, or NJLAD have their own separate deadlines, so early
           review by a lawyer is important.
+        linkText: "Read more on Title VII"
+        linkHref: "/practice-areas/title-vii"
 
       - q: "What are the deadlines for New York employment discrimination claims?"
         a: >-
@@ -94,6 +96,8 @@ faqCategories:
           claims under the New York City Human Rights Law (NYCHRL), which generally has a
           three-year period for civil actions. Federal claims under Title VII, the ADA, or the
           ADEA may still require an EEOC charge within the applicable 180- or 300-day period.
+        linkText: "Read more on the NYSHRL"
+        linkHref: "/practice-areas/new-york-state-human-rights-law"
 
       - q: "What are the deadlines for New Jersey employment discrimination claims?"
         a: >-
@@ -102,6 +106,8 @@ faqCategories:
           Federal claims under Title VII, the ADA, or the ADEA may also apply and may require
           filing with the EEOC within 180 or 300 days. Because these deadlines can overlap,
           workers should not wait until the last minute.
+        linkText: "Read more on the NJLAD"
+        linkHref: "/practice-areas/new-jersey-law-against-discrimination"
 
       - q: "What is the deadline for unpaid wage or overtime claims?"
         a: >-
@@ -267,8 +273,8 @@ faqCategories:
           action. The NYCHRL also applies a lower standard of proof for harassment claims than
           Title VII. If you work in Manhattan, Brooklyn, Queens, the Bronx, or Staten Island,
           the NYCHRL may be an important part of your case.
-        linkText: "See practice areas covered"
-        linkHref: "/practice-areas"
+        linkText: "Read more on the NYCHRL"
+        linkHref: "/practice-areas/new-york-city-human-rights-law"
 
       - q: "What is the NJLAD and what does it cover?"
         a: >-
