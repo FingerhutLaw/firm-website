@@ -2,7 +2,7 @@
 title: "Privacy Policy — Fingerhut Law"
 description: "How Fingerhut Law collects, uses, and protects information submitted through fingerhutlawgroup.com."
 heading: "Privacy Policy"
-effectiveDate: "Effective June 6, 2026"
+effectiveDate: "Effective July 9, 2026"
 ---
 
 Fingerhut Law ("the firm," "we," or "us") respects the privacy of every visitor to this website. This Privacy Policy explains what information we collect through fingerhutlawgroup.com, how we use it, and the choices available to you. Fingerhut Law is a DBA of The Fingerhut Law Group, PLLC, a New York professional limited liability company.
@@ -13,7 +13,9 @@ When you submit the contact form on this site, you provide us with your name, em
 
 ## Information collected automatically
 
-When you visit the site, our hosting provider (Netlify) automatically logs standard request information such as IP address, browser type, referring page, and timestamps. This information is used for security, fraud prevention, and basic site reliability. We do not currently run third-party advertising or behavioral-tracking pixels on this site.
+When you visit the site, our hosting provider (Netlify) automatically logs standard request information such as IP address, browser type, referring page, and timestamps. This information is used for security, fraud prevention, and basic site reliability.
+
+We also use **Plausible Analytics**, a privacy-focused analytics service, to understand aggregate site usage (such as which pages are visited and how visitors arrive). Plausible does not set cookies, does not collect personal data, does not track visitors across websites, and does not build user profiles. The firm does not run third-party advertising pixels, behavioral-tracking pixels, or cross-site trackers on this site.
 
 ## How we use the information
 
@@ -39,6 +41,7 @@ If you consent to receive conversational and informational text messages from Fi
 We use a small number of vendors to operate the site and the firm's communications. Each vendor receives only the information necessary to provide its service:
 
 - **Netlify** — website hosting and basic request logging
+- **Plausible Analytics** — cookieless aggregate site-usage measurement (no personal data)
 - **Formspree** — secure delivery of contact-form submissions to the firm's email
 - **Google Workspace** — the firm's professional email (steven@fingerhutlawgroup.com) and calendar
 
