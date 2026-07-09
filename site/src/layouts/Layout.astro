@@ -108,8 +108,12 @@ const structuredData = {
     <title>{title}</title>
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 
-    <!-- Plausible Analytics (cookieless, privacy-first) -->
-    <script defer data-domain="fingerhutlawgroup.com" src="https://plausible.io/js/script.js"></script>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-r86CYaVsK2ODZfY5lMOLE.js"></script>
+    <script is:inline>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
   </head>
   <body class="min-h-screen bg-fl-bg text-fl-ink font-sans antialiased">
     <header class="border-b border-slate-200">
