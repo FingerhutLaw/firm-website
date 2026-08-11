@@ -1,7 +1,7 @@
 ---
 title: "Signs of Race Discrimination at Work — and What Actually Proves It"
 description: "How to recognize race discrimination when it is not overt, what evidence actually wins cases, and the federal, New York, and New Jersey laws that protect you."
-publishDate: 2026-08-10
+publishDate: 2026-04-22
 category: "Discrimination"
 seoTitle: "Signs of Race Discrimination at Work | NYC & NJ Lawyer | Fingerhut Law"
 seoDescription: "How courts actually prove race discrimination at work — direct and circumstantial evidence, coded language, comparators, and rights under Title VII, § 1981, the NYCHRL, and the NJLAD."

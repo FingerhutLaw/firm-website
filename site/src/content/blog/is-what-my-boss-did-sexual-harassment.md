@@ -1,7 +1,7 @@
 ---
 title: "Is What My Boss Did Sexual Harassment? What the Law Actually Requires"
 description: "What actually counts as sexual harassment at work under Title VII, the NYSHRL, the NYCHRL, and the NJLAD — and what to do if you are unsure."
-publishDate: 2026-08-10
+publishDate: 2026-08-07
 category: "Sexual Harassment"
 seoTitle: "Is What My Boss Did Sexual Harassment? | Fingerhut Law"
 seoDescription: "New York and New Jersey employment lawyer on what counts as sexual harassment at work — the federal standard, the broader NYC standard, and what to do next."

@@ -1,7 +1,7 @@
 ---
 title: "How Much Is a Sexual Harassment Case Worth in New York?"
 description: "The categories of damages, the caps that apply under federal law but not under the NYCHRL, and the factors that drive case value in New York and New Jersey."
-publishDate: 2026-08-10
+publishDate: 2026-07-10
 category: "Sexual Harassment"
 seoTitle: "How Much Is a Sexual Harassment Case Worth in New York? | Fingerhut Law"
 seoDescription: "What sexual harassment cases pay in New York and New Jersey — damages categories, the NYCHRL advantage over federal law, and the factors that drive settlement value."

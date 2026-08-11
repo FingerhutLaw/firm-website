@@ -1,7 +1,7 @@
 ---
 title: "Should You Sign That Severance Agreement? Five Red Flags Before You Waive Your Rights"
 description: "What a severance agreement really is, the clauses that most often hurt workers, and the legal protections that limit what an employer can require you to sign."
-publishDate: 2026-08-10
+publishDate: 2026-06-16
 category: "Severance"
 seoTitle: "Should You Sign This Severance Agreement? | NY & NJ Lawyer | Fingerhut Law"
 seoDescription: "How to read a severance agreement in New York or New Jersey — releases, NDAs limited by the Speak Out Act and NY Gen. Oblig. Law § 5-336, non-competes, and how to negotiate."

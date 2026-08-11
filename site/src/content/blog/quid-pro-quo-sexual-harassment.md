@@ -1,7 +1,7 @@
 ---
 title: "Quid Pro Quo Sexual Harassment: When a Supervisor Conditions Your Job on Sexual Conduct"
 description: "How quid pro quo sexual harassment works, why one incident can be enough, and why employers are strictly liable when a supervisor is involved."
-publishDate: 2026-08-10
+publishDate: 2026-06-26
 category: "Sexual Harassment"
 seoTitle: "Quid Pro Quo Sexual Harassment | NYC & NJ Lawyer | Fingerhut Law"
 seoDescription: "Quid pro quo sexual harassment under Title VII, the NYCHRL, the NYSHRL, and the NJLAD — what it is, how to prove it, and why employer liability is often automatic."

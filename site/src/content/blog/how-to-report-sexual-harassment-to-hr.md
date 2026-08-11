@@ -1,7 +1,7 @@
 ---
 title: "How to Report Sexual Harassment to HR Without Making It Worse"
 description: "What to put in writing, what to keep verbal, and how to preserve your retaliation protections when you take a sexual harassment complaint to HR."
-publishDate: 2026-08-10
+publishDate: 2026-07-30
 category: "Sexual Harassment"
 seoTitle: "How to Report Sexual Harassment to HR | Fingerhut Law"
 seoDescription: "How to complain about sexual harassment to HR the right way: what to document, what to write, what protections attach, and what to expect afterward."

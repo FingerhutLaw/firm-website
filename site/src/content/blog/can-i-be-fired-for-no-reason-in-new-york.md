@@ -1,7 +1,7 @@
 ---
 title: "Can I Be Fired for No Reason in New York? At-Will Employment and Its Many Exceptions"
 description: "The at-will rule in New York and New Jersey, and the substantial list of exceptions — antidiscrimination laws, whistleblower statutes, contracts, and protected activity — that swallow most of it in practice."
-publishDate: 2026-08-10
+publishDate: 2026-05-20
 category: "Wrongful Termination"
 seoTitle: "Can I Be Fired for No Reason in New York? | Wrongful Termination Lawyer"
 seoDescription: "At-will employment in New York and New Jersey — what the rule really means, the many exceptions, and when a \"no reason\" firing is actually unlawful."

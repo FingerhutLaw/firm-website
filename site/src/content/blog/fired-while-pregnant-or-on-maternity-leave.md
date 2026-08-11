@@ -1,7 +1,7 @@
 ---
 title: "Fired While Pregnant or on Maternity Leave in New York or New Jersey? What the Law Actually Requires"
 description: "The overlapping federal, New York, and New Jersey protections for pregnant workers and new parents — and what to do if you were fired, demoted, or denied return from leave."
-publishDate: 2026-08-10
+publishDate: 2026-06-03
 category: "Discrimination"
 seoTitle: "Fired While Pregnant or on Maternity Leave (NY & NJ) | Fingerhut Law"
 seoDescription: "Pregnancy discrimination law in New York and New Jersey: the PDA, PWFA, FMLA, PFL, NYSHRL, NYCHRL, and NJLAD, and what your rights are if you were fired or denied return from leave."

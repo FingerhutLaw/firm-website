@@ -1,7 +1,7 @@
 ---
 title: "Fired or Demoted After Reporting Sexual Harassment? Your Rights Under New York, New Jersey, and Federal Law"
 description: "Retaliation for reporting sexual harassment is illegal — and often a stronger claim than the underlying harassment. What counts, what to prove, and what to do first."
-publishDate: 2026-08-10
+publishDate: 2026-07-21
 category: "Sexual Harassment"
 seoTitle: "Fired After Reporting Sexual Harassment | NY & NJ Retaliation Lawyer"
 seoDescription: "Punished after complaining about sexual harassment? What retaliation looks like, what makes a retaliation claim strong, and your rights under Title VII, the NYCHRL, the NYSHRL, and the NJLAD."

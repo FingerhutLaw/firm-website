@@ -1,7 +1,7 @@
 ---
 title: "Denied a Reasonable Accommodation for a Disability? Here's What to Do Next"
 description: "Federal, New York, and New Jersey disability accommodation law — what qualifies as a reasonable accommodation, what employers must do, and what to do when they refuse."
-publishDate: 2026-08-10
+publishDate: 2026-05-07
 category: "Discrimination"
 seoTitle: "Denied Reasonable Accommodation at Work | NYC & NJ Lawyer | Fingerhut Law"
 seoDescription: "Disability accommodation law in New York and New Jersey — the ADA, ADAAA, NYSHRL, NYCHRL cooperative dialogue, and NJLAD, and what to do when a request is denied."
