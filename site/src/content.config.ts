@@ -357,4 +357,33 @@ const practiceAreas = defineCollection({
   }),
 });
 
-export const collections = { pages, practiceAreas };
+// ---------------------------------------------------------------
+// blog collection
+// One markdown file per post in src/content/blog/.
+// Filename (without .md) is the URL slug: /blog/<slug>.
+// Body is the article; frontmatter drives listing + SEO.
+// ---------------------------------------------------------------
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    category: z.enum([
+      'Sexual Harassment',
+      'Discrimination',
+      'Wrongful Termination',
+      'Retaliation',
+      'Wage & Hour',
+      'Severance',
+      'General',
+    ]),
+    relatedPracticeAreas: z.array(z.string()).optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+    draft: z.boolean().optional().default(false),
+  }),
+});
+
+export const collections = { pages, practiceAreas, blog };
