@@ -79,6 +79,13 @@ trialSettlements:
 # =============================================================
 motionsSectionLabel: "Motion Victories"
 motions:
+  - outcome: "Motion to Dismiss Denied"
+    date: "July 2026"
+    caption: "Jennings v. Partex Life Science Inc., et al."
+    court: "Docket No. MID-L-002149-26 (Middlesex County Superior Court, Law Division)"
+    summary: "Contested application of the New Jersey Wage Payment Law and CEPA to a chief financial officer who performed his executive duties remotely from outside the State. Defendants — a New Jersey corporation and its Dutch parent — moved to dismiss the wage counts on the ground that the NJWPL categorically does not reach an out-of-state remote worker. Steven's opposition rested on the combination of a New Jersey choice-of-law and forum-selection clause in the offer letter, defendants' withholding of New Jersey income tax from the client's first paycheck, and defendants' subsequent termination of the client's ADP access — which left it impossible to determine, at the pleading stage, whether the New Jersey payroll administration had continued. On that record, the court applied New Jersey's liberal notice-pleading standard under Rule 4:6-2(e) and permitted the NJWPL, NJWPL retaliation, and CEPA claims to proceed to discovery."
+    tags: "NJ Wage Payment Law · CEPA · Choice-of-Law"
+
   - outcome: "Defaults Vacated Only on Condition Defense Pays Plaintiff's Costs"
     date: "October 2023"
     caption: "Ruiz v. AF Trucking USA Inc., et al."
