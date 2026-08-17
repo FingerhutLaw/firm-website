@@ -105,6 +105,7 @@ credentialsRecognition:
   - "Super Lawyers Rising Star — New York (2018–2026)"
   - "Best Labor & Employment Attorney — American Institute of Legal Counsel"
   - "Lead Counsel Rated — Thomson Reuters"
+  - "Top 40 Under 40 — The National Trial Lawyers"
 
 # Badges rendered as a small row below the Recognition list.
 # Order matches the recognition lines above.
@@ -117,6 +118,8 @@ badges:
     alt: "American Institute of Legal Counsel — 10 Best"
   - image: "/images/about/badges/lead-counsel-rated.png"
     alt: "Lead Counsel Rated"
+  - image: "/images/about/badges/national-trial-lawyers-top-40-under-40.jpg"
+    alt: "The National Trial Lawyers — Top 40 Under 40"
 
 # --- CLOSING CTA ---
 aboutCTAHeading: "If your rights at work have been violated, you deserve an attorney who will fight for you."
