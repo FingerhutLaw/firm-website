@@ -10,8 +10,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "If you were sexually assaulted by a boss, CEO, owner, executive, coworker, client, or vendor, Fingerhut Law represents employees in workplace sexual assault, harassment, retaliation, and termination claims."
-seoTitle: "NYC Workplace Sexual Assault Lawyer | Fingerhut Law"
+seoDescription: "If you were sexually assaulted by a boss, CEO, owner, executive, coworker, client, or vendor, Friedman & Fingerhut represents employees in workplace sexual assault, harassment, retaliation, and termination claims."
+seoTitle: "NYC Workplace Sexual Assault Lawyer | Friedman & Fingerhut"
 ---
 
 ### Workplace Sexual Assault Is Not “Just an HR Issue”
@@ -20,7 +20,7 @@ Sexual assault connected to work can be both a traumatic personal violation and 
 
 The person responsible may be a supervisor, CEO, founder, owner, partner, executive, manager, coworker, client, customer, investor, vendor, patient, or someone else connected to the workplace. When the assailant is powerful, employees often feel trapped. They may worry that reporting will cost them their job, reputation, bonus, visa sponsorship, professional references, or future opportunities.
 
-Fingerhut Law represents employees who were sexually assaulted, harassed, retaliated against, or forced out after workplace sexual misconduct.
+Friedman & Fingerhut represents employees who were sexually assaulted, harassed, retaliated against, or forced out after workplace sexual misconduct.
 
 ### Laws That May Apply
 
@@ -75,12 +75,12 @@ A common pattern is that the company says it takes the complaint seriously but t
 
 Steven Fingerhut represented survivors during New York’s Adult Survivors Act (CPLR 214-j) lookback window, which revived otherwise time-barred civil claims for adult-survivor sexual offenses between November 24, 2022 and November 24, 2023. The window has now closed, but that experience handling ASA matters — including claims involving senior executives and long-delayed reporting — continues to inform how the firm evaluates and litigates workplace sexual assault cases under the human rights laws, Title VII, and the New Jersey LAD.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Sexual Harassment](/practice-areas/sexual-harassment), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wrongful Termination](/practice-areas/wrongful-termination), [Severance Negotiation](/practice-areas/severance-negotiation), [LGBTQ+ Discrimination](/practice-areas/lgbtq-discrimination), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were sexually assaulted, harassed, or retaliated against by a CEO, owner, executive, supervisor, coworker, client, or vendor, contact **Fingerhut Law** for a confidential consultation.
+If you were sexually assaulted, harassed, or retaliated against by a CEO, owner, executive, supervisor, coworker, client, or vendor, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

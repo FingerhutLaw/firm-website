@@ -79,6 +79,6 @@ If you were fired and something about it does not sit right:
 4. **File for unemployment.** In New York and New Jersey, an at-will termination without misconduct qualifies for benefits. Filing does not waive any legal claims.
 5. **Talk to a lawyer within days, not weeks.** Some deadlines are extremely short. The NYCHRL, NYSHRL, and NJLAD all have relatively long civil-action periods, but the federal EEOC deadline is 300 days from the last discriminatory act, and CEPA is one year.
 
-If you were fired in New York or New Jersey and want to understand whether the reason was lawful, contact **Fingerhut Law** for a confidential consultation.
+If you were fired in New York or New Jersey and want to understand whether the reason was lawful, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

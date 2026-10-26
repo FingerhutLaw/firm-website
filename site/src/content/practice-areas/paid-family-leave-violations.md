@@ -11,8 +11,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees denied New York Paid Family Leave, retaliated against for taking leave, or refused reinstatement after protected family leave."
-seoTitle: "NY Paid Family Leave Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees denied New York Paid Family Leave, retaliated against for taking leave, or refused reinstatement after protected family leave."
+seoTitle: "NY Paid Family Leave Lawyer | Friedman & Fingerhut"
 ---
 
 ### New York Paid Family Leave Protects Workers
@@ -40,12 +40,12 @@ An employer cannot punish an employee for using or requesting Paid Family Leave.
 
 Paid Family Leave violations can overlap with FMLA, pregnancy discrimination, caregiver discrimination, disability discrimination, and retaliation claims. For example, an employee who takes leave to bond with a child or care for a family member may also face gender stereotypes or caregiver bias. In New York City, caregiver discrimination may implicate the New York City Human Rights Law depending on the facts.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [Disability Discrimination](/practice-areas/disability-discrimination), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your employer denied New York Paid Family Leave, refused reinstatement, or retaliated against you for taking leave, contact **Fingerhut Law** for a confidential consultation.
+If your employer denied New York Paid Family Leave, refused reinstatement, or retaliated against you for taking leave, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -1,11 +1,11 @@
 ---
-title: "Privacy Policy — Fingerhut Law"
-description: "How Fingerhut Law collects, uses, and protects information submitted through fingerhutlawgroup.com."
+title: "Privacy Policy — Friedman & Fingerhut"
+description: "How Friedman & Fingerhut collects, uses, and protects information submitted through friedmanfingerhut.com."
 heading: "Privacy Policy"
 effectiveDate: "Effective July 9, 2026"
 ---
 
-Fingerhut Law ("the firm," "we," or "us") respects the privacy of every visitor to this website. This Privacy Policy explains what information we collect through fingerhutlawgroup.com, how we use it, and the choices available to you. Fingerhut Law is a DBA of The Fingerhut Law Group, PLLC, a New York professional limited liability company.
+Friedman & Fingerhut, PLLC ("the firm," "we," or "us") respects the privacy of every visitor to this website. This Privacy Policy explains what information we collect through friedmanfingerhut.com, how we use it, and the choices available to you.
 
 ## Information you provide
 
@@ -30,7 +30,7 @@ We do not sell your information, and we do not share it with marketing partners.
 
 ## SMS terms
 
-If you consent to receive conversational and informational text messages from Fingerhut Law, you agree to receive appointment reminders, case status updates, and replies to inquiries you have initiated from us.
+If you consent to receive conversational and informational text messages from Friedman & Fingerhut, you agree to receive appointment reminders, case status updates, and replies to inquiries you have initiated from us.
 
 - Reply STOP to opt out; reply HELP for support
 - Message and data rates may apply
@@ -43,7 +43,7 @@ We use a small number of vendors to operate the site and the firm's communicatio
 - **Netlify** — website hosting and basic request logging
 - **Plausible Analytics** — cookieless aggregate site-usage measurement (no personal data)
 - **Formspree** — secure delivery of contact-form submissions to the firm's email
-- **Google Workspace** — the firm's professional email (steven@fingerhutlawgroup.com) and calendar
+- **Google Workspace** — the firm's professional email and calendar
 
 These providers operate under their own privacy and security commitments.
 
@@ -77,9 +77,8 @@ We may update this Privacy Policy from time to time. The "Effective" date above 
 
 Questions, requests, or concerns about this Privacy Policy should be directed to:
 
-**Fingerhut Law**
+**Friedman & Fingerhut, PLLC**
 Attn: Privacy
 469 7th Avenue, 12th Floor
 New York, NY 10018
-[steven@fingerhutlawgroup.com](mailto:steven@fingerhutlawgroup.com)
 (212) 680-4040

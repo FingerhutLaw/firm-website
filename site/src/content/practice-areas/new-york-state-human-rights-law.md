@@ -1,14 +1,14 @@
 ---
 name: "New York State Human Rights Law"
 tagline: "New York's statewide anti-discrimination statute."
-intakeSummary: "The New York State Human Rights Law protects employees statewide from discrimination, harassment, retaliation, and failure to accommodate. Fingerhut Law represents employees in NYSHRL claims throughout New York State."
+intakeSummary: "The New York State Human Rights Law protects employees statewide from discrimination, harassment, retaliation, and failure to accommodate. Friedman & Fingerhut represents employees in NYSHRL claims throughout New York State."
 priority: 22
 featured: false
 statutes:
   - "New York State Human Rights Law (N.Y. Exec. Law § 296)"
 draft: false
 seoTitle: "NYSHRL Employment Discrimination Lawyer | New York State Human Rights Law"
-seoDescription: "The New York State Human Rights Law protects employees throughout New York from discrimination, harassment, retaliation, and accommodation failures. Fingerhut Law represents employees in NYSHRL claims."
+seoDescription: "The New York State Human Rights Law protects employees throughout New York from discrimination, harassment, retaliation, and accommodation failures. Friedman & Fingerhut represents employees in NYSHRL claims."
 ---
 
 ### What the NYSHRL Is
@@ -53,12 +53,12 @@ Employees may pursue NYSHRL claims administratively through the New York State D
 
 New York employees should also consider whether EEOC filing is needed to preserve federal claims. Agency filings may sometimes be cross-filed, but employees should not assume that filing in one forum preserves every claim in every forum. Deadlines should be evaluated promptly.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Sexual Harassment](/practice-areas/sexual-harassment), [Race Discrimination](/practice-areas/race-discrimination), [Disability Discrimination](/practice-areas/disability-discrimination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Hostile Work Environment](/practice-areas/hostile-work-environment), [New York City Human Rights Law](/practice-areas/new-york-city-human-rights-law), [Title VII](/practice-areas/title-vii).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you experienced workplace discrimination, harassment, retaliation, or failure to accommodate anywhere in New York State, contact **Fingerhut Law** for a confidential consultation.
+If you experienced workplace discrimination, harassment, retaliation, or failure to accommodate anywhere in New York State, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

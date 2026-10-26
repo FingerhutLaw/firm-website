@@ -3,7 +3,7 @@ title: "Whistleblower Protections in New York and New Jersey: NY Labor Law § 74
 description: "The 2022 amendments to NY Labor Law § 740 dramatically expanded protection for New York whistleblowers. New Jersey's CEPA remains one of the broadest whistleblower statutes in the country."
 publishDate: 2026-08-09
 category: "Retaliation"
-seoTitle: "Whistleblower Protections NY & NJ | NYLL § 740, CEPA | Fingerhut Law"
+seoTitle: "Whistleblower Protections NY & NJ | NYLL § 740, CEPA | Friedman & Fingerhut"
 seoDescription: "New York Labor Law § 740 (post-2022 amendments), New Jersey's Conscientious Employee Protection Act, and the federal whistleblower statutes — protected activity, remedies, and deadlines."
 relatedPracticeAreas:
   - whistleblower-retaliation
@@ -120,6 +120,6 @@ That said, the belief has to be tethered to identifiable law, rule, regulation, 
 4. **Consult before an external report or resignation.** The strategic choice among internal reporting, external reporting, resignation, and continued employment while pursuing a claim affects both liability and remedies.
 5. **Do not sign a severance offer at termination.** Take it home. Whistleblower severance offers often waive the whistleblower claim in exchange for a fraction of its value.
 
-If you were fired, demoted, or otherwise retaliated against after reporting or objecting to unlawful or unsafe conduct in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were fired, demoted, or otherwise retaliated against after reporting or objecting to unlawful or unsafe conduct in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

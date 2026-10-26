@@ -3,7 +3,7 @@ title: "Fired While Pregnant or on Maternity Leave in New York or New Jersey? Wh
 description: "The overlapping federal, New York, and New Jersey protections for pregnant workers and new parents — and what to do if you were fired, demoted, or denied return from leave."
 publishDate: 2026-06-16
 category: "Discrimination"
-seoTitle: "Fired While Pregnant or on Maternity Leave (NY & NJ) | Fingerhut Law"
+seoTitle: "Fired While Pregnant or on Maternity Leave (NY & NJ) | Friedman & Fingerhut"
 seoDescription: "Pregnancy discrimination law in New York and New Jersey: the PDA, PWFA, FMLA, PFL, NYSHRL, NYCHRL, and NJLAD, and what your rights are if you were fired or denied return from leave."
 relatedPracticeAreas:
   - pregnancy-discrimination
@@ -78,6 +78,6 @@ If you were fired, demoted, denied return from leave, or denied accommodation:
 4. **Note the deadlines.** Title VII, PDA, and PWFA claims generally require an EEOC charge within 300 days in New York and New Jersey. FMLA claims have a two-year (or three-year for willful violations) limitations period. NYSHRL and NYCHRL civil actions generally have three years. NJLAD claims generally have two years. New York PFL benefit denials have their own claim procedures with tighter deadlines.
 5. **Talk to a lawyer promptly.** The number of overlapping statutes means the strategy differs significantly from case to case. What works for a FMLA claim may not be optimal for a PWFA claim, and the choice of forum can affect damages.
 
-If you were fired, demoted, or denied accommodations related to pregnancy or maternity leave in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were fired, demoted, or denied accommodations related to pregnancy or maternity leave in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

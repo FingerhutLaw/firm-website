@@ -9,14 +9,14 @@ description: "Steven Fingerhut is a New York and New Jersey employment lawyer wh
 
 # --- HERO ---
 aboutHeroName: "Steven Fingerhut"
-aboutHeroSubhead: "Employment Law Attorney · Founder, Fingerhut Law"
-aboutPortraitImage: "/images/steven-fingerhut.jpg"
+aboutHeroSubhead: "Employment Law Attorney · Co-Founder, Friedman & Fingerhut"
+aboutPortraitImage: "/images/steven-fingerhut-2026.jpg"
 aboutPortraitAlt: "Steven Fingerhut, New York and New Jersey employment lawyer"
 
 # --- BIO INTRO PARAGRAPHS ---
 aboutBio:
   - "Steven Fingerhut is a New York and New Jersey employment lawyer who has recovered more than $30 million for workers — through jury verdicts, settlements, and appellate wins — in cases involving discrimination, harassment, retaliation, wage theft, and wrongful termination."
-  - "Before founding Fingerhut Law, Steven spent over ten years at one of New York's largest plaintiffs-only employment firms, rising to partner and building a trial-focused practice representing employees against employers ranging from Fortune 100 companies to small businesses. He launched Fingerhut Law to bring that same trial-tested representation to a more direct, personalized client experience — without the constraints of a large institutional firm."
+  - "Before co-founding Friedman & Fingerhut, Steven spent over ten years at one of New York's largest plaintiffs-only employment firms, rising to partner and building a trial-focused practice representing employees against employers ranging from Fortune 100 companies to small businesses. He launched the firm to bring that same trial-tested representation to a more direct, personalized client experience — without the constraints of a large institutional firm."
   - "His approach is grounded in three principles: prepare every case as if it will be tried, value every claim as if a jury will decide it, and stay personally accessible to every client he represents."
 
 # --- NOTABLE SETTLEMENTS (anonymized) ---
@@ -123,7 +123,7 @@ badges:
 
 # --- CLOSING CTA ---
 aboutCTAHeading: "If your rights at work have been violated, you deserve an attorney who will fight for you."
-aboutCTABody: "Contact Fingerhut Law for a free, confidential consultation."
+aboutCTABody: "Contact Friedman & Fingerhut for a free, confidential consultation."
 aboutCTAButton: "Schedule a Consultation"
 aboutCTAHref: "/contact"
 ---

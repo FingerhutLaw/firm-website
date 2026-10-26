@@ -1,15 +1,15 @@
 ---
 name: "Age Discrimination in Employment Act (ADEA)"
 tagline: "Federal protection for workers age 40 and older."
-intakeSummary: "The Age Discrimination in Employment Act prohibits age discrimination in hiring, firing, layoffs, promotions, and other employment decisions affecting workers 40 and older. Fingerhut Law represents employees in ADEA claims in New York and New Jersey."
+intakeSummary: "The Age Discrimination in Employment Act prohibits age discrimination in hiring, firing, layoffs, promotions, and other employment decisions affecting workers 40 and older. Friedman & Fingerhut represents employees in ADEA claims in New York and New Jersey."
 priority: 25
 featured: false
 statutes:
   - "Age Discrimination in Employment Act of 1967 (29 U.S.C. § 621 et seq.)"
   - "Older Workers Benefit Protection Act (29 U.S.C. § 626(f))"
 draft: false
-seoTitle: "ADEA Age Discrimination Lawyer | Fingerhut Law"
-seoDescription: "The Age Discrimination in Employment Act protects workers 40 and older from age discrimination in employment. Fingerhut Law represents employees in ADEA claims in New York and New Jersey."
+seoTitle: "ADEA Age Discrimination Lawyer | Friedman & Fingerhut"
+seoDescription: "The Age Discrimination in Employment Act protects workers 40 and older from age discrimination in employment. Friedman & Fingerhut represents employees in ADEA claims in New York and New Jersey."
 ---
 
 ### What the ADEA Is
@@ -52,12 +52,12 @@ Before filing an ADEA lawsuit, employees usually must file an administrative cha
 
 ADEA procedures differ in some respects from Title VII procedures, including rules about when a lawsuit may be filed after an EEOC charge. Employees should also evaluate whether state or local deadlines differ. For example, New York and New York City claims may have different court or agency filing options than federal ADEA claims, and New Jersey LAD claims may proceed under New Jersey-specific procedures.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Age Discrimination](/practice-areas/age-discrimination), [Wrongful Termination](/practice-areas/wrongful-termination), [Severance Negotiation](/practice-areas/severance-negotiation), [Retaliation for Protected Activity](/practice-areas/retaliation), [New York State Human Rights Law](/practice-areas/new-york-state-human-rights-law), [New York City Human Rights Law](/practice-areas/new-york-city-human-rights-law), [New Jersey Law Against Discrimination](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you believe you experienced age discrimination or unlawful treatment in a layoff, termination, or severance in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you believe you experienced age discrimination or unlawful treatment in a layoff, termination, or severance in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

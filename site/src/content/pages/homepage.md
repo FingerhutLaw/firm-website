@@ -19,7 +19,7 @@ phoneHref: "tel:+12126804040"
 # --- FEE NOTE (canonical — rendered site-wide on every closing CTA + footer) ---
 # Edit this line and it updates everywhere. Honor the "where appropriate"
 # framing — not every matter is contingency-eligible.
-feeNote: "Cases are typically handled on a contingency-fee basis — no fee unless the firm obtains a recovery."
+feeNote: "Cases are typically handled on a contingency-fee basis — no fee unless we obtain a recovery."
 
 # --- PRESS STRIP (just below the hero) ---
 # Text-only treatment until clean publication logos are sourced.
@@ -33,7 +33,7 @@ pressLogos:
 
 # --- PRACTICE AREAS GRID (3 x 2 tiles) ---
 practiceAreasLabel: "Practice Areas"
-practiceAreasHeading: "What I handle for New York and New Jersey employees."
+practiceAreasHeading: "What we handle for New York and New Jersey employees."
 practiceAreasCTA: "See all practice areas"
 practiceAreasCTAHref: "/practice-areas"
 practiceAreas:
@@ -68,15 +68,15 @@ results:
     description: "Sexual harassment settlement for a content producer harassed by the CEO of a B2B marketing company."
   - figure: "$500,000+"
     description: "Federal jury verdict (E.D.N.Y., 2024) — judgment now exceeds $500,000 with statutory attorneys' fees and post-judgment interest. Affirmed by the Second Circuit on all six grounds of appeal."
-  - figure: "$30M+"
-    description: "Total recovered for workers across more than a decade of practice."
+  - figure: "$60M+"
+    description: "Total recovered for workers across more than two decades of combined practice."
 
-# --- STEVEN SECTION (portrait + short intro) ---
-meetStevenName: "Steven Fingerhut"
-meetStevenTitle: "Founder, Fingerhut Law"
-meetStevenTagline: "New York employment law attorney representing workers in discrimination, harassment, retaliation, and wrongful termination cases."
-portraitImage: "/images/steven-fingerhut.jpg"
-portraitAlt: "Steven Fingerhut, New York and New Jersey employment lawyer"
+# --- PARTNERS SECTION (two-shot + short intro) ---
+meetStevenName: "Steven Fingerhut & Joshua Friedman"
+meetStevenTitle: "Partners, Friedman & Fingerhut"
+meetStevenTagline: "New York and New Jersey employment lawyers representing workers in discrimination, harassment, retaliation, and wrongful termination cases."
+portraitImage: "/images/steven-and-josh.jpg"
+portraitAlt: "Steven Fingerhut and Joshua Friedman, partners at Friedman & Fingerhut"
 
 # --- IN THE NEWS (3 press cards) ---
 newsLabel: "Press"
@@ -102,7 +102,7 @@ news:
 
 # --- FINAL CTA (dark band, closes the page) ---
 finalCtaHeading: "If your rights at work have been violated, do not wait."
-finalCtaBody: "Employment claims in New York and New Jersey have short deadlines — sometimes as short as 180 days. Contact Fingerhut Law for a free, confidential consultation."
+finalCtaBody: "Employment claims in New York and New Jersey have short deadlines — sometimes as short as 180 days. Contact Friedman & Fingerhut for a free, confidential consultation."
 finalCtaButton: "Schedule a Consultation"
 finalCtaHref: "/contact"
 ---

@@ -11,8 +11,8 @@ caseCallout:
   figure: "$800,000"
   description: "Age discrimination settlement for a C-suite executive terminated because of his age."
 draft: false
-seoDescription: "Fingerhut Law represents employees facing age discrimination, ageist comments, demotion, replacement, layoff, termination, or retaliation in NYC, New York, and New Jersey."
-seoTitle: "NYC Age Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees facing age discrimination, ageist comments, demotion, replacement, layoff, termination, or retaliation in NYC, New York, and New Jersey."
+seoTitle: "NYC Age Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### Age Discrimination at Work
@@ -42,12 +42,12 @@ Age discrimination may include:
 
 Age discrimination often appears in layoffs. Employers may claim business reasons while selecting older employees for termination. Evidence may include layoff lists, ages of selected and retained employees, replacement hiring, comments by leadership, severance communications, and inconsistencies in selection criteria.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Wrongful Termination](/practice-areas/wrongful-termination), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Breach of Employment Contract](/practice-areas/breach-of-employment-contract), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were pushed out, demoted, denied opportunities, or fired because of age, contact **Fingerhut Law** for a confidential consultation.
+If you were pushed out, demoted, denied opportunities, or fired because of age, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

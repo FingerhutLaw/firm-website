@@ -1,11 +1,11 @@
 ---
-title: "Legal Notices — Fingerhut Law"
-description: "Terms of use, attorney advertising notice, and disclaimers for fingerhutlawgroup.com."
+title: "Legal Notices — Friedman & Fingerhut"
+description: "Terms of use, attorney advertising notice, and disclaimers for friedmanfingerhut.com."
 heading: "Legal Notices"
 effectiveDate: "Effective June 6, 2026"
 ---
 
-These Legal Notices govern your use of fingerhutlawgroup.com (the "site"). The site is published by Fingerhut Law, a DBA of The Fingerhut Law Group, PLLC, a New York professional limited liability company with its principal office at 469 7th Avenue, 12th Floor, New York, NY 10018.
+These Legal Notices govern your use of friedmanfingerhut.com (the "site"). The site is published by Friedman & Fingerhut, PLLC, a New York professional limited liability company with its principal office at 469 7th Avenue, 12th Floor, New York, NY 10018.
 
 ## Attorney advertising
 
@@ -37,7 +37,7 @@ The site may link to articles, court opinions, or other resources hosted by thir
 
 ## Intellectual property
 
-All content on this site — including text, photographs, the "Fingerhut Law" name, and the visual design — is owned by the firm or used with permission and is protected by copyright and trademark law. You may view and print individual pages for your personal, non-commercial reference. Any other reproduction, distribution, or modification requires the firm's prior written consent.
+All content on this site — including text, photographs, the "Friedman & Fingerhut" name, and the visual design — is owned by the firm or used with permission and is protected by copyright and trademark law. You may view and print individual pages for your personal, non-commercial reference. Any other reproduction, distribution, or modification requires the firm's prior written consent.
 
 ## Disclaimer of warranties
 
@@ -57,8 +57,7 @@ The firm may revise these Legal Notices from time to time. The "Effective" date 
 
 ## Contact
 
-**Fingerhut Law**
+**Friedman & Fingerhut, PLLC**
 469 7th Avenue, 12th Floor
 New York, NY 10018
-[steven@fingerhutlawgroup.com](mailto:steven@fingerhutlawgroup.com)
 (212) 680-4040

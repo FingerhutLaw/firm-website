@@ -99,6 +99,6 @@ Statistical evidence — the racial composition of the workforce at various leve
 6. **Do not sign a severance offer at termination.** Take it home. Consult before signing.
 7. **Talk to a lawyer.** The strategic choice among Title VII, Section 1981, the NYSHRL, the NYCHRL, and the NJLAD affects the standard, the defenses, the damages cap, and the timeline.
 
-If you have experienced racial slurs, racist comments, or a racially hostile environment at work in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you have experienced racial slurs, racist comments, or a racially hostile environment at work in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

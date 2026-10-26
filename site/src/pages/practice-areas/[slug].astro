@@ -16,16 +16,16 @@ const { Content } = await render(area);
 const homepage = await getEntry('pages', 'homepage');
 const h = homepage!.data;
 
-const seoTitle = area.data.seoTitle ?? `${area.data.name} — Fingerhut Law`;
+const seoTitle = area.data.seoTitle ?? `${area.data.name} — Friedman & Fingerhut`;
 const seoDescription = area.data.seoDescription ?? area.data.intakeSummary;
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://fingerhutlawgroup.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Practice Areas', item: 'https://fingerhutlawgroup.com/practice-areas' },
-    { '@type': 'ListItem', position: 3, name: area.data.name, item: `https://fingerhutlawgroup.com/practice-areas/${area.id}` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://friedmanfingerhut.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Practice Areas', item: 'https://friedmanfingerhut.com/practice-areas' },
+    { '@type': 'ListItem', position: 3, name: area.data.name, item: `https://friedmanfingerhut.com/practice-areas/${area.id}` },
   ],
 };
 ---
@@ -91,7 +91,7 @@ const breadcrumbSchema = {
       </h2>
       <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-6">
         Employment claims in New York have short deadlines — sometimes as short as 180 days.
-        Contact Fingerhut Law for a free, confidential consultation.
+        Contact Friedman &amp; Fingerhut for a free, confidential consultation.
       </p>
       <p class="text-sm text-white/80 italic max-w-2xl mx-auto mb-4">
         Free, confidential consultation — no obligation.

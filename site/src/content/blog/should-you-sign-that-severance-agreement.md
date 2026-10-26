@@ -3,7 +3,7 @@ title: "Should You Sign That Severance Agreement? Five Red Flags Before You Waiv
 description: "What a severance agreement really is, the clauses that most often hurt workers, and the legal protections that limit what an employer can require you to sign."
 publishDate: 2026-06-19
 category: "Severance"
-seoTitle: "Should You Sign This Severance Agreement? | NY & NJ Lawyer | Fingerhut Law"
+seoTitle: "Should You Sign This Severance Agreement? | NY & NJ Lawyer | Friedman & Fingerhut"
 seoDescription: "How to read a severance agreement in New York or New Jersey — releases, NDAs limited by the Speak Out Act and NY Gen. Oblig. Law § 5-336, non-competes, and how to negotiate."
 relatedPracticeAreas:
   - severance-negotiation
@@ -76,6 +76,6 @@ An experienced employment lawyer will identify the leverage and use it. In many 
 
 The money in a severance agreement is real. So is what you are giving up. A worker with a strong retaliation, harassment, or discrimination claim who signs a boilerplate release for one month of severance may be walking away from a six- or seven-figure claim. A worker with no viable claim may be leaving negotiating room on the table but at least should know that is the choice.
 
-If you have been offered a severance agreement in New York or New Jersey, contact **Fingerhut Law** for a confidential review before you sign.
+If you have been offered a severance agreement in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential review before you sign.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

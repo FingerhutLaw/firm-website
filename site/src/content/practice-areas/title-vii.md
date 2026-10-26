@@ -1,14 +1,14 @@
 ---
 name: "Title VII of the Civil Rights Act of 1964"
 tagline: "The federal baseline for workplace civil rights."
-intakeSummary: "Title VII of the Civil Rights Act of 1964 prohibits employment discrimination based on race, color, religion, sex, and national origin. Fingerhut Law represents employees in Title VII claims in New York and New Jersey."
+intakeSummary: "Title VII of the Civil Rights Act of 1964 prohibits employment discrimination based on race, color, religion, sex, and national origin. Friedman & Fingerhut represents employees in Title VII claims in New York and New Jersey."
 priority: 24
 featured: false
 statutes:
   - "Title VII of the Civil Rights Act of 1964 (42 U.S.C. § 2000e et seq.)"
 draft: false
-seoTitle: "Title VII Employment Discrimination Lawyer | Fingerhut Law"
-seoDescription: "Title VII of the Civil Rights Act of 1964 prohibits workplace discrimination based on race, color, religion, sex, and national origin. Fingerhut Law represents employees in Title VII claims in New York and New Jersey."
+seoTitle: "Title VII Employment Discrimination Lawyer | Friedman & Fingerhut"
+seoDescription: "Title VII of the Civil Rights Act of 1964 prohibits workplace discrimination based on race, color, religion, sex, and national origin. Friedman & Fingerhut represents employees in Title VII claims in New York and New Jersey."
 ---
 
 ### What Title VII Is
@@ -49,12 +49,12 @@ Before filing a Title VII lawsuit in court, an employee generally must file a ch
 
 Employees should also consider whether state or local claims have different deadlines or forum rules. Filing with one agency may sometimes cross-file with another, but employees should not assume that every claim is automatically preserved. Deadline analysis is fact-specific and should be reviewed carefully.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Race Discrimination](/practice-areas/race-discrimination), [Sexual Harassment](/practice-areas/sexual-harassment), [Pregnancy Discrimination](/practice-areas/pregnancy-discrimination), [Retaliation for Protected Activity](/practice-areas/retaliation), [New York State Human Rights Law](/practice-areas/new-york-state-human-rights-law), [New York City Human Rights Law](/practice-areas/new-york-city-human-rights-law), [New Jersey Law Against Discrimination](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you experienced workplace discrimination, harassment, or retaliation in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you experienced workplace discrimination, harassment, or retaliation in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

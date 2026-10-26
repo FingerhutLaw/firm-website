@@ -3,7 +3,7 @@ title: "LGBTQ+ Discrimination at Work: What Federal, New York, and New Jersey La
 description: "Since Bostock, sexual orientation and gender identity discrimination are actionable under Title VII. New York and New Jersey law has protected LGBTQ+ workers for years, and does so more broadly."
 publishDate: 2026-08-12
 category: "Discrimination"
-seoTitle: "LGBTQ+ Discrimination at Work | NY & NJ Employment Lawyer | Fingerhut Law"
+seoTitle: "LGBTQ+ Discrimination at Work | NY & NJ Employment Lawyer | Friedman & Fingerhut"
 seoDescription: "Sexual orientation and gender identity discrimination under Title VII, Bostock v. Clayton County, the NYSHRL, the NYCHRL, and the NJLAD — protections, common issues, and remedies."
 relatedPracticeAreas:
   - lgbtq-discrimination
@@ -84,6 +84,6 @@ For workers with New York and New Jersey employers, the more important point is 
 5. **Do not sign a severance offer at termination.** Take it home. Consult before signing.
 6. **Talk to a lawyer.** The choice of statute — Title VII, NYSHRL, NYCHRL, NJLAD — meaningfully affects the standard, the defenses, and the damages available.
 
-If you are experiencing LGBTQ+ discrimination or harassment at work in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you are experiencing LGBTQ+ discrimination or harassment at work in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -1,5 +1,5 @@
 ---
-title: "Employment Law FAQs — Fingerhut Law"
+title: "Employment Law FAQs — Friedman & Fingerhut"
 description: "Common questions about employment discrimination, retaliation, wage claims, and wrongful termination in New York and New Jersey. General guidance, not legal advice."
 
 faqHeroLabel: "FAQs"
@@ -169,7 +169,7 @@ faqCategories:
 
       - q: "Do employment lawyers charge upfront fees?"
         a: >-
-          At Fingerhut Law, initial consultations are free and confidential, and most cases are
+          At Friedman & Fingerhut, initial consultations are free and confidential, and most cases are
           handled on a contingency-fee basis — meaning the fee is paid from a recovery, and
           there is no fee unless the firm obtains one. Some matters may involve hourly fees,
           hybrid fees, or fee-shifting statutes where the employer may be ordered to pay

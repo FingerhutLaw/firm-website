@@ -8,8 +8,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "A hostile work environment may be illegal when harassment is tied to sex, race, disability, religion, age, LGBTQ+ status, or another protected trait. Fingerhut Law represents employees in NYC, New York, and New Jersey."
-seoTitle: "NYC Hostile Work Environment Lawyer | Fingerhut Law"
+seoDescription: "A hostile work environment may be illegal when harassment is tied to sex, race, disability, religion, age, LGBTQ+ status, or another protected trait. Friedman & Fingerhut represents employees in NYC, New York, and New Jersey."
+seoTitle: "NYC Hostile Work Environment Lawyer | Friedman & Fingerhut"
 ---
 
 ### Not Every Bad Workplace Is an Illegal Hostile Work Environment
@@ -44,12 +44,12 @@ In New Jersey, hostile work environment claims may arise under the **New Jersey 
 
 Evidence may include messages, emails, witness accounts, recordings where lawful, HR complaints, performance reviews, changes in assignments, medical records, photos, and notes documenting dates, locations, and participants. A single severe incident can be important, especially if it involves assault, threats, slurs, or abuse of authority. A pattern of smaller incidents can also matter, particularly when management knew and failed to act.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Sexual Harassment](/practice-areas/sexual-harassment), [Race Discrimination](/practice-areas/race-discrimination), [LGBTQ+ Discrimination](/practice-areas/lgbtq-discrimination), [Religious Discrimination](/practice-areas/religious-discrimination), [Disability Discrimination](/practice-areas/disability-discrimination), [Retaliation for Protected Activity](/practice-areas/retaliation).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your workplace became hostile because of harassment, discrimination, or retaliation, contact **Fingerhut Law** for a confidential consultation.
+If your workplace became hostile because of harassment, discrimination, or retaliation, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

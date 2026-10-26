@@ -3,7 +3,7 @@ title: "Signs of Race Discrimination at Work — and What Actually Proves It"
 description: "How to recognize race discrimination when it is not overt, what evidence actually wins cases, and the federal, New York, and New Jersey laws that protect you."
 publishDate: 2026-06-05
 category: "Discrimination"
-seoTitle: "Signs of Race Discrimination at Work | NYC & NJ Lawyer | Fingerhut Law"
+seoTitle: "Signs of Race Discrimination at Work | NYC & NJ Lawyer | Friedman & Fingerhut"
 seoDescription: "How courts actually prove race discrimination at work — direct and circumstantial evidence, coded language, comparators, and rights under Title VII, § 1981, the NYCHRL, and the NJLAD."
 relatedPracticeAreas:
   - race-discrimination
@@ -76,6 +76,6 @@ If you suspect race discrimination at your workplace:
 
 The choice of statute matters. A race discrimination case brought under § 1981 has a different structure, different deadlines, and different remedies than one brought under Title VII. Overlaying the NYCHRL or NJLAD often materially improves both prospects and damages. An experienced employment lawyer will evaluate all of these together.
 
-If you have experienced race discrimination at work in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you have experienced race discrimination at work in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -13,8 +13,8 @@ statutes:
   - "New York City Human Rights Law"
   - "New York Labor Law § 740 (Whistleblower)"
 draft: false
-seoDescription: "Fired after reporting harassment, rejecting a CEO’s advances, requesting leave, complaining about discrimination, or raising wage concerns? Fingerhut Law represents employees in wrongful termination claims."
-seoTitle: "NYC Wrongful Termination Lawyer | Fingerhut Law"
+seoDescription: "Fired after reporting harassment, rejecting a CEO’s advances, requesting leave, complaining about discrimination, or raising wage concerns? Friedman & Fingerhut represents employees in wrongful termination claims."
+seoTitle: "NYC Wrongful Termination Lawyer | Friedman & Fingerhut"
 ---
 
 ### When Is a Firing “Wrongful”?
@@ -50,12 +50,12 @@ Warning signs include suspicious timing, shifting explanations, sudden negative 
 
 Some employees, especially executives and high-level professionals, may have written employment agreements, offer letters, equity documents, commission plans, bonus plans, or severance agreements. These documents may create separate rights involving notice, cause, compensation, equity, restrictive covenants, or post-employment obligations. Employees should have counsel review these documents before signing anything.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Sexual Harassment](/practice-areas/sexual-harassment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation), [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [Breach of Employment Contract](/practice-areas/breach-of-employment-contract), [Wage Theft](/practice-areas/wage-theft).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were fired after reporting harassment, discrimination, wage violations, leave issues, or misconduct, contact **Fingerhut Law** for a confidential consultation.
+If you were fired after reporting harassment, discrimination, wage violations, leave issues, or misconduct, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

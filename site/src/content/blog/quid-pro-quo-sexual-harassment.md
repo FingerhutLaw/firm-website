@@ -3,7 +3,7 @@ title: "Quid Pro Quo Sexual Harassment: When a Supervisor Conditions Your Job on
 description: "How quid pro quo sexual harassment works, why one incident can be enough, and why employers are strictly liable when a supervisor is involved."
 publishDate: 2026-06-26
 category: "Sexual Harassment"
-seoTitle: "Quid Pro Quo Sexual Harassment | NYC & NJ Lawyer | Fingerhut Law"
+seoTitle: "Quid Pro Quo Sexual Harassment | NYC & NJ Lawyer | Friedman & Fingerhut"
 seoDescription: "Quid pro quo sexual harassment under Title VII, the NYCHRL, the NYSHRL, and the NJLAD — what it is, how to prove it, and why employer liability is often automatic."
 relatedPracticeAreas:
   - sexual-harassment
@@ -79,6 +79,6 @@ If you are being subjected to quid pro quo harassment — a supervisor, executiv
 4. **Track the timing of every job action** that follows a rejection — every negative review, every reassignment, every schedule change.
 5. **Talk to a lawyer before signing anything.** Severance offers presented on the day of a termination often waive quid pro quo claims. Do not sign without review.
 
-If a supervisor, executive, or owner in New York or New Jersey conditioned any part of your employment on sexual conduct, contact **Fingerhut Law** for a confidential consultation.
+If a supervisor, executive, or owner in New York or New Jersey conditioned any part of your employment on sexual conduct, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -10,8 +10,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees facing disability discrimination, failure to accommodate, medical leave retaliation, termination, or harassment in NYC, New York, and New Jersey."
-seoTitle: "NYC Disability Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees facing disability discrimination, failure to accommodate, medical leave retaliation, termination, or harassment in NYC, New York, and New Jersey."
+seoTitle: "NYC Disability Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### Disability Discrimination Is Illegal
@@ -43,12 +43,12 @@ Disability discrimination may include:
 
 Reasonable accommodations may include schedule changes, leave, modified duties, remote work, equipment, seating changes, breaks, reassignment to a vacant position, or changes to workplace policies. The appropriate accommodation depends on the job, the medical need, and the employer’s operations. Employers generally must consider requests in good faith rather than rejecting them automatically.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [NY Paid Family Leave Violations](/practice-areas/paid-family-leave-violations), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wrongful Termination](/practice-areas/wrongful-termination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were denied accommodations, harassed, forced out, or fired because of a disability or medical condition, contact **Fingerhut Law** for a confidential consultation.
+If you were denied accommodations, harassed, forced out, or fired because of a disability or medical condition, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

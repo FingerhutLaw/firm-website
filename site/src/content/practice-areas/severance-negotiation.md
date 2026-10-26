@@ -9,8 +9,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Before signing a severance agreement, speak with Fingerhut Law. We represent employees, executives, managers, and professionals negotiating severance, releases, non-competes, bonuses, commissions, and workplace claims."
-seoTitle: "NYC Severance Negotiation Lawyer | Fingerhut Law"
+seoDescription: "Before signing a severance agreement, speak with Friedman & Fingerhut. We represent employees, executives, managers, and professionals negotiating severance, releases, non-competes, bonuses, commissions, and workplace claims."
+seoTitle: "NYC Severance Negotiation Lawyer | Friedman & Fingerhut"
 ---
 
 ### Do Not Sign a Severance Agreement Without Understanding Your Rights
@@ -19,7 +19,7 @@ A severance agreement is more than a payment offer. It is usually a legal contra
 
 Employees are often handed severance agreements at stressful moments: after being fired, laid off, pushed out, or told their position is being eliminated. Executives, managers, and employees who support CEOs or business owners may face additional pressure because the employer wants a quiet exit, especially when the separation follows harassment, sexual assault, whistleblowing, discrimination, wage complaints, or internal conflict with leadership.
 
-Fingerhut Law helps employees evaluate severance agreements, identify leverage, negotiate better terms, and avoid signing away valuable rights without informed advice.
+Friedman & Fingerhut helps employees evaluate severance agreements, identify leverage, negotiate better terms, and avoid signing away valuable rights without informed advice.
 
 ### Why Severance Agreements Matter
 
@@ -96,12 +96,12 @@ Before signing a severance agreement, employees should consider:
 - Does it give me enough time to review and revoke if age claims are involved?
 - Do not assume that an employer’s deadline is the final word. In many cases, counsel can ask for more time and negotiate terms.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Wrongful Termination](/practice-areas/wrongful-termination), [Sexual Harassment](/practice-areas/sexual-harassment), [Workplace Sexual Assault](/practice-areas/sexual-assault), [Retaliation for Protected Activity](/practice-areas/retaliation), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation), [Breach of Employment Contract](/practice-areas/breach-of-employment-contract), [Wage Theft](/practice-areas/wage-theft), [Age Discrimination](/practice-areas/age-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you received a severance agreement or were asked to sign a release after termination, layoff, harassment, discrimination, retaliation, or whistleblowing, contact **Fingerhut Law** for a confidential consultation before signing.
+If you received a severance agreement or were asked to sign a release after termination, layoff, harassment, discrimination, retaliation, or whistleblowing, contact **Friedman & Fingerhut** for a confidential consultation before signing.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

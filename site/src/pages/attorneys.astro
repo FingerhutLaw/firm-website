@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+
+const attorneys = [
+  {
+    name: 'Steven Fingerhut',
+    title: 'Co-Founder · Employment Law Attorney',
+    tagline:
+      'More than $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases across New York and New Jersey.',
+    image: '/images/steven-fingerhut-2026.jpg',
+    alt: 'Steven Fingerhut, co-founder of Friedman & Fingerhut',
+    href: '/about',
+    cta: 'Read Steven’s bio',
+  },
+  {
+    name: 'Joshua Friedman',
+    title: 'Co-Founder · Employment Law Attorney',
+    tagline:
+      'Over $28 million recovered for employees in New York City, Long Island, and Westchester across 13 years of wrongful termination, discrimination, harassment, and retaliation litigation.',
+    image: '/images/josh-friedman.jpg',
+    alt: 'Joshua Friedman, co-founder of Friedman & Fingerhut',
+    href: '/josh',
+    cta: 'Read Josh’s bio',
+  },
+];
+---
+
+<Layout
+  title="Attorneys | Friedman & Fingerhut"
+  description="Meet the partners at Friedman & Fingerhut: Steven Fingerhut and Joshua Friedman — New York and New Jersey employment lawyers representing workers in discrimination, harassment, retaliation, and wrongful termination claims."
+>
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-6 pt-24 pb-12 md:pb-16">
+    <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+      Attorneys
+    </p>
+    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.05] tracking-tight text-fl-ink max-w-4xl">
+      The partners who will handle your case.
+    </h1>
+    <p class="mt-6 text-lg text-fl-ink-soft leading-relaxed max-w-3xl">
+      Friedman &amp; Fingerhut is a boutique firm by design. The lawyers whose names are
+      on the door are the lawyers who answer your questions, develop your strategy,
+      take your depositions, and stand up in court for you.
+    </p>
+  </section>
+
+  <!-- Two attorney cards -->
+  <section class="mx-auto max-w-6xl px-6 pb-24">
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
+      {attorneys.map((a) => (
+        <li class="flex flex-col bg-white border border-slate-200 overflow-hidden hover:shadow-xl hover:shadow-slate-900/10 hover:-translate-y-1 transition duration-300 group">
+          <a href={a.href} class="block">
+            <img
+              src={a.image}
+              alt={a.alt}
+              class="w-full aspect-[4/5] object-cover object-center"
+              loading="eager"
+            />
+          </a>
+          <div class="p-8 md:p-10 flex flex-col flex-grow">
+            <h2 class="font-serif font-medium text-3xl md:text-4xl text-fl-ink leading-tight mb-2 group-hover:text-fl-accent transition-colors">
+              <a href={a.href}>{a.name}</a>
+            </h2>
+            <p class="text-sm uppercase tracking-widest text-fl-accent font-semibold mb-6">
+              {a.title}
+            </p>
+            <p class="text-fl-ink-soft leading-relaxed flex-grow">
+              {a.tagline}
+            </p>
+            <a
+              href={a.href}
+              class="mt-8 inline-block self-start text-fl-accent font-semibold border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+            >
+              {a.cta} &rarr;
+            </a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="bg-fl-accent text-white">
+    <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight mb-8">
+        If your rights at work have been violated, you deserve attorneys who will fight for you.
+      </h2>
+      <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
+        Contact Friedman &amp; Fingerhut for a free, confidential consultation.
+      </p>
+      {h.feeNote && (
+        <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
+          {h.feeNote}
+        </p>
+      )}
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a
+          href="/contact"
+          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+        >
+          Schedule a Consultation
+        </a>
+        <span class="text-white/80 text-sm">
+          or call
+          <a href={h.phoneHref} class="text-white font-medium hover:underline">
+            {h.phone}
+          </a>
+        </span>
+      </div>
+    </div>
+  </section>
+</Layout>

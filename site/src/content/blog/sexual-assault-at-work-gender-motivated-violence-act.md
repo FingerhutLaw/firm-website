@@ -3,7 +3,7 @@ title: "Sexual Assault at Work: Civil Claims, Employer Liability, and the NYC Ge
 description: "The civil-side framework for workplace sexual assault: employer liability, common-law tort claims, and the NYC Gender Motivated Violence Act's private right of action."
 publishDate: 2026-08-13
 category: "Sexual Harassment"
-seoTitle: "Sexual Assault at Work | NYC Gender Motivated Violence Act | Fingerhut Law"
+seoTitle: "Sexual Assault at Work | NYC Gender Motivated Violence Act | Friedman & Fingerhut"
 seoDescription: "Civil claims for workplace sexual assault under Title VII, the NYCHRL, the NJLAD, common-law torts, and the NYC Gender Motivated Violence Act, N.Y.C. Admin. Code § 10-1101."
 relatedPracticeAreas:
   - sexual-assault
@@ -90,6 +90,6 @@ Cooperation with a criminal case does not require the survivor to give up contro
 5. **Do not sign a severance or release.** Any settlement offered at or near the time of a sexual assault is likely to substantially undervalue the claim. Take it home. Consult before signing.
 6. **Know that the confidentiality provisions may not be enforceable.** New York, New Jersey, and federal law limit nondisclosure and nondisparagement provisions in sexual-assault settlements. That is worth understanding before signing.
 
-If you were sexually assaulted at work in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were sexually assaulted at work in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

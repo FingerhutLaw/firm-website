@@ -3,7 +3,7 @@ title: "Is What My Boss Did Sexual Harassment? What the Law Actually Requires"
 description: "What actually counts as sexual harassment at work under Title VII, the NYSHRL, the NYCHRL, and the NJLAD — and what to do if you are unsure."
 publishDate: 2026-08-07
 category: "Sexual Harassment"
-seoTitle: "Is What My Boss Did Sexual Harassment? | Fingerhut Law"
+seoTitle: "Is What My Boss Did Sexual Harassment? | Friedman & Fingerhut"
 seoDescription: "New York and New Jersey employment lawyer on what counts as sexual harassment at work — the federal standard, the broader NYC standard, and what to do next."
 relatedPracticeAreas:
   - sexual-harassment
@@ -84,6 +84,6 @@ Preserve what you have. Save texts, emails, DMs, Slack messages, calendar entrie
 
 Deadlines are shorter than most people think. Federal claims under Title VII generally require a charge with the EEOC within 300 days of the last incident in New York and New Jersey. State claims under the NYSHRL and NYCHRL generally allow three years to sue in court. NJLAD claims generally allow two years. A conversation with a lawyer before those deadlines close is free, confidential, and does not commit you to filing anything.
 
-If you are being sexually harassed in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you are being sexually harassed in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

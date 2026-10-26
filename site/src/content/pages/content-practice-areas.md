@@ -11,11 +11,11 @@ description: "Workplace discrimination, harassment, retaliation, and wrongful te
 
 # --- HERO ---
 practiceHeroLabel: "Practice Areas"
-practiceHeroHeadline: "What I handle for New York and New Jersey employees."
+practiceHeroHeadline: "What we handle for New York and New Jersey employees."
 practiceHeroSubheadline: "Discrimination, harassment, retaliation, and wrongful termination — at Fortune 500 companies and small businesses alike."
 
 # --- INTRO PROSE ---
-practiceIntro: "Fingerhut Law represents New York and New Jersey employees in cases involving workplace discrimination, harassment, retaliation, and wrongful termination. The practice has litigated on behalf of workers in financial services, tech startups, advertising and marketing, film and media, hospitality, construction, real estate, fashion and retail, and professional services. The categories below are the most common — they are not exhaustive. If your situation does not fit neatly within them, that does not mean you do not have a claim. Contact the firm for a free, confidential consultation."
+practiceIntro: "Friedman & Fingerhut represents New York and New Jersey employees in cases involving workplace discrimination, harassment, retaliation, and wrongful termination. The firm has litigated on behalf of workers in financial services, tech startups, advertising and marketing, film and media, hospitality, construction, real estate, fashion and retail, and professional services. The categories below are the most common — they are not exhaustive. If your situation does not fit neatly within them, that does not mean you do not have a claim. Contact the firm for a free, confidential consultation."
 
 # =============================================================
 # PRACTICE AREA TILES
@@ -86,7 +86,7 @@ practiceAreasList:
 # --- "HAS THIS HAPPENED TO YOU?" SCENARIO PROMPTS ---
 # Conversion-focused prompts per the Outten & Golden pattern (competitive-research.md §5).
 scenariosHeading: "Worth a phone call"
-scenariosIntro: "If any of these sound familiar, contact Fingerhut Law for a free, confidential consultation."
+scenariosIntro: "If any of these sound familiar, contact Friedman & Fingerhut for a free, confidential consultation."
 scenarios:
   - "Were you fired within weeks of disclosing a pregnancy?"
   - "Were you passed over for promotion after reporting harassment?"
@@ -98,7 +98,7 @@ scenarios:
 
 # --- CLOSING CTA ---
 practiceCTAHeading: "If your rights at work have been violated, do not wait."
-practiceCTABody: "Employment claims in New York have short deadlines — sometimes as short as 180 days. Contact Fingerhut Law for a free, confidential consultation."
+practiceCTABody: "Employment claims in New York have short deadlines — sometimes as short as 180 days. Contact Friedman & Fingerhut for a free, confidential consultation."
 practiceCTAButton: "Schedule a Consultation"
 practiceCTAHref: "/contact"
 ---

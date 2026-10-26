@@ -1,14 +1,14 @@
 ---
 name: "New Jersey Law Against Discrimination"
 tagline: "New Jersey's broadest employment-discrimination statute."
-intakeSummary: "The New Jersey Law Against Discrimination protects employees from discrimination, harassment, retaliation, and failure to accommodate. Fingerhut Law represents employees in NJ LAD claims."
+intakeSummary: "The New Jersey Law Against Discrimination protects employees from discrimination, harassment, retaliation, and failure to accommodate. Friedman & Fingerhut represents employees in NJ LAD claims."
 priority: 21
 featured: false
 statutes:
   - "New Jersey Law Against Discrimination (N.J.S.A. 10:5-1 et seq.)"
 draft: false
-seoTitle: "New Jersey LAD Employment Lawyer | Fingerhut Law"
-seoDescription: "The New Jersey Law Against Discrimination protects employees from discrimination, harassment, retaliation, and failure to accommodate. Fingerhut Law represents employees in NJ LAD claims."
+seoTitle: "New Jersey LAD Employment Lawyer | Friedman & Fingerhut"
+seoDescription: "The New Jersey Law Against Discrimination protects employees from discrimination, harassment, retaliation, and failure to accommodate. Friedman & Fingerhut represents employees in NJ LAD claims."
 ---
 
 ### What Is the New Jersey Law Against Discrimination?
@@ -42,12 +42,12 @@ The NJ LAD also prohibits retaliation. An employer cannot punish an employee for
 
 Some New Jersey employment cases involve both the NJ LAD and **CEPA**, New Jersey’s whistleblower law. The NJ LAD generally focuses on discrimination, harassment, accommodation, and retaliation connected to protected traits. CEPA generally focuses on retaliation for whistleblowing about legal violations, fraud, criminal conduct, or clear public-policy issues. Depending on the facts, an employee may need counsel to evaluate how these claims interact.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation), [Sexual Harassment](/practice-areas/sexual-harassment), [Race Discrimination](/practice-areas/race-discrimination), [Disability Discrimination](/practice-areas/disability-discrimination), [Retaliation for Protected Activity](/practice-areas/retaliation).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you work in New Jersey and experienced discrimination, harassment, retaliation, or failure to accommodate, contact **Fingerhut Law** for a confidential consultation.
+If you work in New Jersey and experienced discrimination, harassment, retaliation, or failure to accommodate, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

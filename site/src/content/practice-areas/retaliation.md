@@ -13,8 +13,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees fired, demoted, disciplined, threatened, or pushed out after reporting harassment, discrimination, wage theft, leave violations, or illegal conduct."
-seoTitle: "NYC Workplace Retaliation Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees fired, demoted, disciplined, threatened, or pushed out after reporting harassment, discrimination, wage theft, leave violations, or illegal conduct."
+seoTitle: "NYC Workplace Retaliation Lawyer | Friedman & Fingerhut"
 ---
 
 ### What Is Workplace Retaliation?
@@ -55,12 +55,12 @@ Under federal law, Burlington Northern & Santa Fe Railway Co. v. White, 548 U.S.
 
 Retaliation claims may arise under the **New York City Human Rights Law**, N.Y.C. Admin. Code § 8-107, the **New York State Human Rights Law**, N.Y. Exec. Law § 296, **Title VII**, the **ADA**, the **ADEA**, the **FMLA**, the **FLSA**, the **New York Labor Law**, New York Labor Law § 740, the **NJ LAD**, or **CEPA**, depending on the protected activity.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Wrongful Termination](/practice-areas/wrongful-termination), [Sexual Harassment](/practice-areas/sexual-harassment), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation), [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [Wage Theft](/practice-areas/wage-theft).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your employer punished you after you complained, objected, requested leave or accommodation, or supported another employee, contact **Fingerhut Law** for a confidential consultation.
+If your employer punished you after you complained, objected, requested leave or accommodation, or supported another employee, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

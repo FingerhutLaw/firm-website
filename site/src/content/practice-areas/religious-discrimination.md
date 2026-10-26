@@ -8,8 +8,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees facing religious discrimination, harassment, denial of accommodations, retaliation, or termination in NYC, New York, and New Jersey workplaces."
-seoTitle: "NYC Religious Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees facing religious discrimination, harassment, denial of accommodations, retaliation, or termination in NYC, New York, and New Jersey workplaces."
+seoTitle: "NYC Religious Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### Religious Discrimination at Work
@@ -40,12 +40,12 @@ Religious discrimination may include:
 
 Religious harassment may create a hostile work environment when comments, jokes, ridicule, exclusion, or pressure to abandon or adopt religious practices makes the workplace unequal. In New York City, the city-law standard is broader than federal law, and courts must analyze claims under the NYCHRL separately from federal claims, as reflected in Mihalik v. Credit Agricole Cheuvreux N. Am., Inc..
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Failure to Provide a Religious Accommodation](/practice-areas/religious-accommodation-failure), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wrongful Termination](/practice-areas/wrongful-termination), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were denied equal treatment, harassed, or punished because of your religion or religious practices, contact **Fingerhut Law** for a confidential consultation.
+If you were denied equal treatment, harassed, or punished because of your religion or religious practices, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

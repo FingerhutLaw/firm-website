@@ -10,11 +10,11 @@ description: "Trial verdicts, appellate affirmations, and notable settlements fo
 
 # --- HERO ---
 resultsHeroLabel: "Results"
-resultsHeroHeadline: "$30M+ recovered for workers."
-resultsHeroSubheadline: "Trial verdicts, appellate affirmations, and notable settlements representing New York employees in discrimination, harassment, retaliation, and wrongful termination matters."
+resultsHeroHeadline: "$60M+ recovered for workers."
+resultsHeroSubheadline: "Trial verdicts, appellate affirmations, and notable settlements representing New York and New Jersey employees in discrimination, harassment, retaliation, and wrongful termination matters."
 
 # --- INTRO PROSE ---
-resultsIntro: "Over the course of more than a decade representing employees, Steven Fingerhut has recovered more than $30 million for workers — through jury verdicts, appellate affirmations, settlements, and agency hearings. The matters below are a representative selection."
+resultsIntro: "Over more than two decades of combined practice representing employees, Steven Fingerhut and Joshua Friedman have recovered over $60 million for workers — through jury verdicts, appellate affirmations, settlements, and agency hearings. The matters below are a representative selection."
 
 # Disclaimer shown directly under the intro (and again near the closing CTA).
 resultsDisclaimer: "Prior results do not guarantee a similar outcome. Each matter is decided on its own facts."
@@ -164,8 +164,12 @@ settlementsSectionLabel: "Notable Settlements"
 settlements:
   - figure: "$2,000,000"
     description: "Race discrimination settlement on behalf of eleven construction workers subjected to pervasive use of racial slurs by two supervisors."
+  - figure: "$2,000,000"
+    description: "Sexual harassment settlement for a senior associate at a Big Law firm harassed by a senior partner."
   - figure: "$1,550,000"
     description: "Sexual harassment settlement for a content producer harassed by the CEO of a B2B marketing company."
+  - figure: "$1,300,000"
+    description: "Whistleblower retaliation settlement for the head of data science at a large financial institution, fired after reporting potentially fraudulent marketing materials."
   - figure: "$975,000"
     description: "Sexual harassment settlement for a bank employee harassed by her director-level supervisor."
   - figure: "$900,000"
@@ -174,11 +178,19 @@ settlements:
     description: "Age discrimination settlement for a C-suite executive terminated because of his age."
   - figure: "$800,000"
     description: "Gender discrimination and wrongful termination settlement for a physician."
+  - figure: "$750,000"
+    description: "Sexual harassment and retaliation settlement for a paralegal at a large class-action law firm, harassed by a senior associate and then unlawfully fired."
+  - figure: "$750,000"
+    description: "Whistleblower retaliation settlement for a project manager and executive assistant fired for reporting violations of real estate regulations."
+  - figure: "$450,000"
+    description: "National origin discrimination and retaliation settlement for a director of advanced analytics at a large accounting and finance firm pushed out after reporting discrimination."
+  - figure: "$300,000"
+    description: "Pregnancy discrimination settlement for a senior sales specialist at a large jewelry retailer fired while pregnant and preparing for maternity leave."
 
 # --- CLOSING ---
 
 resultsCTAHeading: "If your rights at work have been violated, do not wait."
-resultsCTABody: "Employment claims in New York have short deadlines — sometimes as short as 180 days. Contact Fingerhut Law for a free, confidential consultation."
+resultsCTABody: "Employment claims in New York have short deadlines — sometimes as short as 180 days. Contact Friedman & Fingerhut for a free, confidential consultation."
 resultsCTAButton: "Schedule a Consultation"
 resultsCTAHref: "/contact"
 ---

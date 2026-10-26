@@ -12,8 +12,8 @@ statutes:
   - "New York City Human Rights Law"
   - "New York Paid Family Leave"
 draft: false
-seoDescription: "Pregnant workers have rights. Fingerhut Law represents employees facing pregnancy discrimination, failure to accommodate, leave retaliation, demotion, or termination in NYC, New York, and New Jersey."
-seoTitle: "NYC Pregnancy Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Pregnant workers have rights. Friedman & Fingerhut represents employees facing pregnancy discrimination, failure to accommodate, leave retaliation, demotion, or termination in NYC, New York, and New Jersey."
+seoTitle: "NYC Pregnancy Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### Pregnancy Discrimination at Work
@@ -61,12 +61,12 @@ An employer cannot punish an employee for requesting a pregnancy accommodation, 
 
 Suspicious timing can matter. If an employee has strong performance reviews and is suddenly criticized, demoted, or fired shortly after announcing pregnancy or requesting leave, that timing may support a pregnancy discrimination or retaliation claim.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Disability Discrimination](/practice-areas/disability-discrimination), [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [NY Paid Family Leave Violations](/practice-areas/paid-family-leave-violations), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Sexual Harassment](/practice-areas/sexual-harassment), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were denied accommodations, demoted, harassed, pushed out, or fired because of pregnancy, childbirth, fertility treatment, lactation, or a related medical condition, contact **Fingerhut Law** for a confidential consultation.
+If you were denied accommodations, demoted, harassed, pushed out, or fired because of pregnancy, childbirth, fertility treatment, lactation, or a related medical condition, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

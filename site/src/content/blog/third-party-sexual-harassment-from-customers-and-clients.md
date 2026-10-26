@@ -3,7 +3,7 @@ title: "Sexual Harassment by a Customer, Client, or Patient: When the Employer I
 description: "Why sexual harassment by non-employees is workplace harassment, the employer's duty to intervene, and the industries where third-party harassment cases most often arise."
 publishDate: 2026-08-15
 category: "Sexual Harassment"
-seoTitle: "Sexual Harassment by Customers or Clients | NY & NJ Lawyer | Fingerhut Law"
+seoTitle: "Sexual Harassment by Customers or Clients | NY & NJ Lawyer | Friedman & Fingerhut"
 seoDescription: "Employer liability for sexual harassment by customers, clients, patients, vendors, and other non-employees under Title VII, the NYSHRL, the NYCHRL, and the NJLAD."
 relatedPracticeAreas:
   - sexual-harassment
@@ -84,6 +84,6 @@ The principle is that the complaining worker should not be worse off for having 
 4. **Preserve documentation.** Screenshots, emails, dated notes, witness names.
 5. **Consult a lawyer before accepting reassignment or severance.** Reassignments that look like accommodations sometimes include waivers.
 
-If a customer, client, patient, vendor, or other non-employee has been sexually harassing you at work in New York or New Jersey and the employer has not stopped it, contact **Fingerhut Law** for a confidential consultation.
+If a customer, client, patient, vendor, or other non-employee has been sexually harassing you at work in New York or New Jersey and the employer has not stopped it, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -8,8 +8,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents LGBTQ+ employees facing discrimination, harassment, misgendering, outing, retaliation, termination, or unequal treatment at work."
-seoTitle: "NYC LGBTQ+ Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents LGBTQ+ employees facing discrimination, harassment, misgendering, outing, retaliation, termination, or unequal treatment at work."
+seoTitle: "NYC LGBTQ+ Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### LGBTQ+ Employees Are Protected from Workplace Discrimination
@@ -42,12 +42,12 @@ Retaliation is also unlawful. An employer cannot punish an employee for objectin
 
 The **New Jersey Law Against Discrimination**, N.J.S.A. 10:5-12, prohibits discrimination based on sexual orientation, gender identity or expression, sex, and other protected traits. New Jersey employees may also bring hostile work environment or retaliation claims under the NJ LAD.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Sexual Harassment](/practice-areas/sexual-harassment), [Wrongful Termination](/practice-areas/wrongful-termination), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you experienced LGBTQ+ discrimination, harassment, misgendering, outing, retaliation, or termination at work, contact **Fingerhut Law** for a confidential consultation.
+If you experienced LGBTQ+ discrimination, harassment, misgendering, outing, retaliation, or termination at work, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

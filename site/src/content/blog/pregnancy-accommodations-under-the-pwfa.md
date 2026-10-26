@@ -3,7 +3,7 @@ title: "Pregnancy Accommodations at Work: What the PWFA, NYSHRL, NYCHRL, and NJL
 description: "The Pregnant Workers Fairness Act changed the federal framework in 2023. New York and New Jersey have required pregnancy accommodations for longer, and continue to require more."
 publishDate: 2026-08-10
 category: "Discrimination"
-seoTitle: "Pregnancy Accommodations at Work | PWFA, NYSHRL, NJLAD | Fingerhut Law"
+seoTitle: "Pregnancy Accommodations at Work | PWFA, NYSHRL, NJLAD | Friedman & Fingerhut"
 seoDescription: "Pregnant workers' right to reasonable accommodations under the federal PWFA, the NYSHRL, the NYCHRL, and the NJLAD — what employers must do and what refusals produce cases."
 relatedPracticeAreas:
   - pregnancy-discrimination
@@ -109,6 +109,6 @@ If a worker requested a stool and was moved to a less desirable shift, or asked 
 6. **Do not sign a severance offer if you are terminated.** Take it home. Consult before signing.
 7. **Talk to a lawyer.** The PWFA, PDA, NYSHRL, NYCHRL, and NJLAD each provide different remedies and different limitations periods.
 
-If you were denied a pregnancy accommodation, subjected to an inadequate interactive process, or retaliated against for requesting an accommodation in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were denied a pregnancy accommodation, subjected to an inadequate interactive process, or retaliated against for requesting an accommodation in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -3,7 +3,7 @@ title: "Sexual Harassment by a Coworker: Employer Liability When the Harasser Is
 description: "Why coworker sexual harassment is treated differently from supervisor harassment, when the employer becomes liable, and how the standard changes under the NYCHRL and NJLAD."
 publishDate: 2026-08-16
 category: "Sexual Harassment"
-seoTitle: "Sexual Harassment by a Coworker | NY & NJ Employment Lawyer | Fingerhut Law"
+seoTitle: "Sexual Harassment by a Coworker | NY & NJ Employment Lawyer | Friedman & Fingerhut"
 seoDescription: "How employer liability works when a coworker — not a supervisor — is the harasser under Title VII, the NYSHRL, the NYCHRL, and the NJLAD, and what to do to make the employer legally responsible."
 relatedPracticeAreas:
   - sexual-harassment
@@ -93,6 +93,6 @@ If the complaint about a coworker was followed by cut hours, transferred assignm
 6. **Do not accept a severance offer at termination.** Take it home. Consult before signing.
 7. **Talk to a lawyer.** The strategic choice among Title VII, the NYSHRL, the NYCHRL, and the NJLAD, and whether to pair the harassment claim with a retaliation claim, matters.
 
-If a coworker in New York or New Jersey has been subjecting you to sexual harassment and the employer's response has not stopped it, contact **Fingerhut Law** for a confidential consultation.
+If a coworker in New York or New Jersey has been subjecting you to sexual harassment and the employer's response has not stopped it, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

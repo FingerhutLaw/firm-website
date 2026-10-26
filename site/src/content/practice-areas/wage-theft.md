@@ -8,8 +8,8 @@ statutes:
   - "New York Labor Law Articles 6 and 19"
   - "New York Wage Theft Prevention Act"
 draft: false
-seoDescription: "Wage theft includes unpaid overtime, off-the-clock work, withheld tips, unpaid commissions, illegal deductions, late wages, and failure to pay earned compensation. Fingerhut Law represents employees."
-seoTitle: "NYC Wage Theft Lawyer | Fingerhut Law"
+seoDescription: "Wage theft includes unpaid overtime, off-the-clock work, withheld tips, unpaid commissions, illegal deductions, late wages, and failure to pay earned compensation. Friedman & Fingerhut represents employees."
+seoTitle: "NYC Wage Theft Lawyer | Friedman & Fingerhut"
 ---
 
 ### What Is Wage Theft?
@@ -42,12 +42,12 @@ New York courts regularly address wage theft claims involving unpaid minimum wag
 
 Employees are often afraid to complain about unpaid wages because they fear termination, reduced hours, immigration threats, bad references, or blacklisting. Retaliation for wage complaints may be unlawful. Employees should preserve pay stubs, time records, schedules, texts, emails, handbooks, tip records, commission plans, and any communications about pay.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Unpaid Minimum Wage and Overtime](/practice-areas/unpaid-minimum-wage-overtime), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wrongful Termination](/practice-areas/wrongful-termination), [Breach of Employment Contract](/practice-areas/breach-of-employment-contract), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your employer failed to pay wages, overtime, tips, commissions, bonuses, or other earned compensation, contact **Fingerhut Law** for a confidential consultation.
+If your employer failed to pay wages, overtime, tips, commissions, bonuses, or other earned compensation, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

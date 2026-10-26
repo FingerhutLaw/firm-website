@@ -3,7 +3,7 @@ title: "Denied a Reasonable Accommodation for a Disability? Here's What to Do Ne
 description: "Federal, New York, and New Jersey disability accommodation law — what qualifies as a reasonable accommodation, what employers must do, and what to do when they refuse."
 publishDate: 2026-06-09
 category: "Discrimination"
-seoTitle: "Denied Reasonable Accommodation at Work | NYC & NJ Lawyer | Fingerhut Law"
+seoTitle: "Denied Reasonable Accommodation at Work | NYC & NJ Lawyer | Friedman & Fingerhut"
 seoDescription: "Disability accommodation law in New York and New Jersey — the ADA, ADAAA, NYSHRL, NYCHRL cooperative dialogue, and NJLAD, and what to do when a request is denied."
 relatedPracticeAreas:
   - disability-discrimination
@@ -80,6 +80,6 @@ If you have been denied an accommodation:
 5. **Do not resign, unless you must.** Constructive discharge claims (where the workplace becomes so intolerable that resignation is forced) are recognized but harder than remaining employed while asserting the claim.
 6. **File a charge or complaint promptly.** ADA charges must be filed with the EEOC within 300 days in New York and New Jersey. NYSHRL and NYCHRL claims generally have three-year civil-action deadlines. NJLAD generally has two years.
 
-If you were denied a reasonable accommodation, fired, or retaliated against for requesting one in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were denied a reasonable accommodation, fired, or retaliated against for requesting one in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

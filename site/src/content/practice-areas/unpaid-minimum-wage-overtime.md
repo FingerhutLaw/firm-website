@@ -9,8 +9,8 @@ statutes:
   - "New York Labor Law Article 19"
   - "New York Wage Theft Prevention Act"
 draft: false
-seoDescription: "Fingerhut Law represents employees owed unpaid minimum wage, overtime, spread-of-hours pay, off-the-clock wages, commissions, tips, and other compensation in New York and New Jersey."
-seoTitle: "NYC Unpaid Overtime and Minimum Wage Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees owed unpaid minimum wage, overtime, spread-of-hours pay, off-the-clock wages, commissions, tips, and other compensation in New York and New Jersey."
+seoTitle: "NYC Unpaid Overtime and Minimum Wage Lawyer | Friedman & Fingerhut"
 ---
 
 ### Employees Must Be Paid for Their Work
@@ -41,12 +41,12 @@ Unpaid wage and overtime cases may involve:
 
 Employers cannot retaliate against employees for asking about pay, complaining about unpaid wages, reporting overtime violations, or participating in wage investigations. Retaliation may include termination, schedule cuts, threats, discipline, demotion, or immigration-related intimidation.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Wage Theft](/practice-areas/wage-theft), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Breach of Employment Contract](/practice-areas/breach-of-employment-contract), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were not paid minimum wage, overtime, commissions, tips, bonuses, or other earned compensation, contact **Fingerhut Law** for a confidential consultation.
+If you were not paid minimum wage, overtime, commissions, tips, bonuses, or other earned compensation, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

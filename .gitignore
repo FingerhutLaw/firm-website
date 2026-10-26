@@ -19,6 +19,11 @@
 *.odt
 *.rtf
 
+# Raw photo source files at project root (originals from the photoshoot;
+# cleaned/renamed versions live under site/public/images/).
+/*.jpg
+/*.jpeg
+
 # Screenshots (may contain DNS records, account info, or other sensitive setup data)
 **/DNS Records Screenshot*.png
 **/*screenshot*.png

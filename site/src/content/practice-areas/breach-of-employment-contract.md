@@ -7,8 +7,8 @@ statutes:
   - "New York common law (breach of contract)"
   - "New York Labor Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees, executives, professionals, and managers in employment contract disputes involving severance, bonuses, commissions, equity, termination, and restrictive covenants."
-seoTitle: "NYC Employment Contract Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees, executives, professionals, and managers in employment contract disputes involving severance, bonuses, commissions, equity, termination, and restrictive covenants."
+seoTitle: "NYC Employment Contract Lawyer | Friedman & Fingerhut"
 ---
 
 ### Employment Contracts Matter
@@ -43,12 +43,12 @@ Executives and high-level employees often face unique issues. They may be termin
 
 Employees should be careful before signing severance, release, non-disparagement, confidentiality, or restrictive covenant documents. These agreements may waive valuable claims, impose future obligations, or affect compensation. A lawyer can evaluate whether the severance offer reflects the employee’s legal leverage and unpaid rights.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Wrongful Termination](/practice-areas/wrongful-termination), [Wage Theft](/practice-areas/wage-theft), [Unpaid Minimum Wage and Overtime](/practice-areas/unpaid-minimum-wage-overtime), [Whistleblower Retaliation](/practice-areas/whistleblower-retaliation), [Sexual Harassment](/practice-areas/sexual-harassment).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your employer failed to honor an employment agreement, severance promise, commission plan, bonus plan, or equity arrangement, contact **Fingerhut Law** for a confidential consultation.
+If your employer failed to honor an employment agreement, severance promise, commission plan, bonus plan, or equity arrangement, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

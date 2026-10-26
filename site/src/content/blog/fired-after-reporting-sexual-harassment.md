@@ -81,6 +81,6 @@ If you have just been fired or demoted after complaining:
 4. **File for unemployment** in New York or New Jersey as soon as you are separated. This is a separate process from any retaliation claim and does not waive your rights.
 5. **Call a lawyer.** Deadlines run from the date of the retaliatory action. Federal EEOC charges in New York and New Jersey generally must be filed within 300 days. NYSHRL and NYCHRL civil actions generally have three-year deadlines. NJLAD claims generally have two years.
 
-If you were fired, demoted, or pushed out after reporting sexual harassment in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were fired, demoted, or pushed out after reporting sexual harassment in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -3,7 +3,7 @@ title: "Sexual Harassment of Men in the Workplace: The Law, the Patterns, and Wh
 description: "Sexual harassment of male workers is fully covered by Title VII, the NYSHRL, the NYCHRL, and the NJLAD — including same-sex harassment and harassment based on failure to conform to gender stereotypes."
 publishDate: 2026-08-14
 category: "Sexual Harassment"
-seoTitle: "Sexual Harassment of Men | NY & NJ Employment Lawyer | Fingerhut Law"
+seoTitle: "Sexual Harassment of Men | NY & NJ Employment Lawyer | Friedman & Fingerhut"
 seoDescription: "Male workers' rights against sexual harassment under Title VII, Oncale, the NYSHRL, the NYCHRL, and the NJLAD, including same-sex harassment and gender-stereotype claims."
 relatedPracticeAreas:
   - sexual-harassment
@@ -84,6 +84,6 @@ Federal courts have held for decades, since *Meritor*, that the correct question
 4. **Consider counsel before the report.** A conversation with an employment lawyer before filing the internal complaint often changes the shape of the complaint and preserves options.
 5. **Do not sign a severance offer at termination.** Especially not at the moment of termination. Take it home. Consult before signing.
 
-If you are a male worker in New York or New Jersey experiencing sexual harassment at work — from a supervisor, a coworker, a customer, or a client — contact **Fingerhut Law** for a confidential consultation.
+If you are a male worker in New York or New Jersey experiencing sexual harassment at work — from a supervisor, a coworker, a customer, or a client — contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

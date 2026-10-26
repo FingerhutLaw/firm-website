@@ -120,6 +120,6 @@ Nearly every federal and state antidiscrimination statute — and many other wor
 4. **Do not sign a severance at the moment of termination.** Take it home. Consult.
 5. **Talk to a lawyer promptly.** Retaliation limitations periods vary — EEOC filings must generally happen within 300 days in New York and New Jersey; NYCHRL and NYSHRL civil actions generally have three years; NJLAD is generally two years; CEPA is one year. The clock matters.
 
-If you were terminated, demoted, disciplined, or otherwise treated adversely after reporting discrimination, harassment, unsafe conditions, wage violations, or other unlawful conduct in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you were terminated, demoted, disciplined, or otherwise treated adversely after reporting discrimination, harassment, unsafe conditions, wage violations, or other unlawful conduct in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

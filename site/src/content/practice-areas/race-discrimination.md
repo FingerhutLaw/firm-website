@@ -13,8 +13,8 @@ caseCallout:
   figure: "$2,000,000"
   description: "Race discrimination settlement on behalf of eleven construction workers subjected to pervasive use of racial slurs by two supervisors."
 draft: false
-seoDescription: "Fingerhut Law represents employees facing race discrimination, racial harassment, unequal discipline, termination, demotion, or retaliation in NYC, New York, and New Jersey workplaces."
-seoTitle: "NYC Race Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees facing race discrimination, racial harassment, unequal discipline, termination, demotion, or retaliation in NYC, New York, and New Jersey workplaces."
+seoTitle: "NYC Race Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### Race Discrimination Is Illegal in New York City Workplaces
@@ -50,12 +50,12 @@ It is unlawful for an employer to punish an employee for opposing race discrimin
 
 Employees working in New Jersey may have claims under the **New Jersey Law Against Discrimination**, N.J.S.A. 10:5-12. The NJ LAD broadly prohibits discrimination and harassment based on race and other protected traits. In hostile work environment cases, New Jersey courts often look to the standard described in Lehmann v. Toys “R” Us, Inc., which asks whether discriminatory conduct would not have occurred but for the protected trait and was severe or pervasive enough to make a reasonable person believe the working conditions were hostile or abusive.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Hostile Work Environment](/practice-areas/hostile-work-environment), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Prior Criminal Conviction Discrimination](/practice-areas/criminal-conviction-discrimination), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you believe you were mistreated, harassed, disciplined, denied opportunities, or fired because of race, contact **Fingerhut Law** for a confidential consultation.
+If you believe you were mistreated, harassed, disciplined, denied opportunities, or fired because of race, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

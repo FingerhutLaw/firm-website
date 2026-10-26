@@ -1,5 +1,5 @@
 ---
-title: "Blog — Fingerhut Law"
+title: "Blog — Friedman & Fingerhut"
 description: "Substantive articles on workplace discrimination, sexual harassment, retaliation, and wrongful termination in New York and New Jersey."
 
 blogHeroLabel: "Blog"

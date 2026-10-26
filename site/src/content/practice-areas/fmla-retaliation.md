@@ -8,8 +8,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees denied FMLA leave, fired after medical or family leave, discouraged from taking leave, or retaliated against for using FMLA rights."
-seoTitle: "NYC FMLA Retaliation and Interference Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees denied FMLA leave, fired after medical or family leave, discouraged from taking leave, or retaliated against for using FMLA rights."
+seoTitle: "NYC FMLA Retaliation and Interference Lawyer | Friedman & Fingerhut"
 ---
 
 ### What Is the FMLA?
@@ -39,12 +39,12 @@ Examples of FMLA retaliation may include:
 
 FMLA issues often overlap with disability accommodation laws, pregnancy laws, New York Paid Family Leave, and employer leave policies. An employee who exhausts FMLA leave may still have rights under disability accommodation laws depending on the facts. Employees should preserve medical certifications, leave requests, HR communications, attendance records, and termination documents.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Disability Discrimination](/practice-areas/disability-discrimination), [NY Paid Family Leave Violations](/practice-areas/paid-family-leave-violations), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your employer denied leave, interfered with leave, or punished you for taking medical or family leave, contact **Fingerhut Law** for a confidential consultation.
+If your employer denied leave, interfered with leave, or punished you for taking medical or family leave, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

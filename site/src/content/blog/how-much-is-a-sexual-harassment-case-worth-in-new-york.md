@@ -3,7 +3,7 @@ title: "How Much Is a Sexual Harassment Case Worth in New York?"
 description: "The categories of damages, the caps that apply under federal law but not under the NYCHRL, and the factors that drive case value in New York and New Jersey."
 publishDate: 2026-07-10
 category: "Sexual Harassment"
-seoTitle: "How Much Is a Sexual Harassment Case Worth in New York? | Fingerhut Law"
+seoTitle: "How Much Is a Sexual Harassment Case Worth in New York? | Friedman & Fingerhut"
 seoDescription: "What sexual harassment cases pay in New York and New Jersey — damages categories, the NYCHRL advantage over federal law, and the factors that drive settlement value."
 relatedPracticeAreas:
   - sexual-harassment
@@ -74,6 +74,6 @@ Most non-physical emotional distress damages are taxable as ordinary income unde
 
 A responsible lawyer will not give you a settlement number in a first consultation. A responsible lawyer can tell you which laws apply, what deadlines are running, how strong the evidence looks, what discovery is likely to produce, what remedies are potentially available, and what similar cases have resolved for.
 
-If you were sexually harassed in New York or New Jersey and want to understand what your case is realistically worth, contact **Fingerhut Law** for a confidential consultation.
+If you were sexually harassed in New York or New Jersey and want to understand what your case is realistically worth, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

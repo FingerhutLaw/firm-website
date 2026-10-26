@@ -4,7 +4,7 @@
 # Edit any value below — the site updates instantly.
 # =============================================================
 
-title: "Press — Fingerhut Law"
+title: "Press — Friedman & Fingerhut"
 description: "Steven Fingerhut has been featured in national legal publications and speaks regularly on employment law issues affecting workers in New York and New Jersey."
 
 # --- HERO ---
@@ -80,7 +80,7 @@ pressSpeaking:
 # =============================================================
 pressInquiriesHeading: "Media & Press Inquiries"
 pressInquiriesBody: "Steven Fingerhut is available for media comment on employment law matters, workplace discrimination, and workers' rights in New York and New Jersey. Reporters and producers on deadline are encouraged to call the firm directly."
-pressInquiriesEmail: "steven@fingerhutlawgroup.com"
+pressInquiriesEmail: "intake@friedmanfingerhut.com"
 pressInquiriesCTAText: "Contact the firm"
 pressInquiriesCTAHref: "/contact"
 ---

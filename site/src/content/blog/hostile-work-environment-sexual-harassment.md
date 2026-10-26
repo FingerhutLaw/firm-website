@@ -3,7 +3,7 @@ title: "Hostile Work Environment Sexual Harassment: What Actually Meets the Stan
 description: "The federal 'severe or pervasive' standard, the far broader NYCHRL and NJLAD standards, and the categories of conduct that produce hostile work environment cases."
 publishDate: 2026-08-17
 category: "Sexual Harassment"
-seoTitle: "Hostile Work Environment Sexual Harassment | NYC & NJ Lawyer | Fingerhut Law"
+seoTitle: "Hostile Work Environment Sexual Harassment | NYC & NJ Lawyer | Friedman & Fingerhut"
 seoDescription: "Hostile work environment sexual harassment under Title VII, the NYSHRL, the NYCHRL, and the NJLAD — the legal standards, common conduct patterns, and how liability attaches."
 relatedPracticeAreas:
   - sexual-harassment
@@ -89,6 +89,6 @@ If you are experiencing a hostile work environment based on sex:
 5. **Do not sign a severance offer at the moment of termination.** Take it home. Consult before signing.
 6. **Talk to a lawyer.** The choice among Title VII, the NYSHRL, the NYCHRL, and the NJLAD affects the standard, the defenses, and the damages. That choice should be strategic.
 
-If you are dealing with hostile-work-environment sexual harassment in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation.
+If you are dealing with hostile-work-environment sexual harassment in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

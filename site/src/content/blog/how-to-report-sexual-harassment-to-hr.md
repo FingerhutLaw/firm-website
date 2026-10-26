@@ -3,7 +3,7 @@ title: "How to Report Sexual Harassment to HR Without Making It Worse"
 description: "What to put in writing, what to keep verbal, and how to preserve your retaliation protections when you take a sexual harassment complaint to HR."
 publishDate: 2026-07-30
 category: "Sexual Harassment"
-seoTitle: "How to Report Sexual Harassment to HR | Fingerhut Law"
+seoTitle: "How to Report Sexual Harassment to HR | Friedman & Fingerhut"
 seoDescription: "How to complain about sexual harassment to HR the right way: what to document, what to write, what protections attach, and what to expect afterward."
 relatedPracticeAreas:
   - sexual-harassment
@@ -72,6 +72,6 @@ The wording, timing, and audience of a harassment complaint can shape the case f
 
 If the harassment is ongoing and dangerous, do not wait for the perfect complaint. Report it now, safely, and adjust with counsel afterward. But if you have time — even a few days — use it.
 
-If you are considering reporting sexual harassment in New York or New Jersey, contact **Fingerhut Law** for a confidential consultation before you send anything to HR.
+If you are considering reporting sexual harassment in New York or New Jersey, contact **Friedman & Fingerhut** for a confidential consultation before you send anything to HR.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

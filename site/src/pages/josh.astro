@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry } from 'astro:content';
+
+const page = await getEntry('pages', 'josh');
+const c = page!.data as any;
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+---
+
+<Layout title={c.title} description={c.description}>
+  <!-- Hero: portrait + name + subhead -->
+  <section class="mx-auto max-w-6xl px-6 pt-24 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5">
+        {c.aboutPortraitImage && (
+          <img
+            src={c.aboutPortraitImage}
+            alt={c.aboutPortraitAlt}
+            class="w-full max-w-md mx-auto md:mx-0 rounded-2xl shadow-xl aspect-[4/5] object-cover object-center"
+            loading="eager"
+          />
+        )}
+      </div>
+      <div class="md:col-span-7">
+        <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+          About
+        </p>
+        <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight text-fl-ink">
+          {c.aboutHeroName}
+        </h1>
+        <p class="mt-4 text-lg text-fl-ink-soft italic">{c.aboutHeroSubhead}</p>
+        {c.aboutBio && (
+          <div class="mt-10 space-y-6">
+            {c.aboutBio.map((para: string) => (
+              <p class="text-lg text-fl-ink-soft leading-relaxed">{para}</p>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Notable Results (dark band) -->
+  {c.aboutSettlements && c.aboutSettlements.length > 0 && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight mb-12">
+          {c.aboutSettlementsHeading}
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {c.aboutSettlements.map((s: {figure: string; description: string}) => (
+            <li>
+              <p class="font-serif text-4xl font-medium tracking-tight mb-3">
+                {s.figure}
+              </p>
+              <p class="text-sm text-white/80 leading-relaxed">{s.description}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-12 text-xs text-white/60 italic">
+          Prior results do not guarantee a similar outcome.
+        </p>
+      </div>
+    </section>
+  )}
+
+  <!-- Practice Areas list -->
+  {c.aboutPracticeAreasList && c.aboutPracticeAreasList.length > 0 && (
+    <section class="mx-auto max-w-4xl px-6 py-20 md:py-24">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-6">
+        {c.aboutPracticeAreasHeading}
+      </h2>
+      {c.aboutPracticeAreasIntro && (
+        <p class="text-lg text-fl-ink-soft mb-8">{c.aboutPracticeAreasIntro}</p>
+      )}
+      <ul class="md:columns-2 md:gap-x-12 mb-8 space-y-4">
+        {c.aboutPracticeAreasList.map((item: string) => (
+          <li class="flex gap-3 text-lg text-fl-ink-soft leading-relaxed break-inside-avoid">
+            <span class="text-fl-accent flex-shrink-0">·</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+      {c.aboutPracticeAreasOutro && (
+        <p class="text-lg text-fl-ink-soft leading-relaxed">{c.aboutPracticeAreasOutro}</p>
+      )}
+      <a
+        href="/practice-areas"
+        class="inline-block mt-10 text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+      >
+        See all practice areas &rarr;
+      </a>
+    </section>
+  )}
+
+  <!-- Testimonials -->
+  {c.testimonials && c.testimonials.length > 0 && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-5xl px-6 py-20 md:py-24">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-12">
+          {c.testimonialsHeading}
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {c.testimonials.map((t: {quote: string; attribution: string}) => (
+            <li class="bg-white border border-slate-200 p-8 flex flex-col">
+              <blockquote class="font-serif italic text-lg text-fl-ink leading-snug flex-grow">
+                &ldquo;{t.quote}&rdquo;
+              </blockquote>
+              <p class="mt-6 text-sm text-fl-ink-soft">— {t.attribution}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-10 text-xs text-fl-ink-soft italic">
+          Prior results do not guarantee a similar outcome.
+        </p>
+      </div>
+    </section>
+  )}
+
+  <!-- Credentials -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-6xl px-6 py-20 md:py-24">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight text-fl-ink mb-12">
+        {c.credentialsHeading}
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {c.credentialsEducation && c.credentialsEducation.length > 0 && (
+          <div>
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Education
+            </h3>
+            <ul class="space-y-2">
+              {c.credentialsEducation.map((item: string) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {c.credentialsAdmissions && c.credentialsAdmissions.length > 0 && (
+          <div>
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Admitted to Practice
+            </h3>
+            <ul class="space-y-2">
+              {c.credentialsAdmissions.map((item: string) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {c.credentialsRecognition && c.credentialsRecognition.length > 0 && (
+          <div class="md:col-span-2">
+            <h3 class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-4">
+              Recognition
+            </h3>
+            <ul class="space-y-3">
+              {c.credentialsRecognition.map((item: string) => (
+                <li class="text-fl-ink leading-relaxed">{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- Outside the Office -->
+  {c.outsideBody && (
+    <section class="bg-slate-50 border-y border-slate-200">
+      <div class="mx-auto max-w-4xl px-6 py-16 md:py-20">
+        <h2 class="font-serif font-medium text-2xl md:text-3xl leading-tight tracking-tight text-fl-ink mb-6">
+          {c.outsideHeading}
+        </h2>
+        <p class="text-lg text-fl-ink-soft leading-relaxed">{c.outsideBody}</p>
+      </div>
+    </section>
+  )}
+
+  <!-- Closing CTA -->
+  {c.aboutCTAHeading && (
+    <section class="bg-fl-accent text-white">
+      <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+        <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight mb-8">
+          {c.aboutCTAHeading}
+        </h2>
+        <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
+          {c.aboutCTABody}
+        </p>
+        {h.feeNote && (
+          <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
+            {h.feeNote}
+          </p>
+        )}
+        <a
+          href={c.aboutCTAHref}
+          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+        >
+          {c.aboutCTAButton}
+        </a>
+      </div>
+    </section>
+  )}
+</Layout>

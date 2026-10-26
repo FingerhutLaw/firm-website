@@ -9,9 +9,9 @@ interface Props {
 }
 
 const {
-  title = 'Fingerhut Law — New York and New Jersey Employment Lawyer',
+  title = 'Friedman & Fingerhut — New York and New Jersey Employment Lawyers',
   description = 'A focused employment law practice in New York and New Jersey. Over $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases.',
-  image = '/images/steven-fingerhut.jpg',
+  image = '/images/steven-and-josh.jpg',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -28,13 +28,11 @@ const site = homepage!.data;
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'LegalService',
-  name: 'Fingerhut Law',
-  alternateName: 'The Fingerhut Law Group, PLLC',
-  url: 'https://fingerhutlawgroup.com',
-  logo: 'https://fingerhutlawgroup.com/brand/wordmark-navy.svg',
-  image: 'https://fingerhutlawgroup.com/images/steven-fingerhut.jpg',
+  name: 'Friedman & Fingerhut, PLLC',
+  url: 'https://friedmanfingerhut.com',
+  image: 'https://friedmanfingerhut.com/images/steven-and-josh.jpg',
   telephone: '+1-212-680-4040',
-  email: 'steven@fingerhutlawgroup.com',
+  email: 'intake@friedmanfingerhut.com',
   priceRange: 'Contingency fee where appropriate — no fee unless we recover',
   address: {
     '@type': 'PostalAddress',
@@ -48,12 +46,20 @@ const structuredData = {
     { '@type': 'State', name: 'New York' },
     { '@type': 'State', name: 'New Jersey' },
   ],
-  founder: {
-    '@type': 'Person',
-    name: 'Steven Fingerhut',
-    jobTitle: 'Attorney',
-    image: 'https://fingerhutlawgroup.com/images/steven-fingerhut.jpg',
-  },
+  founders: [
+    {
+      '@type': 'Person',
+      name: 'Steven Fingerhut',
+      jobTitle: 'Attorney',
+      image: 'https://friedmanfingerhut.com/images/steven-fingerhut.jpg',
+    },
+    {
+      '@type': 'Person',
+      name: 'Joshua Friedman',
+      jobTitle: 'Attorney',
+      image: 'https://friedmanfingerhut.com/images/josh-friedman.jpg',
+    },
+  ],
   knowsAbout: [
     'Employment Discrimination',
     'Workplace Sexual Harassment',
@@ -83,7 +89,7 @@ const structuredData = {
     <link rel="canonical" href={canonicalURL} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Fingerhut Law" />
+    <meta property="og:site_name" content="Friedman & Fingerhut" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
@@ -118,11 +124,13 @@ const structuredData = {
   <body class="min-h-screen bg-fl-bg text-fl-ink font-sans antialiased">
     <header class="border-b border-slate-200">
       <nav class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
-        <a href="/" class="inline-flex items-center" aria-label="Fingerhut Law — home">
-          <img src="/brand/wordmark-navy.svg" alt="Fingerhut Law" class="h-7 md:h-9 w-auto" />
+        <a href="/" class="inline-flex items-center" aria-label="Friedman & Fingerhut — home">
+          <span class="font-serif font-medium text-2xl md:text-3xl tracking-tight text-fl-accent whitespace-nowrap">
+            Friedman <span class="text-fl-accent">&amp;</span> Fingerhut
+          </span>
         </a>
         <ul class="hidden md:flex items-center gap-8 text-sm font-semibold text-fl-ink">
-          <li><a href="/about" class="hover:text-fl-accent transition-colors">About</a></li>
+          <li><a href="/attorneys" class="hover:text-fl-accent transition-colors">Attorneys</a></li>
           <li><a href="/practice-areas" class="hover:text-fl-accent transition-colors">Practice Areas</a></li>
           <li><a href="/results" class="hover:text-fl-accent transition-colors">Results</a></li>
           <li><a href="/faq" class="hover:text-fl-accent transition-colors">FAQ</a></li>
@@ -151,7 +159,7 @@ const structuredData = {
       </nav>
       <div id="fl-mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white">
         <ul class="mx-auto max-w-6xl px-6 py-4 flex flex-col divide-y divide-slate-100 text-base font-semibold text-fl-ink">
-          <li><a href="/about" class="block py-3 hover:text-fl-accent transition-colors">About</a></li>
+          <li><a href="/attorneys" class="block py-3 hover:text-fl-accent transition-colors">Attorneys</a></li>
           <li><a href="/practice-areas" class="block py-3 hover:text-fl-accent transition-colors">Practice Areas</a></li>
           <li><a href="/results" class="block py-3 hover:text-fl-accent transition-colors">Results</a></li>
           <li><a href="/faq" class="block py-3 hover:text-fl-accent transition-colors">FAQ</a></li>
@@ -184,17 +192,15 @@ const structuredData = {
     <footer class="mt-24 border-t border-slate-200 bg-slate-50">
       <div class="mx-auto max-w-6xl px-6 py-12 text-sm text-fl-ink-soft">
         <div class="mb-5 flex items-center gap-3 flex-wrap">
-          <img src="/brand/wordmark-navy.svg" alt="Fingerhut Law" class="h-6 w-auto" />
+          <span class="font-serif font-medium text-xl text-fl-accent tracking-tight">
+            Friedman &amp; Fingerhut
+          </span>
           <span class="font-serif text-base text-fl-ink-soft">· New York and New Jersey Employment Law</span>
         </div>
-        <p class="mb-4 italic">
-          Fingerhut Law is a DBA of The Fingerhut Law Group, PLLC,
-          a New York professional limited liability company.
-        </p>
         <p class="mb-4">
           469 7th Avenue, 12th Floor, New York, NY 10018 ·
           <a href="tel:+12126804040" class="text-fl-accent hover:underline">(212) 680-4040</a> ·
-          <a href="mailto:steven@fingerhutlawgroup.com" class="text-fl-accent hover:underline">steven@fingerhutlawgroup.com</a>
+          <a href="mailto:intake@friedmanfingerhut.com" class="text-fl-accent hover:underline">intake@friedmanfingerhut.com</a>
         </p>
         <p class="mb-4">
           Monday through Friday, 9:00 am – 6:00 pm ET. After-hours consultations by appointment.
@@ -216,7 +222,7 @@ const structuredData = {
           <span class="text-slate-400 mx-2">·</span>
           <a href="/terms" class="hover:text-fl-accent">Legal Notices</a>
         </p>
-        <p class="mt-3 text-xs">© 2026 The Fingerhut Law Group, PLLC. All rights reserved.</p>
+        <p class="mt-3 text-xs">© 2026 Friedman &amp; Fingerhut, PLLC. All rights reserved.</p>
       </div>
     </footer>
   </body>

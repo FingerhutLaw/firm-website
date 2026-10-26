@@ -8,8 +8,8 @@ statutes:
   - "New York State Human Rights Law"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees denied religious accommodations for Sabbath observance, prayer, dress, grooming, holidays, dietary needs, and sincerely held religious beliefs."
-seoTitle: "NYC Religious Accommodation Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees denied religious accommodations for Sabbath observance, prayer, dress, grooming, holidays, dietary needs, and sincerely held religious beliefs."
+seoTitle: "NYC Religious Accommodation Lawyer | Friedman & Fingerhut"
 ---
 
 ### Employees May Be Entitled to Religious Accommodations
@@ -42,12 +42,12 @@ Employers sometimes deny religious accommodations automatically, assume a belief
 
 An employer cannot punish an employee for requesting a religious accommodation or complaining about religious discrimination. Retaliation may include termination, reduced hours, discipline, negative reviews, exclusion, or pressure to resign.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Religious Discrimination](/practice-areas/religious-discrimination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Wrongful Termination](/practice-areas/wrongful-termination), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If your employer denied a religious accommodation or punished you for requesting one, contact **Fingerhut Law** for a confidential consultation.
+If your employer denied a religious accommodation or punished you for requesting one, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

@@ -10,8 +10,8 @@ statutes:
   - "New York City Human Rights Law"
   - "New York Adult Survivor Act"
 draft: false
-seoDescription: "Experiencing sexual harassment by a boss, CEO, owner, executive, coworker, client, or vendor? Fingerhut Law represents employees in NYC, New York, and New Jersey workplace harassment claims."
-seoTitle: "NYC Sexual Harassment Lawyer | Fingerhut Law"
+seoDescription: "Experiencing sexual harassment by a boss, CEO, owner, executive, coworker, client, or vendor? Friedman & Fingerhut represents employees in NYC, New York, and New Jersey workplace harassment claims."
+seoTitle: "NYC Sexual Harassment Lawyer | Friedman & Fingerhut"
 ---
 
 ### Sexual Harassment by a Boss, CEO, Owner, or Executive
@@ -47,12 +47,12 @@ If you are being sexually harassed, try to preserve evidence. Save texts, emails
 
 You do not always need a perfect paper trail to bring a claim. But contemporaneous records can help show what happened, when it happened, who knew, and how the company responded.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Sexual Assault](/practice-areas/sexual-assault), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wrongful Termination](/practice-areas/wrongful-termination), [LGBTQ+ Discrimination](/practice-areas/lgbtq-discrimination), [New Jersey Law Against Discrimination](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were sexually harassed by a CEO, owner, supervisor, executive, coworker, client, or vendor, contact **Fingerhut Law** for a confidential consultation.
+If you were sexually harassed by a CEO, owner, supervisor, executive, coworker, client, or vendor, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

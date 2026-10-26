@@ -8,8 +8,8 @@ statutes:
   - "New York City Fair Chance Act"
   - "New York State Human Rights Law"
 draft: false
-seoDescription: "Fingerhut Law represents employees and job applicants denied work, fired, or treated unfairly because of prior criminal convictions or background checks in New York City."
-seoTitle: "NYC Criminal Conviction Discrimination Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees and job applicants denied work, fired, or treated unfairly because of prior criminal convictions or background checks in New York City."
+seoTitle: "NYC Criminal Conviction Discrimination Lawyer | Friedman & Fingerhut"
 ---
 
 ### Employees and Applicants Have Rights After a Prior Conviction
@@ -38,12 +38,12 @@ Criminal conviction discrimination may include:
 
 People with prior convictions often face unfair barriers to employment even after rehabilitation. New York law is designed to prevent blanket exclusions and require individualized consideration. Employers that rely on background checks must follow the law carefully.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Race Discrimination](/practice-areas/race-discrimination), [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were denied a job, fired, or treated unfairly because of a prior conviction or background check, contact **Fingerhut Law** for a confidential consultation.
+If you were denied a job, fired, or treated unfairly because of a prior conviction or background check, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

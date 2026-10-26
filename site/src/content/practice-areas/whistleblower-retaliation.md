@@ -10,8 +10,8 @@ statutes:
   - "False Claims Act"
   - "OSHA whistleblower provisions"
 draft: false
-seoDescription: "Fingerhut Law represents employees who suffer retaliation after reporting illegal, unsafe, fraudulent, or unethical conduct, including New York whistleblower claims and New Jersey CEPA claims."
-seoTitle: "NYC and NJ Whistleblower Retaliation Lawyer | Fingerhut Law"
+seoDescription: "Friedman & Fingerhut represents employees who suffer retaliation after reporting illegal, unsafe, fraudulent, or unethical conduct, including New York whistleblower claims and New Jersey CEPA claims."
+seoTitle: "NYC and NJ Whistleblower Retaliation Lawyer | Friedman & Fingerhut"
 ---
 
 ### Employees Should Not Be Punished for Reporting Misconduct
@@ -44,12 +44,12 @@ Whistleblower retaliation may occur when an employee is punished after:
 
 Important evidence may include emails, texts, complaint records, internal reports, compliance submissions, Slack or Teams messages, meeting notes, performance reviews, disciplinary notices, termination communications, and witness names. Timing is also important. A sudden negative review or termination shortly after protected whistleblowing may support an inference of retaliation.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Wrongful Termination](/practice-areas/wrongful-termination), [Retaliation for Protected Activity](/practice-areas/retaliation), [Wage Theft](/practice-areas/wage-theft), [Sexual Harassment](/practice-areas/sexual-harassment), [FMLA Retaliation and Interference](/practice-areas/fmla-retaliation), [NJ LAD](/practice-areas/new-jersey-law-against-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you were punished for reporting misconduct or refusing to participate in illegal conduct, contact **Fingerhut Law** for a confidential consultation.
+If you were punished for reporting misconduct or refusing to participate in illegal conduct, contact **Friedman & Fingerhut** for a confidential consultation.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.

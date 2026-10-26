@@ -9,8 +9,8 @@ statutes:
   - "New York Adult Survivor Act (CPLR 214-j)"
   - "New York City Human Rights Law"
 draft: false
-seoDescription: "Civil claims under NYC's Gender-Motivated Violence Act for workplace sexual assault and gender-based violence. Fingerhut Law represents survivors against perpetrators and the institutions that enabled them — including older claims revived by the 2022 lookback amendment."
-seoTitle: "NYC Gender-Motivated Violence Act Lawyer | Fingerhut Law"
+seoDescription: "Civil claims under NYC's Gender-Motivated Violence Act for workplace sexual assault and gender-based violence. Friedman & Fingerhut represents survivors against perpetrators and the institutions that enabled them — including older claims revived by the 2022 lookback amendment."
+seoTitle: "NYC Gender-Motivated Violence Act Lawyer | Friedman & Fingerhut"
 ---
 
 ### A Civil Cause of Action for Survivors of Gender-Motivated Violence
@@ -44,12 +44,12 @@ Many survivors of workplace sexual violence never filed a claim at the time. Som
 
 The GMVA changed that. For the right facts, it offers a direct route to civil accountability years — sometimes decades — after the conduct occurred. It allows survivors to pursue the individual responsible, and where appropriate, the employer or institution that allowed the conduct to continue.
 
-### Related Fingerhut Law Pages
+### Related Friedman & Fingerhut Pages
 
 [Sexual Harassment](/practice-areas/sexual-harassment), [Workplace Sexual Assault](/practice-areas/sexual-assault), [Hostile Work Environment](/practice-areas/hostile-work-environment), [Retaliation for Protected Activity](/practice-areas/retaliation), [LGBTQ+ Discrimination](/practice-areas/lgbtq-discrimination).
 
-### Contact Fingerhut Law
+### Contact Friedman & Fingerhut
 
-If you experienced gender-motivated violence at work — including years or decades ago — contact **Fingerhut Law** for a confidential consultation about a possible claim under the New York City Gender-Motivated Violence Act.
+If you experienced gender-motivated violence at work — including years or decades ago — contact **Friedman & Fingerhut** for a confidential consultation about a possible claim under the New York City Gender-Motivated Violence Act.
 
 **Attorney Advertising Disclaimer:** This article is attorney advertising and is provided for general informational purposes only. It does not create an attorney-client relationship and is not legal advice. Prior results do not guarantee a similar outcome.
