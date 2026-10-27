@@ -5,10 +5,13 @@
   --color-fl-bg-soft: #F1F5F9;
   --color-fl-ink: #111111;
   --color-fl-ink-soft: #4a4a4a;
-  --color-fl-accent: #0A1F44;
+  --color-fl-accent: #002147;
   --color-fl-accent-2: #142E5C;
+  --color-fl-brass: #8A7A4A;
+  --color-fl-brass-rule: #B8A66A;
 
   --font-serif: 'Cormorant Garamond', Garamond, Georgia, 'Times New Roman', serif;
+  --font-didot: 'GFS Didot', 'Playfair Display', Didot, 'Bodoni 72', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 

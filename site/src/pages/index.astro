@@ -11,61 +11,85 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
 
 <Layout
   title="New York & New Jersey Employment Lawyers | Friedman & Fingerhut"
-  description="Friedman & Fingerhut represents New York and New Jersey employees in workplace discrimination, harassment, retaliation, and wrongful termination claims. Over $30 million recovered. Free confidential consultation."
+  description="Friedman & Fingerhut represents New York and New Jersey employees in workplace discrimination, harassment, retaliation, and wrongful termination claims. $60 million-plus recovered. Free confidential consultation."
 >
-  <!-- Hero — two-shot LEFT, firm name RIGHT, very faded courthouse photo -->
-  <section
-    class="relative bg-white bg-cover bg-center border-b border-slate-200"
-    style="background-image: url('/images/hero/home-hero.jpg');"
-  >
-    <div class="absolute inset-0 bg-white/70"></div>
-    <div class="relative mx-auto max-w-6xl px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center md:items-start">
-      <div class="md:col-span-7">
-        <img
-          src={c.portraitImage}
-          alt={c.portraitAlt}
-          class="w-full mx-auto md:mx-0 rounded-2xl shadow-xl aspect-[3/2] object-cover object-center"
-        />
-        <div class="mt-6 text-center md:text-left">
-          <a
-            href="/attorneys"
-            class="inline-block text-fl-accent font-semibold border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
-          >
-            Meet the partners &rarr;
-          </a>
-        </div>
-      </div>
-      <div class="md:col-span-5 md:pt-2">
-        <h1 class="font-serif font-medium text-4xl md:text-5xl leading-[1.05] tracking-tight text-fl-ink whitespace-nowrap">
-          <span class="fl-mask"><span class="fl-rise">Friedman &amp; Fingerhut</span></span>
+  <!-- Hero — letterhead layout: big Didot wordmark on top, descriptive H1 + CTA split, big photo below -->
+  <section class="bg-white border-b border-slate-200">
+    <!-- Decorative wordmark (branding, not the H1 — see descriptive H1 below) -->
+    <div class="max-w-[1180px] mx-auto px-6 pt-10 md:pt-14 pb-2 text-center">
+      <p class="font-didot uppercase tracking-[0.08em] md:tracking-[0.16em] text-fl-accent leading-tight m-0 text-balance"
+         style="font-size: clamp(22px, 4.6vw, 60px);">
+        Friedman &amp; Fingerhut
+      </p>
+    </div>
+
+    <!-- Descriptive H1 + lede on left; CTA cluster on right -->
+    <div class="max-w-[1180px] mx-auto px-6 pt-6 md:pt-8 pb-10 grid grid-cols-1 md:grid-cols-2 gap-9 items-center">
+      <div class="text-center md:pl-[6%]">
+        <h1 class="font-serif italic font-medium text-fl-accent leading-[1.2] m-0 text-balance"
+            style="font-size: clamp(22px, 2.3vw, 29px);">
+          {c.heroHeadline}
         </h1>
-        <p class="mt-4 font-serif font-medium italic text-xl md:text-2xl text-fl-accent fl-fade fl-fade-1 whitespace-nowrap">
-          New York and New Jersey Employment Lawyers
+        <p class="mt-4 text-base leading-relaxed text-fl-ink max-w-[32em] mx-auto">
+          {c.heroSubheadline}
         </p>
-        <p class="mt-6 md:mt-8 text-lg leading-relaxed text-fl-ink max-w-xl fl-fade fl-fade-1">
-          $60 million-plus recovered for workers in discrimination, harassment,
-          retaliation, and wrongful termination cases.
-        </p>
-        <div class="mt-8 md:mt-10 flex flex-wrap items-center gap-6 fl-fade fl-fade-2">
-          <a
-            href={c.heroCTAHref}
-            class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-semibold tracking-wide hover:bg-fl-accent-2 transition-colors"
-          >
-            {c.heroCTAText}
+      </div>
+      <div class="flex flex-col items-center gap-2.5 md:pr-[6%]">
+        <a
+          href={c.heroCTAHref}
+          class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] hover:bg-fl-accent-2 transition-colors"
+        >
+          {c.heroCTAText}
+        </a>
+        <span class="text-sm text-fl-ink-soft">
+          or call
+          <a href={c.phoneHref} class="font-semibold text-fl-accent hover:underline">
+            {c.phone}
           </a>
-          <span class="text-fl-ink-soft text-sm">
-            or call
-            <a href={c.phoneHref} class="text-fl-accent font-semibold hover:underline">
-              {c.phone}
-            </a>
-          </span>
-        </div>
-        <p class="mt-6 text-sm text-fl-ink-soft italic fl-fade fl-fade-2">
-          Free, confidential consultation — no obligation. No fee unless we obtain a recovery.
-        </p>
+        </span>
+        {c.feeNote && (
+          <p class="text-xs italic text-fl-ink-soft max-w-[24em] text-center leading-relaxed mt-1">
+            {c.feeNote}
+          </p>
+        )}
       </div>
     </div>
+
+    <!-- Hero photo -->
+    <div class="max-w-[1180px] mx-auto px-6 pb-6">
+      <img
+        src={c.portraitImage}
+        alt={c.portraitAlt}
+        class="w-full aspect-[3/2] object-cover rounded-xl shadow-[0_28px_56px_-28px_rgba(0,33,71,0.32),0_12px_24px_-14px_rgba(0,33,71,0.22)]"
+        style="object-position: center 35%;"
+      />
+    </div>
+
+    <!-- Meet the partners link -->
+    <div class="max-w-[1180px] mx-auto px-6 pb-14">
+      <a
+        href="/attorneys"
+        class="inline-block text-fl-accent font-semibold border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+      >
+        Meet the partners &rarr;
+      </a>
+    </div>
   </section>
+
+  {c.pressLogos && c.pressLogos.length > 0 && (
+    <section class="bg-white border-t border-b border-slate-200 py-5" aria-label={c.pressLabel ?? 'As Featured In'}>
+      <div class="max-w-[1180px] mx-auto px-6 flex items-center justify-center flex-wrap gap-x-9 gap-y-3">
+        <span class="text-[10.5px] font-sans font-semibold uppercase tracking-[0.22em] text-fl-brass md:pr-6 md:border-r md:border-slate-200">
+          {c.pressLabel ?? 'As Featured In'}
+        </span>
+        <ul class="flex items-center justify-center flex-wrap gap-x-7 gap-y-2 list-none m-0 p-0">
+          {c.pressLogos.map((logo: string) => (
+            <li class="font-serif text-[15px] text-fl-ink-soft whitespace-nowrap">{logo}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <!-- Credibility stats — fade-up + count once on scroll -->
   <section class="bg-fl-accent text-white">

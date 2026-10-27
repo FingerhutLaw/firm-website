@@ -10,7 +10,7 @@ const attorneys = [
     name: 'Steven Fingerhut',
     title: 'Co-Founder · Employment Law Attorney',
     tagline:
-      'More than $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases across New York and New Jersey.',
+      'More than $60 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases across New York and New Jersey.',
     image: '/images/steven-fingerhut-2026.jpg',
     alt: 'Steven Fingerhut, co-founder of Friedman & Fingerhut',
     href: '/about',
@@ -57,7 +57,8 @@ const attorneys = [
             <img
               src={a.image}
               alt={a.alt}
-              class="w-full aspect-[4/5] object-cover object-center"
+              class="w-full aspect-[4/5] object-cover"
+              style={a.name === 'Joshua Friedman' ? 'object-position: 36% center;' : 'object-position: center center;'}
               loading="eager"
             />
           </a>

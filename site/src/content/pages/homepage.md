@@ -8,7 +8,7 @@
 
 # --- HERO SECTION (top of homepage) ---
 heroHeadline: "A focused employment law practice in New York and New Jersey."
-heroSubheadline: "Over $30 million recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases."
+heroSubheadline: "$60 million-plus recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases."
 heroCTAText: "Schedule a Consultation"
 heroCTAHref: "/contact"
 
@@ -19,7 +19,7 @@ phoneHref: "tel:+12126804040"
 # --- FEE NOTE (canonical — rendered site-wide on every closing CTA + footer) ---
 # Edit this line and it updates everywhere. Honor the "where appropriate"
 # framing — not every matter is contingency-eligible.
-feeNote: "Cases are typically handled on a contingency-fee basis — no fee unless we obtain a recovery."
+feeNote: "Free, confidential consultation — no obligation. No fee unless we obtain a recovery."
 
 # --- PRESS STRIP (just below the hero) ---
 # Text-only treatment until clean publication logos are sourced.

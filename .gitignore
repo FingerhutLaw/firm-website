@@ -53,3 +53,7 @@ desktop.ini
 node_modules/
 dist/
 build/
+
+# Local image backups (kept on disk for safety, not for repo)
+site/public/images/_backup_*.jpg
+site/public/images/_backup_*.png
