@@ -1,0 +1,11 @@
+# 301 permanent redirects: old domain → new domain.
+# Hostname-scoped (absolute URL form), so these only fire on the orphan
+# Netlify site that serves fingerhutlawgroup.com. The new site (serving
+# friedmanfingerhut.com + www) sees a non-matching Host and serves content
+# normally. :splat preserves the path for in-flight links (critical for
+# Supabase magic-link URLs under /kronos-invite/).
+
+https://fingerhutlawgroup.com/*        https://friedmanfingerhut.com/:splat  301!
+https://www.fingerhutlawgroup.com/*    https://friedmanfingerhut.com/:splat  301!
+http://fingerhutlawgroup.com/*         https://friedmanfingerhut.com/:splat  301!
+http://www.fingerhutlawgroup.com/*     https://friedmanfingerhut.com/:splat  301!
