@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-fl-bg: #FFFFFF;
+  --color-fl-bg: #F4EDE1;
+  --color-fl-bg-tint: #ECE4D3;
   --color-fl-bg-soft: #F1F5F9;
   --color-fl-ink: #111111;
   --color-fl-ink-soft: #4a4a4a;
   --color-fl-accent: #002147;
   --color-fl-accent-2: #142E5C;
   --color-fl-brass: #8A7A4A;
+  /* fl-brass-ink is a darker brass for body-text use — passes WCAG AA
+     (~4.8:1) against the ivory fl-bg while staying unmistakably brass. */
+  --color-fl-brass-ink: #6E5F38;
   --color-fl-brass-rule: #B8A66A;
 
   --font-serif: 'Cormorant Garamond', Garamond, Georgia, 'Times New Roman', serif;

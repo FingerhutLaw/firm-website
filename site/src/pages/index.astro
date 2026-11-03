@@ -13,73 +13,100 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
   title="New York & New Jersey Employment Lawyers | Friedman & Fingerhut"
   description="Friedman & Fingerhut represents New York and New Jersey employees in workplace discrimination, harassment, retaliation, and wrongful termination claims. $60 million-plus recovered. Free confidential consultation."
 >
-  <!-- Hero — letterhead layout: big Didot wordmark on top, descriptive H1 + CTA split, big photo below -->
-  <section class="bg-white border-b border-slate-200">
-    <!-- Decorative wordmark (branding, not the H1 — see descriptive H1 below) -->
-    <div class="max-w-[1180px] mx-auto px-6 pt-10 md:pt-14 pb-2 text-center">
-      <p class="font-didot uppercase tracking-[0.08em] md:tracking-[0.16em] text-fl-accent leading-tight m-0 text-balance"
-         style="font-size: clamp(22px, 4.6vw, 60px);">
-        Friedman &amp; Fingerhut
-      </p>
-    </div>
-
-    <!-- Descriptive H1 + lede on left; CTA cluster on right -->
-    <div class="max-w-[1180px] mx-auto px-6 pt-6 md:pt-8 pb-10 grid grid-cols-1 md:grid-cols-2 gap-9 items-center">
-      <div class="text-center md:pl-[6%]">
-        <h1 class="font-serif italic font-medium text-fl-accent leading-[1.2] m-0 text-balance"
-            style="font-size: clamp(22px, 2.3vw, 29px);">
+  <!-- Hero — two-column: content left, partner portrait right.
+       Stats band sits at the bottom of the hero viewport to draw the
+       eye downward and signal credibility before the fold. -->
+  <section class="bg-fl-bg">
+    <div class="max-w-[1120px] mx-auto px-6 pt-4 md:pt-6 pb-6 md:pb-7 grid grid-cols-1 md:grid-cols-[1fr_1.25fr] gap-6 md:gap-7 items-start md:items-center">
+      <!-- Left: eyebrow, H1, big brand statement, descriptor, CTAs -->
+      <div>
+        {c.heroEyebrow && (
+          <p class="text-[11px] md:text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-3">
+            {c.heroEyebrow}
+          </p>
+        )}
+        <h1 class="font-serif font-medium text-fl-accent leading-[1.2] tracking-tight m-0 text-balance"
+            style="font-size: clamp(19px, 2.1vw, 26px);">
           {c.heroHeadline}
         </h1>
-        <p class="mt-4 text-base leading-relaxed text-fl-ink max-w-[32em] mx-auto">
-          {c.heroSubheadline}
+        {c.heroBrandStatement && (
+          <p class="font-serif font-medium text-fl-ink leading-[1.08] tracking-tight mt-3 md:mt-4"
+             style="font-size: clamp(26px, 3.6vw, 42px);">
+            {c.heroBrandStatement.trim().split(/\n+/).map((line: string, i: number) => (
+              <>{i > 0 && <br />}{line.trim()}</>
+            ))}
+          </p>
+        )}
+        <p class="mt-4 md:mt-5 text-sm md:text-base leading-relaxed text-fl-ink-soft max-w-[32em]">
+          {c.heroDescription ?? c.heroSubheadline}
         </p>
-      </div>
-      <div class="flex flex-col items-center gap-2.5 md:pr-[6%]">
-        <a
-          href={c.heroCTAHref}
-          class="inline-block bg-fl-accent text-white px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] hover:bg-fl-accent-2 transition-colors"
-        >
-          {c.heroCTAText}
-        </a>
-        <span class="text-sm text-fl-ink-soft">
-          or call
-          <a href={c.phoneHref} class="font-semibold text-fl-accent hover:underline">
-            {c.phone}
+        <div class="mt-5 md:mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a
+            href={c.heroCTAHref}
+            class="inline-block bg-fl-accent text-white px-7 py-4 text-sm font-semibold uppercase tracking-[0.08em] hover:bg-fl-accent-2 transition-colors"
+          >
+            {c.heroCTAText}
           </a>
-        </span>
+          <span class="text-sm text-fl-ink-soft">
+            or call
+            <a href={c.phoneHref} class="font-semibold text-fl-accent hover:underline">
+              {c.phone}
+            </a>
+          </span>
+        </div>
         {c.feeNote && (
-          <p class="text-xs italic text-fl-ink-soft max-w-[24em] text-center leading-relaxed mt-1">
+          <p class="mt-3 text-xs italic text-fl-ink-soft max-w-[28em]">
             {c.feeNote}
           </p>
         )}
       </div>
+
+      <!-- Right: full partner portrait, framed. max-h ties the image to
+           viewport height so the whole picture lives above the fold on
+           typical laptop screens, leaving room for the stats band below. -->
+      <div class="relative flex justify-center">
+        <img
+          src={c.portraitImage}
+          alt={c.portraitAlt}
+          class="w-full max-h-[64vh] md:max-h-[72vh] h-auto object-contain rounded-lg shadow-[0_28px_56px_-28px_rgba(0,33,71,0.32),0_12px_24px_-14px_rgba(0,33,71,0.22)]"
+        />
+      </div>
     </div>
 
-    <!-- Hero photo -->
-    <div class="max-w-[1180px] mx-auto px-6 pb-6">
-      <img
-        src={c.portraitImage}
-        alt={c.portraitAlt}
-        class="w-full aspect-[3/2] object-cover rounded-xl shadow-[0_28px_56px_-28px_rgba(0,33,71,0.32),0_12px_24px_-14px_rgba(0,33,71,0.22)]"
-        style="object-position: center 35%;"
-      />
-    </div>
-
-    <!-- Meet the partners link -->
-    <div class="max-w-[1180px] mx-auto px-6 pb-14">
-      <a
-        href="/attorneys"
-        class="inline-block text-fl-accent font-semibold border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
-      >
-        Meet the partners &rarr;
-      </a>
+    <!-- Stats band — ivory, brass dividers, sits at bottom of the hero
+         viewport to draw the eye downward -->
+    <div class="border-y border-fl-brass-rule/50 bg-fl-bg-tint">
+      <div id="fl-stats" class="fl-stats mx-auto max-w-[1240px] px-6 py-5 md:py-6 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-fl-brass-rule/40">
+        <div class="fl-stat flex flex-col items-center text-center py-3 md:py-0 md:px-6">
+          <div class="font-serif font-medium text-fl-accent text-[32px] md:text-[40px] leading-none">
+            <span class="fl-count" data-to="60" data-pre="$" data-suf="M+">$60M+</span>
+          </div>
+          <div class="mt-2 text-[11px] uppercase tracking-[0.18em] text-fl-ink-soft font-semibold">
+            Recovered for workers
+          </div>
+        </div>
+        <div class="fl-stat flex flex-col items-center text-center py-3 md:py-0 md:px-6">
+          <div class="font-serif font-medium text-fl-accent text-[32px] md:text-[40px] leading-none">
+            <span class="fl-count" data-to="25" data-suf="+">25+</span>
+          </div>
+          <div class="mt-2 text-[11px] uppercase tracking-[0.18em] text-fl-ink-soft font-semibold">
+            Years combined experience
+          </div>
+        </div>
+        <div class="fl-stat flex flex-col items-center text-center py-3 md:py-0 md:px-6">
+          <div class="font-serif font-medium text-fl-accent text-[32px] md:text-[40px] leading-none">NY · NJ</div>
+          <div class="mt-2 text-[11px] uppercase tracking-[0.18em] text-fl-ink-soft font-semibold">
+            Workers only — never employers
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   {c.pressLogos && c.pressLogos.length > 0 && (
-    <section class="bg-white border-t border-b border-slate-200 py-5" aria-label={c.pressLabel ?? 'As Featured In'}>
+    <section class="bg-fl-bg border-b border-fl-brass-rule/30 py-5" aria-label={c.pressLabel ?? 'As Featured In'}>
       <div class="max-w-[1180px] mx-auto px-6 flex items-center justify-center flex-wrap gap-x-9 gap-y-3">
-        <span class="text-[10.5px] font-sans font-semibold uppercase tracking-[0.22em] text-fl-brass md:pr-6 md:border-r md:border-slate-200">
+        <span class="text-[10.5px] font-sans font-semibold uppercase tracking-[0.22em] text-fl-brass md:pr-6 md:border-r md:border-fl-brass-rule/40">
           {c.pressLabel ?? 'As Featured In'}
         </span>
         <ul class="flex items-center justify-center flex-wrap gap-x-7 gap-y-2 list-none m-0 p-0">
@@ -91,32 +118,6 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
     </section>
   )}
 
-  <!-- Credibility stats — fade-up + count once on scroll -->
-  <section class="bg-fl-accent text-white">
-    <div class="mx-auto max-w-6xl px-6 pt-16 md:pt-20">
-      <p class="text-center font-serif italic text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-snug">
-        Employment law for workers in New York and New Jersey.
-      </p>
-    </div>
-    <div id="fl-stats" class="fl-stats mx-auto max-w-6xl px-6 pt-12 pb-16 md:pb-20 grid grid-cols-2 md:grid-cols-4 gap-10">
-      <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="60" data-pre="$" data-suf="M+">$60M+</span></div>
-        <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Recovered for workers</div>
-      </div>
-      <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="25" data-suf="+">25+</span></div>
-        <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Combined years litigating</div>
-      </div>
-      <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none"><span class="fl-count" data-to="100" data-suf="%">100%</span></div>
-        <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Workers, never employers</div>
-      </div>
-      <div class="fl-stat">
-        <div class="font-serif font-medium text-5xl md:text-6xl leading-none">NY · NJ</div>
-        <div class="mt-3 text-xs uppercase tracking-widest text-white/70">Admitted in both states</div>
-      </div>
-    </div>
-  </section>
   <script>
     const flStats = document.getElementById('fl-stats');
     if (flStats) {
@@ -149,18 +150,18 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
   <!-- Practice areas grid (3 x 2) — moved up so visitors see what we handle quickly -->
   {c.practiceAreas && c.practiceAreas.length > 0 && (
     <section class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+      <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-6">
         {c.practiceAreasLabel}
       </p>
       <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink max-w-3xl mb-16">
         {c.practiceAreasHeading}
       </h2>
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-fl-brass-rule/40 border border-fl-brass-rule/40">
         {c.practiceAreas.map((area) => (
           <li class="bg-white">
             <a
               href={area.href}
-              class="relative block h-full px-8 py-10 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10 transition duration-300 group"
+              class="relative block h-full px-8 py-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-fl-accent/10 transition duration-300 group"
             >
               <h3 class="font-serif font-medium text-2xl text-fl-ink mb-3 group-hover:text-fl-accent transition-colors">
                 {area.name}
@@ -168,7 +169,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
               <p class="text-fl-ink-soft leading-relaxed">
                 {area.tagline}
               </p>
-              <span class="mt-4 inline-block text-sm font-medium text-fl-accent transition-transform duration-300 group-hover:translate-x-1">Learn more &rarr;</span>
+              <span class="mt-4 inline-block text-sm font-medium text-fl-brass-ink group-hover:text-fl-brass transition-transform duration-300 group-hover:translate-x-1">Learn more &rarr;</span>
             </a>
           </li>
         ))}
@@ -177,7 +178,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
         <div class="mt-12">
           <a
             href={c.practiceAreasCTAHref}
-            class="text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+            class="text-fl-brass-ink font-medium border-b-2 border-fl-brass-rule pb-1 hover:text-fl-brass hover:border-fl-brass transition-colors"
           >
             {c.practiceAreasCTA} &rarr;
           </a>
@@ -187,9 +188,9 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
   )}
 
   <!-- How We Practice — body from src/content/pages/firm-values.md -->
-  <section class="bg-slate-50 border-y border-slate-200">
+  <section class="bg-fl-bg-tint border-y border-fl-brass-rule/40">
     <div class="mx-auto max-w-4xl px-6 py-24 md:py-32">
-      <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-8">
+      <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-8">
         {howIPractice!.data.title ?? 'How We Practice'}
       </p>
       <h2 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight text-fl-ink mb-12">
@@ -205,7 +206,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
   {c.results && c.results.length > 0 && (
     <section class="bg-fl-accent text-white">
       <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <p class="text-xs uppercase tracking-widest text-white/60 font-semibold mb-6">
+        <p class="text-xs uppercase tracking-[0.22em] text-fl-brass-rule font-semibold mb-6">
           {c.resultsLabel}
         </p>
         <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight mb-16 max-w-3xl">
@@ -227,7 +228,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
           <div class="mt-16">
             <a
               href={c.resultsCTAHref}
-              class="text-white font-medium border-b-2 border-white/60 pb-1 hover:border-white transition-colors"
+              class="text-fl-brass-rule font-medium border-b-2 border-fl-brass-rule/60 pb-1 hover:text-white hover:border-white transition-colors"
             >
               {c.resultsCTA} &rarr;
             </a>
@@ -238,9 +239,9 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
   )}
 
   <!-- Recognition marquee — moved here to sit next to Meet Steven as supporting credibility -->
-  <section class="border-b border-slate-200 overflow-hidden">
+  <section class="bg-fl-bg border-b border-fl-brass-rule/40 overflow-hidden">
     <div class="mx-auto max-w-6xl px-6 pt-10 pb-2">
-      <p class="text-xs uppercase tracking-widest text-fl-ink-soft text-center">
+      <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold text-center">
         Recognition
       </p>
     </div>
@@ -274,9 +275,9 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
 
   <!-- In the news (3 cards) -->
   {c.news && c.news.length > 0 && (
-    <section class="bg-slate-50 border-y border-slate-200">
+    <section class="bg-fl-bg-tint border-y border-fl-brass-rule/40">
       <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <p class="text-xs uppercase tracking-widest text-fl-accent font-semibold mb-6">
+        <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-6">
           {c.newsLabel}
         </p>
         <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink mb-16">
@@ -284,8 +285,8 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
         </h2>
         <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {c.news.map((item) => (
-            <li class="bg-white border border-slate-200 p-8 flex flex-col">
-              <p class="text-xs uppercase tracking-widest text-fl-ink-soft mb-3">
+            <li class="bg-white border border-fl-brass-rule/30 p-8 flex flex-col">
+              <p class="text-xs uppercase tracking-[0.18em] text-fl-brass font-semibold mb-3">
                 {item.publication}{item.date ? ` · ${item.date}` : ''}
               </p>
               <h3 class="font-serif font-medium text-xl leading-snug text-fl-ink mb-4">
@@ -296,7 +297,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
               </p>
               <a
                 href={item.href}
-                class="mt-6 text-fl-accent font-medium hover:text-fl-accent-2 transition-colors text-sm"
+                class="mt-6 text-fl-brass-ink font-medium hover:text-fl-brass transition-colors text-sm"
               >
                 Read article &rarr;
               </a>
@@ -307,7 +308,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
           <div class="mt-12">
             <a
               href={c.newsCTAHref}
-              class="text-fl-accent font-medium border-b-2 border-fl-accent pb-1 hover:text-fl-accent-2 hover:border-fl-accent-2 transition-colors"
+              class="text-fl-brass-ink font-medium border-b-2 border-fl-brass-rule pb-1 hover:text-fl-brass hover:border-fl-brass transition-colors"
             >
               {c.newsCTA} &rarr;
             </a>
@@ -338,7 +339,7 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
         <div class="flex flex-wrap items-center justify-center gap-6">
           <a
             href={c.finalCtaHref}
-            class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+            class="inline-block bg-fl-brass text-white px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] hover:bg-fl-brass-ink transition-colors"
           >
             {c.finalCtaButton}
           </a>

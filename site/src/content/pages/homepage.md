@@ -7,7 +7,18 @@
 # =============================================================
 
 # --- HERO SECTION (top of homepage) ---
+# heroHeadline is the H1 for SEO. heroBrandStatement is the larger
+# visual statement rendered below it. heroDescription is the short
+# descriptor beneath. heroSubheadline is kept for backwards compat
+# and is used by Open Graph / meta descriptions elsewhere.
+heroEyebrow: "FRIEDMAN & FINGERHUT · EMPLOYMENT LITIGATION"
 heroHeadline: "A focused employment law practice in New York and New Jersey."
+# Block scalar — each line becomes its own display line in the hero.
+heroBrandStatement: |
+  We stand with workers.
+  We believe survivors.
+  We try cases when it counts.
+heroDescription: "We prepare every case for trial. Most of our clients settle before we file — on their terms, not their employer's."
 heroSubheadline: "$60 million-plus recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases."
 heroCTAText: "Schedule a Consultation"
 heroCTAHref: "/contact"
