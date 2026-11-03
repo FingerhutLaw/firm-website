@@ -6,7 +6,7 @@
 # Edit any value — the site updates instantly.
 # =============================================================
 
-title: "Practice Areas"
+title: "NYC Employment Law Practice Areas | Friedman & Fingerhut"
 description: "Workplace discrimination, harassment, retaliation, and wrongful termination matters in New York. Areas where Steven Fingerhut most often represents employees."
 
 # --- HERO ---

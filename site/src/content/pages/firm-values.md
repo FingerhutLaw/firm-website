@@ -3,7 +3,7 @@ title: "How We Practice"
 description: "The philosophy behind Friedman & Fingerhut: holistic case strategy, trial-tested judgment, and boutique representation from partners who do the work themselves."
 ---
 
-Between us, we have more than twenty years devoted exclusively to representing employees — never employers. That focus matters. Employment law rewards depth: the difference between a $200,000 case and a $2 million case is rarely the facts. It is almost always the strategy.
+Between us, we have more than twenty-five years devoted exclusively to representing employees — never employers. That focus matters. Employment law rewards depth: the difference between a $200,000 case and a $2 million case is rarely the facts. It is almost always the strategy.
 
 We provide a holistic approach to counseling, strategizing, and litigating each case — weighing the strength of competing evidence, the financial health of the defendant, the reputational exposure on both sides, the consequences of public litigation, the pressure points specific to the employer, the structure and limits of the relevant insurance coverage, and the right moment to push settlement at each phase of the case. Those variables shift as litigation moves through discovery, dispositive motions, and trial preparation. Reading them accurately — and adjusting in real time — is what experience buys you.
 

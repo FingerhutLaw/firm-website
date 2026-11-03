@@ -3,7 +3,7 @@
 # JOSH FRIEDMAN PROFILE PAGE — /josh
 # =============================================================
 
-title: "About Joshua Friedman"
+title: "Joshua Friedman | Employment Discrimination Attorney, NYC"
 description: "Joshua Friedman is a New York employment attorney and co-founder of Friedman & Fingerhut, with 13 years representing employees in wrongful termination, discrimination, harassment, retaliation, and severance matters."
 
 # --- HERO ---

@@ -4,7 +4,7 @@
 # Edit any value below — the site updates instantly.
 # =============================================================
 
-title: "About Steven Fingerhut"
+title: "Steven Fingerhut | Employment Discrimination Attorney, NYC"
 description: "Steven Fingerhut is a New York and New Jersey employment lawyer who has recovered more than $30 million for workers in discrimination, harassment, retaliation, and wrongful termination cases."
 
 # --- HERO ---

@@ -138,7 +138,22 @@ const structuredData = {
           </span>
         </a>
         <ul class="hidden md:flex items-center gap-7 text-xs uppercase tracking-[0.1em] font-semibold text-fl-ink-soft">
-          <li><a href="/attorneys" class="hover:text-fl-accent transition-colors">Attorneys</a></li>
+          <li class="relative group">
+            <button type="button" class="inline-flex items-center gap-1 uppercase tracking-[0.1em] font-semibold text-fl-ink-soft hover:text-fl-accent transition-colors focus:outline-none" aria-haspopup="true">
+              About
+              <svg class="h-2.5 w-2.5" viewBox="0 0 10 6" fill="currentColor" aria-hidden="true">
+                <path d="M0 0l5 6 5-6z" />
+              </svg>
+            </button>
+            <!-- Dropdown panel: a hover buffer (the top-full pt-2) keeps it open
+                 while the pointer crosses the gap from the button into the panel. -->
+            <div class="hidden group-hover:block group-focus-within:block absolute left-1/2 -translate-x-1/2 top-full pt-2 z-20">
+              <ul class="min-w-[13rem] bg-fl-bg border border-fl-brass-rule/40 shadow-lg py-2 normal-case tracking-normal text-sm font-medium text-fl-ink">
+                <li><a href="/attorneys" class="block px-5 py-2.5 hover:bg-fl-bg-tint hover:text-fl-accent transition-colors">Attorneys</a></li>
+                <li><a href="/how-we-practice" class="block px-5 py-2.5 hover:bg-fl-bg-tint hover:text-fl-accent transition-colors">How We Practice</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="/practice-areas" class="hover:text-fl-accent transition-colors">Practice Areas</a></li>
           <li><a href="/results" class="hover:text-fl-accent transition-colors">Results</a></li>
           <li><a href="/faq" class="hover:text-fl-accent transition-colors">FAQ</a></li>
@@ -167,7 +182,13 @@ const structuredData = {
       </nav>
       <div id="fl-mobile-menu" class="hidden md:hidden border-t border-fl-bg-tint bg-fl-bg">
         <ul class="mx-auto max-w-6xl px-6 py-4 flex flex-col divide-y divide-slate-100 text-base font-semibold text-fl-ink">
-          <li><a href="/attorneys" class="block py-3 hover:text-fl-accent transition-colors">Attorneys</a></li>
+          <li class="py-3">
+            <div class="mb-1 text-fl-ink-soft uppercase tracking-[0.1em] text-xs font-semibold">About</div>
+            <ul class="pl-3 space-y-2">
+              <li><a href="/attorneys" class="block py-1 hover:text-fl-accent transition-colors">Attorneys</a></li>
+              <li><a href="/how-we-practice" class="block py-1 hover:text-fl-accent transition-colors">How We Practice</a></li>
+            </ul>
+          </li>
           <li><a href="/practice-areas" class="block py-3 hover:text-fl-accent transition-colors">Practice Areas</a></li>
           <li><a href="/results" class="block py-3 hover:text-fl-accent transition-colors">Results</a></li>
           <li><a href="/faq" class="block py-3 hover:text-fl-accent transition-colors">FAQ</a></li>

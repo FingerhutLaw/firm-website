@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry, render } from 'astro:content';
+
+const page = await getEntry('pages', 'firm-values');
+const { Content: FirmValuesBody } = await render(page!);
+const homepage = await getEntry('pages', 'homepage');
+const h = homepage!.data;
+
+const seoTitle = 'How We Practice | Friedman & Fingerhut';
+const seoDescription =
+  page!.data.description ??
+  'The philosophy behind Friedman & Fingerhut: holistic case strategy, trial-tested judgment, and boutique representation from partners who do the work themselves.';
+---
+
+<Layout title={seoTitle} description={seoDescription}>
+  <!-- Hero -->
+  <section class="mx-auto max-w-4xl px-6 pt-24 pb-10 md:pb-14">
+    <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-6">
+      How We Practice
+    </p>
+    <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.08] tracking-tight text-fl-ink">
+      We stand with workers.<br />We believe survivors.
+    </h1>
+  </section>
+
+  <!-- Body -->
+  <section class="mx-auto max-w-4xl px-6 pb-24 md:pb-32">
+    <div class="prose-fl">
+      <FirmValuesBody />
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="bg-fl-accent text-white">
+    <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+      <h2 class="font-serif font-medium text-3xl md:text-4xl leading-tight tracking-tight mb-8">
+        If your rights at work have been violated, do not wait.
+      </h2>
+      <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-8">
+        Contact Friedman &amp; Fingerhut for a free, confidential consultation.
+      </p>
+      {h.feeNote && (
+        <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
+          {h.feeNote}
+        </p>
+      )}
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a
+          href="/contact"
+          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+        >
+          Schedule a Consultation
+        </a>
+        <span class="text-white/80 text-sm">
+          or call
+          <a href={h.phoneHref} class="text-white font-medium hover:underline">
+            {h.phone}
+          </a>
+        </span>
+      </div>
+    </div>
+  </section>
+</Layout>

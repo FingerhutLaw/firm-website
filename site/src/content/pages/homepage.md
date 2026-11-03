@@ -12,14 +12,12 @@
 # descriptor beneath. heroSubheadline is kept for backwards compat
 # and is used by Open Graph / meta descriptions elsewhere.
 heroEyebrow: "FRIEDMAN & FINGERHUT · EMPLOYMENT LITIGATION"
-heroHeadline: "A focused employment law practice in New York and New Jersey."
 # Block scalar — each line becomes its own display line in the hero.
+# This is the H1 (the big impact statement).
 heroBrandStatement: |
-  We stand with workers.
-  We believe survivors.
-  We try cases when it counts.
-heroDescription: "We prepare every case for trial. Most of our clients settle before we file — on their terms, not their employer's."
-heroSubheadline: "$60 million-plus recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases."
+  A focused employment practice for New York and New Jersey workers.
+heroDescription: "$60 million-plus recovered in discrimination, sexual harassment, retaliation, and wrongful termination cases. We represent only employees, and the partners handle every case themselves."
+heroSubheadline: "$60 million-plus recovered in discrimination, sexual harassment, retaliation, and wrongful termination cases. We represent only employees, and the partners handle every case themselves."
 heroCTAText: "Schedule a Consultation"
 heroCTAHref: "/contact"
 
@@ -81,6 +79,20 @@ results:
     description: "Federal jury verdict (E.D.N.Y., 2024) — judgment now exceeds $500,000 with statutory attorneys' fees and post-judgment interest. Affirmed by the Second Circuit on all six grounds of appeal."
   - figure: "$60M+"
     description: "Total recovered for workers across more than two decades of combined practice."
+
+# --- HOW WE PRACTICE (homepage preview — short summary + photo + link) ---
+# The full long-form "How We Practice" text lives at /how-we-practice (rendered
+# from firm-values.md). This block is just the homepage teaser.
+howWePracticeLabel: "How We Practice"
+howWePracticeHeading: "We stand with workers. We believe survivors."
+howWePracticePreview: |
+  Between us, we have more than twenty-five years devoted exclusively to representing employees — never employers. Employment law rewards depth: the difference between a $200,000 case and a $2 million case is rarely the facts. It is almost always the strategy.
+
+  We know how employers defend these cases, and we prepare every matter for trial. As the partners, we answer your questions, develop your strategy, take your depositions, and stand up in court for you.
+howWePracticeCTA: "Read our full approach"
+howWePracticeCTAHref: "/how-we-practice"
+howWePracticeImage: "/images/steven-and-josh-courthouse.jpg"
+howWePracticeImageAlt: "Steven Fingerhut and Joshua Friedman on the courthouse steps"
 
 # --- PARTNERS SECTION (two-shot + short intro) ---
 meetStevenName: "Steven Fingerhut & Joshua Friedman"

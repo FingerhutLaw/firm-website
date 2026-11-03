@@ -1,12 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getEntry, render } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 const homepage = await getEntry('pages', 'homepage');
 const c = homepage!.data;
-
-const howIPractice = await getEntry('pages', 'firm-values');
-const { Content: HowIPracticeBody } = await render(howIPractice!);
 ---
 
 <Layout
@@ -25,17 +22,13 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
             {c.heroEyebrow}
           </p>
         )}
-        <h1 class="font-serif font-medium text-fl-accent leading-[1.2] tracking-tight m-0 text-balance"
-            style="font-size: clamp(19px, 2.1vw, 26px);">
-          {c.heroHeadline}
-        </h1>
         {c.heroBrandStatement && (
-          <p class="font-serif font-medium text-fl-ink leading-[1.08] tracking-tight mt-3 md:mt-4"
-             style="font-size: clamp(26px, 3.6vw, 42px);">
+          <h1 class="font-serif font-medium text-fl-ink leading-[1.08] tracking-tight m-0 text-balance"
+              style="font-size: clamp(26px, 3.6vw, 42px);">
             {c.heroBrandStatement.trim().split(/\n+/).map((line: string, i: number) => (
               <>{i > 0 && <br />}{line.trim()}</>
             ))}
-          </p>
+          </h1>
         )}
         <p class="mt-4 md:mt-5 text-sm md:text-base leading-relaxed text-fl-ink-soft max-w-[32em]">
           {c.heroDescription ?? c.heroSubheadline}
@@ -187,17 +180,43 @@ const { Content: HowIPracticeBody } = await render(howIPractice!);
     </section>
   )}
 
-  <!-- How We Practice — body from src/content/pages/firm-values.md -->
+  <!-- How We Practice — preview on homepage; full text lives at /how-we-practice -->
   <section class="bg-fl-bg-tint border-y border-fl-brass-rule/40">
-    <div class="mx-auto max-w-4xl px-6 py-24 md:py-32">
-      <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-8">
-        {howIPractice!.data.title ?? 'How We Practice'}
-      </p>
-      <h2 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight text-fl-ink mb-12">
-        We stand with workers.<br />We believe survivors.
-      </h2>
-      <div class="prose-fl">
-        <HowIPracticeBody />
+    <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-12 md:gap-16 items-center">
+        <div>
+          <a href={c.howWePracticeCTAHref ?? '/how-we-practice'} class="inline-block">
+            <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-8 hover:text-fl-brass-ink transition-colors">
+              {c.howWePracticeLabel ?? 'How We Practice'} &rarr;
+            </p>
+          </a>
+          <h2 class="font-serif font-medium text-4xl md:text-5xl leading-[1.1] tracking-tight text-fl-ink mb-10">
+            {c.howWePracticeHeading ?? 'We stand with workers. We believe survivors.'}
+          </h2>
+          {c.howWePracticePreview && (
+            <div class="space-y-5 text-lg text-fl-ink-soft leading-relaxed">
+              {c.howWePracticePreview.trim().split(/\n\n+/).map((para: string) => (
+                <p>{para.trim()}</p>
+              ))}
+            </div>
+          )}
+          <a
+            href={c.howWePracticeCTAHref ?? '/how-we-practice'}
+            class="mt-10 inline-block text-fl-brass-ink font-medium border-b-2 border-fl-brass-rule pb-1 hover:text-fl-brass hover:border-fl-brass transition-colors"
+          >
+            {c.howWePracticeCTA ?? 'Read our full approach'} &rarr;
+          </a>
+        </div>
+        {c.howWePracticeImage && (
+          <div class="flex justify-center">
+            <img
+              src={c.howWePracticeImage}
+              alt={c.howWePracticeImageAlt ?? 'Steven Fingerhut and Joshua Friedman'}
+              class="w-full max-w-xl rounded-lg shadow-[0_28px_56px_-28px_rgba(0,33,71,0.32),0_12px_24px_-14px_rgba(0,33,71,0.22)] object-cover"
+              loading="lazy"
+            />
+          </div>
+        )}
       </div>
     </div>
   </section>
