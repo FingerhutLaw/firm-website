@@ -121,25 +121,24 @@ const structuredData = {
     </script>
   </head>
   <body class="min-h-screen bg-fl-bg text-fl-ink font-sans antialiased overflow-x-hidden">
-    <header class="border-b border-fl-bg-tint bg-fl-bg">
+    <header class="border-b border-black/20 bg-fl-ink-navy">
       <nav class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
         <a href="/" class="inline-flex items-center gap-3" aria-label="Friedman & Fingerhut — home">
-          <!-- Double-line brass monogram: open center (ivory shows
-               through) with the F|F bookend wordmark — first F mirrored
-               so the two face each other, matching the Line & Brass mock. -->
+          <!-- Double-line brass monogram on midnight: brass rule holds,
+               F|F letters shift to white so they read on the dark bar. -->
           <span class="relative inline-flex items-center justify-center h-9 w-[32px] border border-fl-brass-rule shrink-0" aria-hidden="true">
             <span class="absolute inset-[3px] border border-fl-brass-rule/80"></span>
-            <span class="relative font-didot text-fl-accent text-[14px] leading-none inline-flex items-center">
+            <span class="relative font-didot text-white text-[14px] leading-none inline-flex items-center">
               <span class="inline-block -scale-x-100">F</span><span class="inline-block">F</span>
             </span>
           </span>
-          <span class="hidden sm:inline-block font-didot uppercase tracking-[0.14em] text-[15px] md:text-[17px] text-fl-accent leading-none pt-0.5">
+          <span class="hidden sm:inline-block font-didot uppercase tracking-[0.14em] text-[15px] md:text-[17px] text-white leading-none pt-0.5">
             Friedman &amp; Fingerhut
           </span>
         </a>
-        <ul class="hidden md:flex items-center gap-7 text-xs uppercase tracking-[0.1em] font-semibold text-fl-ink-soft">
+        <ul class="hidden md:flex items-center gap-7 text-xs uppercase tracking-[0.1em] font-semibold text-white/80">
           <li class="relative group">
-            <button type="button" class="inline-flex items-center gap-1 uppercase tracking-[0.1em] font-semibold text-fl-ink-soft hover:text-fl-accent transition-colors focus:outline-none" aria-haspopup="true">
+            <button type="button" class="inline-flex items-center gap-1 uppercase tracking-[0.1em] font-semibold text-white/80 hover:text-fl-clay-peach transition-colors focus:outline-none" aria-haspopup="true">
               About
               <svg class="h-2.5 w-2.5" viewBox="0 0 10 6" fill="currentColor" aria-hidden="true">
                 <path d="M0 0l5 6 5-6z" />
@@ -154,20 +153,22 @@ const structuredData = {
               </ul>
             </div>
           </li>
-          <li><a href="/practice-areas" class="hover:text-fl-accent transition-colors">Practice Areas</a></li>
-          <li><a href="/results" class="hover:text-fl-accent transition-colors">Results</a></li>
-          <li><a href="/faq" class="hover:text-fl-accent transition-colors">FAQ</a></li>
-          <li><a href="/blog" class="hover:text-fl-accent transition-colors">Blog</a></li>
-          <li><a href="/press" class="hover:text-fl-accent transition-colors">Press</a></li>
-          <li><a href="/contact" class="hover:text-fl-accent transition-colors">Contact</a></li>
+          <li><a href="/practice-areas" class="hover:text-fl-clay-peach transition-colors">Practice Areas</a></li>
+          <li><a href="/results" class="hover:text-fl-clay-peach transition-colors">Results</a></li>
+          <li><a href="/faq" class="hover:text-fl-clay-peach transition-colors">FAQ</a></li>
+          <li><a href="/blog" class="hover:text-fl-clay-peach transition-colors">Blog</a></li>
+          <li><a href="/press" class="hover:text-fl-clay-peach transition-colors">Press</a></li>
+          <li><a href="/contact" class="hover:text-fl-clay-peach transition-colors">Contact</a></li>
         </ul>
-        <a href="tel:+12126804040" class="hidden md:inline text-sm font-semibold text-fl-accent hover:text-fl-accent-2 transition-colors whitespace-nowrap">
+        <!-- Terracotta pill around the phone — the one tap element in the nav.
+             Clay is reserved for actions; nothing else in the header is this color. -->
+        <a href="tel:+12126804040" class="hidden md:inline-flex items-center bg-fl-clay text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-fl-clay-ink transition-colors whitespace-nowrap">
           (212) 680-4040
         </a>
         <button
           id="fl-mobile-menu-button"
           type="button"
-          class="md:hidden inline-flex items-center justify-center p-2 -mr-2 text-fl-ink"
+          class="md:hidden inline-flex items-center justify-center p-2 -mr-2 text-white"
           aria-label="Open menu"
           aria-controls="fl-mobile-menu"
           aria-expanded="false"
@@ -195,7 +196,7 @@ const structuredData = {
           <li><a href="/blog" class="block py-3 hover:text-fl-accent transition-colors">Blog</a></li>
           <li><a href="/press" class="block py-3 hover:text-fl-accent transition-colors">Press</a></li>
           <li><a href="/contact" class="block py-3 hover:text-fl-accent transition-colors">Contact</a></li>
-          <li><a href="tel:+12126804040" class="block py-3 text-fl-accent">Call (212) 680-4040</a></li>
+          <li><a href="tel:+12126804040" class="block py-3 text-fl-clay font-semibold">Call (212) 680-4040</a></li>
         </ul>
       </div>
     </header>

@@ -11,14 +11,14 @@
 # visual statement rendered below it. heroDescription is the short
 # descriptor beneath. heroSubheadline is kept for backwards compat
 # and is used by Open Graph / meta descriptions elsewhere.
-heroEyebrow: "FRIEDMAN & FINGERHUT · EMPLOYMENT LITIGATION"
+heroEyebrow: "For workers, never employers · NY & NJ"
 # Block scalar — each line becomes its own display line in the hero.
 # This is the H1 (the big impact statement).
 heroBrandStatement: |
-  A focused employment practice for New York and New Jersey workers.
-heroDescription: "$60 million-plus recovered in discrimination, sexual harassment, retaliation, and wrongful termination cases. We represent only employees, and the partners handle every case themselves."
-heroSubheadline: "$60 million-plus recovered in discrimination, sexual harassment, retaliation, and wrongful termination cases. We represent only employees, and the partners handle every case themselves."
-heroCTAText: "Schedule a Consultation"
+  New York & New Jersey Employment Lawyers
+heroDescription: "A focused practice for workers — sexual harassment, discrimination, retaliation, and wrongful termination. The partners handle every case themselves."
+heroSubheadline: "A focused practice for workers — sexual harassment, discrimination, retaliation, and wrongful termination. The partners handle every case themselves."
+heroCTAText: "Schedule a Free Consultation"
 heroCTAHref: "/contact"
 
 # --- PHONE NUMBER (used in hero + header + footer) ---
@@ -77,8 +77,8 @@ results:
     description: "Sexual harassment settlement for a content producer harassed by the CEO of a B2B marketing company."
   - figure: "$500,000+"
     description: "Federal jury verdict (E.D.N.Y., 2024) — judgment now exceeds $500,000 with statutory attorneys' fees and post-judgment interest. Affirmed by the Second Circuit on all six grounds of appeal."
-  - figure: "$60M+"
-    description: "Total recovered for workers across more than two decades of combined practice."
+  - figure: "$1,300,000"
+    description: "Whistleblower retaliation settlement for the head of data science at a large financial institution, fired after reporting potentially fraudulent marketing materials."
 
 # --- HOW WE PRACTICE (homepage preview — short summary + photo + link) ---
 # The full long-form "How We Practice" text lives at /how-we-practice (rendered

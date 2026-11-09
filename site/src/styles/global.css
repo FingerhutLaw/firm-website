@@ -8,11 +8,23 @@
   --color-fl-ink-soft: #4a4a4a;
   --color-fl-accent: #002147;
   --color-fl-accent-2: #142E5C;
+  /* ink-navy is a deeper navy used for the top nav bar — one shade darker
+     than fl-accent so the header reads as a distinct frame above the
+     midnight hero. */
+  --color-fl-ink-navy: #001433;
   --color-fl-brass: #8A7A4A;
   /* fl-brass-ink is a darker brass for body-text use — passes WCAG AA
      (~4.8:1) against the ivory fl-bg while staying unmistakably brass. */
   --color-fl-brass-ink: #6E5F38;
   --color-fl-brass-rule: #B8A66A;
+  /* Gold used for high-contrast numerals on navy (results figures). */
+  --color-fl-gold: #D8BA6C;
+  /* Clay (terracotta) — the one tap color. fl-clay for buttons/pills on
+     ivory; fl-clay-ink for hover; fl-clay-peach lightens for the same role
+     on midnight surfaces so contrast ratios hold on dark. */
+  --color-fl-clay: #B8532F;
+  --color-fl-clay-ink: #AD4D2B;
+  --color-fl-clay-peach: #F2A27C;
 
   --font-serif: 'Cormorant Garamond', Garamond, Georgia, 'Times New Roman', serif;
   --font-didot: 'GFS Didot', 'Playfair Display', Didot, 'Bodoni 72', Georgia, serif;
