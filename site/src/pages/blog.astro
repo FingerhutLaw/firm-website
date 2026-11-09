@@ -49,11 +49,11 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
                 <p class="text-fl-accent text-xs font-semibold uppercase tracking-widest mb-4">
                   {post.data.category}
                 </p>
-                <h2 class="font-serif font-medium text-2xl md:text-3xl text-fl-ink mb-4 group-hover:text-fl-accent transition-colors leading-snug">
+                <h2 class="font-serif font-medium text-2xl md:text-3xl text-fl-ink mb-4 group-hover:text-fl-clay transition-colors leading-snug">
                   {post.data.title}
                 </h2>
                 <p class="text-fl-ink-soft leading-relaxed">{post.data.description}</p>
-                <span class="inline-block mt-6 text-fl-accent font-medium text-sm border-b-2 border-fl-accent pb-1 group-hover:border-fl-accent-2 group-hover:text-fl-accent-2 transition-colors">
+                <span class="inline-block mt-6 text-fl-clay font-medium text-sm border-b-2 border-fl-clay pb-1 group-hover:border-fl-clay-ink group-hover:text-fl-clay-ink transition-colors">
                   Read the article &rarr;
                 </span>
               </a>
@@ -76,7 +76,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
         </p>
         <a
           href={c.blogCTAHref}
-          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+          class="inline-block bg-transparent text-fl-clay-peach border border-fl-clay-peach px-8 py-4 text-sm font-medium tracking-wide hover:bg-fl-clay-peach hover:text-fl-accent transition-colors"
         >
           {c.blogCTAButton}
         </a>

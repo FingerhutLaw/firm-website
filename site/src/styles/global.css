@@ -136,14 +136,14 @@ html {
   line-height: 1.7;
 }
 .prose-fl-page a {
-  color: var(--color-fl-accent);
+  color: var(--color-fl-clay);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   transition: color 0.15s;
 }
 .prose-fl-page a:hover {
-  color: var(--color-fl-accent-2);
+  color: var(--color-fl-clay-ink);
 }
 .prose-fl-page blockquote {
   margin: 2rem 0;

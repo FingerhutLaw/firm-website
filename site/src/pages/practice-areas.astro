@@ -51,14 +51,14 @@ const areas = (await getCollection('practiceAreas')).sort(
                 href={`/practice-areas/${area.id}`}
                 class="block h-full px-8 py-10 md:px-10 md:py-12 hover:bg-slate-50 transition-colors group"
               >
-                <h2 class="font-serif font-medium text-2xl md:text-3xl text-fl-ink mb-3 group-hover:text-fl-accent transition-colors">
+                <h2 class="font-serif font-medium text-2xl md:text-3xl text-fl-ink mb-3 group-hover:text-fl-clay transition-colors">
                   {area.data.name}
                 </h2>
                 <p class="text-fl-accent text-sm font-medium uppercase tracking-widest mb-4">
                   {area.data.tagline}
                 </p>
                 <p class="text-fl-ink-soft leading-relaxed">{area.data.intakeSummary}</p>
-                <span class="inline-block mt-6 text-fl-accent font-medium text-sm border-b-2 border-fl-accent pb-1 group-hover:border-fl-accent-2 group-hover:text-fl-accent-2 transition-colors">
+                <span class="inline-block mt-6 text-fl-clay font-medium text-sm border-b-2 border-fl-clay pb-1 group-hover:border-fl-clay-ink group-hover:text-fl-clay-ink transition-colors">
                   Learn more &rarr;
                 </span>
               </a>
@@ -106,7 +106,7 @@ const areas = (await getCollection('practiceAreas')).sort(
         )}
         <a
           href={c.practiceCTAHref}
-          class="inline-block bg-white text-fl-accent px-8 py-4 text-sm font-medium tracking-wide hover:bg-slate-100 transition-colors"
+          class="inline-block bg-transparent text-fl-clay-peach border border-fl-clay-peach px-8 py-4 text-sm font-medium tracking-wide hover:bg-fl-clay-peach hover:text-fl-accent transition-colors"
         >
           {c.practiceCTAButton}
         </a>
