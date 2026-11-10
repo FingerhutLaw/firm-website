@@ -6,12 +6,14 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  noindex?: boolean;
 }
 
 const {
   title = 'Friedman & Fingerhut — New York and New Jersey Employment Lawyers',
   description = 'A focused employment law practice in New York and New Jersey. $60 million-plus recovered for workers in discrimination, harassment, retaliation, and wrongful termination cases.',
   image = '/images/steven-and-josh.jpg',
+  noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -86,6 +88,7 @@ const structuredData = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonicalURL} />
 
     <meta property="og:type" content="website" />
