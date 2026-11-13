@@ -354,6 +354,8 @@ const practiceAreas = defineCollection({
     draft: z.boolean().optional().default(true),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
+    reviewedBy: z.string().optional(),
+    lastUpdated: z.string().optional(),
   }),
 });
 

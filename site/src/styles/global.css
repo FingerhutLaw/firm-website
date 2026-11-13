@@ -156,6 +156,96 @@ html {
   color: var(--color-fl-ink);
 }
 
+/* "On this page" jump-link nav used on SEO-optimized practice-area pages.
+   Two-column on wide screens, one on narrow. Overrides the prose diamond
+   bullets. Scroll-margin on anchored H2s keeps headings from hiding under
+   future sticky navs. */
+.prose-fl-page .on-this-page {
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-fl-brass-rule);
+  background: var(--color-fl-bg-tint);
+  border-radius: 4px;
+}
+.prose-fl-page .on-this-page .otp-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-fl-accent);
+}
+.prose-fl-page .on-this-page ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 2;
+  column-gap: 2rem;
+}
+.prose-fl-page .on-this-page ul li {
+  position: static;
+  padding-left: 0;
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  break-inside: avoid;
+}
+.prose-fl-page .on-this-page ul li::before {
+  content: none;
+}
+.prose-fl-page .on-this-page a {
+  color: var(--color-fl-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+}
+.prose-fl-page .on-this-page a:hover {
+  color: var(--color-fl-clay);
+  border-bottom-color: var(--color-fl-clay);
+}
+@media (max-width: 640px) {
+  .prose-fl-page .on-this-page ul { columns: 1; }
+}
+
+/* Inline call-to-action box used in long-form practice-area pages. */
+.prose-fl-page .inline-cta {
+  margin: 2.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-fl-clay);
+  border-left-width: 4px;
+  background: #FBF3EE;
+  border-radius: 4px;
+}
+.prose-fl-page .inline-cta p {
+  margin: 0 0 0.4rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--color-fl-ink);
+}
+.prose-fl-page .inline-cta p:last-child { margin-bottom: 0; }
+.prose-fl-page .inline-cta .inline-cta__headline {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.3;
+  color: var(--color-fl-accent);
+}
+.prose-fl-page .inline-cta a {
+  font-weight: 600;
+  color: var(--color-fl-clay);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-fl-clay);
+}
+.prose-fl-page .inline-cta a:hover {
+  color: var(--color-fl-clay-ink);
+  border-bottom-color: var(--color-fl-clay-ink);
+}
+
+/* Smooth scroll + leave room above anchored headings so jump links don't
+   land them under the fixed header. */
+html { scroll-behavior: smooth; }
+.prose-fl-page h2[id] { scroll-margin-top: 96px; }
+
 /* Left-to-right badge marquee on the homepage. Pauses on hover; respects
    prefers-reduced-motion. The track holds the badge list duplicated twice,
    then animates between -50% (showing the second copy) and 0% (showing the

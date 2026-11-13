@@ -19,6 +19,14 @@ const h = homepage!.data;
 const seoTitle = area.data.seoTitle ?? `${area.data.name} — Friedman & Fingerhut`;
 const seoDescription = area.data.seoDescription ?? area.data.intakeSummary;
 
+const lastUpdatedLabel = area.data.lastUpdated
+  ? new Date(`${area.data.lastUpdated}T00:00:00`).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  : null;
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -41,6 +49,13 @@ const breadcrumbSchema = {
     <h1 class="font-serif font-medium text-5xl md:text-6xl leading-[1.1] tracking-tight max-w-4xl">
       {area.data.name}
     </h1>
+    {(area.data.reviewedBy || lastUpdatedLabel) && (
+      <p class="mt-5 text-sm text-fl-ink-soft">
+        {area.data.reviewedBy && <>Reviewed by {area.data.reviewedBy}</>}
+        {area.data.reviewedBy && lastUpdatedLabel && <span> &middot; </span>}
+        {lastUpdatedLabel && <>Last updated {lastUpdatedLabel}</>}
+      </p>
+    )}
     <p class="mt-6 text-2xl text-fl-accent font-serif italic max-w-3xl leading-snug">
       {area.data.tagline}
     </p>
