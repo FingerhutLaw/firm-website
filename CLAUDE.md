@@ -20,7 +20,7 @@ npm run dev        # local preview at http://localhost:4321
 npm run build      # produces dist/ — what Netlify ships
 ```
 
-Node ≥ 22.12 (see `site/package.json`).
+**Node ≥ 22.12 required** (see `site/package.json`). If `npm install` fails with an engine/version error, you're probably on Node 20 (the common LTS). Fix with `nvm install 22` or install the latest from nodejs.org, then re-run `npm install`.
 
 ## How a change goes live
 
