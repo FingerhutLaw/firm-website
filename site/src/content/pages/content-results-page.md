@@ -134,6 +134,13 @@ motions:
 # =============================================================
 discoverySectionLabel: "Discovery Decisions"
 discoveryDecisions:
+  - outcome: "Evasive Foreign-National CEO Compelled to Appear for In-Person Deposition in New York"
+    date: "October 2024"
+    caption: "Clarke v. Passfeed, Inc., et al."
+    court: "Case No. 1:24-cv-00596 (JPC)(SLC) (S.D.N.Y.) — Hon. Sarah L. Cave, Magistrate Judge"
+    summary: "Race discrimination and retaliation action in which the client, Passfeed's former chief compliance officer, sought to depose the company's chief executive officer in person. For two months, defense counsel represented — including to the court — that the CEO, a Chinese national, was abroad with 'no plans on returning in the near future.' Through a non-party witness, the client then learned that the CEO was in fact working from Passfeed's New York office. Steven moved to compel. Overriding the ordinary presumption that a non-resident defendant is deposed in his home district, Magistrate Judge Cave cited the CEO's 'apparent subterfuge to avoid this litigation' and ordered the in-person deposition to go forward in New York within four days — before the CEO left the country again."
+    tags: "Deposition Location · Foreign-National Defendant · Rule 30"
+
   - outcome: "Subpoenas to Prior Employers Quashed"
     date: "July 2021"
     caption: "Smith-Carrington v. Eli Lilly and Company, et al."
