@@ -28,7 +28,7 @@ verdicts:
   - outcome: "$500,000+"
     date: "January 2024"
     caption: "Smart v. USA Labor for Hire, Inc., et al."
-    court: "Case No. 1:20-cv-5594 (E.D.N.Y.)"
+    court: "Case No. 1:20-cv-5594 (E.D.N.Y.) — Hon. Taryn A. Merkl, Magistrate Judge"
     summary: "Federal jury verdict for a client subjected to a hostile work environment, retaliation, and defamation on the basis of sex and race, and terminated for objecting to harassment. With statutory attorneys' fees and accrued post-judgment interest, the judgment now exceeds $500,000. Steven defeated the defendants' motions for remittitur and a new trial and obtained a full attorneys'-fee award."
     tags: "Race & Sex Discrimination · Retaliation · Defamation"
 
@@ -42,7 +42,7 @@ verdicts:
   - outcome: "$112,000"
     date: "March 2022"
     caption: "Grant v. Pexie Enterprises, Inc."
-    court: "Index No. 704041/2015 (Queens County Supreme Court)"
+    court: "Index No. 704041/2015 (Queens County Supreme Court) — Hon. Philip Hom"
     summary: "Unanimous state jury verdict — under COVID-19 mask mandates throughout the proceedings — for a young woman of color sexually harassed, assaulted, and battered by her supervisor at a Subway franchise, and constructively discharged after fewer than two weeks of employment. The jury rejected the defendants' two counterclaims (abuse of process and fraud) on a 31-page verdict sheet."
     tags: "Sexual Harassment · Assault & Battery · Constructive Discharge"
 
@@ -69,7 +69,7 @@ trialSettlements:
   - outcome: "Settled Mid-Trial — Day 3"
     date: "September 27, 2021"
     caption: "Crump v. The New York City Housing Authority, et al."
-    court: "Index No. 163138/2015 (New York County Supreme Court)"
+    court: "Index No. 163138/2015 (New York County Supreme Court) — Hon. Lawrence K. Love"
     summary: "Sexual orientation discrimination and retaliation matter against NYCHA — one of the largest and most heavily-defended institutional employers in New York. After jury selection and through the start of plaintiff's direct testimony on the third day of trial, NYCHA agreed to settle. Visible readiness to take the case the full distance is itself what often causes institutional defendants to pay."
     tags: "Sexual Orientation Discrimination · Retaliation"
 
@@ -82,7 +82,7 @@ motions:
   - outcome: "Motion to Dismiss Denied"
     date: "July 2026"
     caption: "Jennings v. Partex Life Science Inc., et al."
-    court: "Docket No. MID-L-002149-26 (Middlesex County Superior Court, Law Division)"
+    court: "Docket No. MID-L-002149-26 (Middlesex County Superior Court, Law Division) — Hon. Christopher D. Rafano, J.S.C."
     summary: "Contested application of the New Jersey Wage Payment Law and CEPA to a chief financial officer who performed his executive duties remotely from outside the State. Defendants — a New Jersey corporation and its Dutch parent — moved to dismiss the wage counts on the ground that the NJWPL categorically does not reach an out-of-state remote worker. Steven's opposition rested on the combination of a New Jersey choice-of-law and forum-selection clause in the offer letter, defendants' withholding of New Jersey income tax from the client's first paycheck, and defendants' subsequent termination of the client's ADP access — which left it impossible to determine, at the pleading stage, whether the New Jersey payroll administration had continued. On that record, the court applied New Jersey's liberal notice-pleading standard under Rule 4:6-2(e) and permitted the NJWPL, NJWPL retaliation, and CEPA claims to proceed to discovery."
     tags: "NJ Wage Payment Law · CEPA · Choice-of-Law"
 
@@ -103,14 +103,14 @@ motions:
   - outcome: "Summary Judgment Denied in Full"
     date: "June 2023"
     caption: "Kamal v. G E R Industries, Inc., et al."
-    court: "Case No. 7:20-cv-05671-VB-VR (S.D.N.Y.)"
+    court: "Case No. 7:20-cv-05671-VB-VR (S.D.N.Y.) — Hon. Vincent L. Briccetti"
     summary: "Age discrimination case for an older worker pushed out of his job, against both the corporate employer and the individually named owner. ADEA cases require but-for causation and are routinely dismissed at summary judgment — this one survived in full, clearing the way for trial against both defendants."
     tags: "Age Discrimination · ADEA"
 
   - outcome: "Summary Judgment Substantially Denied"
     date: "March 2024"
     caption: "Ferrando-Dehtiar v. Anesthesia Group of Albany, P.C., et al."
-    court: "Case No. 1:20-cv-01373 (AMN/CFH) (N.D.N.Y.)"
+    court: "Case No. 1:20-cv-01373 (AMN/CFH) (N.D.N.Y.) — Hon. Anne M. Nardacci"
     summary: "Title VII and NYSHRL action against an anesthesiology practice and three physician-partners. After the client submitted a written resignation and the employer refused to allow her to rescind it, Steven persuaded the court that the refusal of rescission was itself the adverse action — sustaining retaliation, failure-to-promote, aiding-and-abetting, and assault & battery claims against the corporate and individual defendants."
     tags: "Retaliation · Failure to Promote · Assault & Battery"
 
@@ -144,21 +144,21 @@ discoveryDecisions:
   - outcome: "Subpoenas to Prior Employers Quashed"
     date: "July 2021"
     caption: "Smith-Carrington v. Eli Lilly and Company, et al."
-    court: "Case No. 1:20-cv-02377 (MKB)(CLP) (E.D.N.Y.)"
+    court: "Case No. 1:20-cv-02377 (MKB)(CLP) (E.D.N.Y.) — Hon. Cheryl L. Pollak, Magistrate Judge"
     summary: "Defendants noticed two subpoenas to plaintiff's former employers seeking application materials, performance reviews, attendance, discipline, and complaint history — arguing the records would establish a 'habit' of the same conduct that allegedly led to her termination. The court rejected the framing: prior-employer performance records were inadmissible propensity evidence rather than admissible 'habit' under Rule 406; the defense had no independent basis to expect responsive complaint records existed; and any narrowed inquiry was limited to specific named coworkers identified in a single exhibit. Years of unrelated employment history stayed out of the case."
     tags: "Rule 45 · Rule 406 · Prior Employer Records"
 
   - outcome: "Defendant Ordered to Be Deposed First"
     date: "March 2021"
     caption: "Kamal v. G E R Industries, Inc., et al."
-    court: "Case No. 7:20-cv-05671-VB-VR (S.D.N.Y.)"
+    court: "Case No. 7:20-cv-05671-VB-VR (S.D.N.Y.) — Hon. Vincent L. Briccetti"
     summary: "Steven noticed the defendant's deposition early and pressed each notice as scheduling slipped. When the defendant moved to extend fact discovery and asked the court to require the plaintiff to be deposed first, Steven opposed. The court denied the extension and ordered the defendant himself to appear first — finding that although the Federal Rules do not provide a particular priority of depositions, the plaintiff's diligent efforts and the defendant's evident decision to make himself unavailable during the court-ordered fact-discovery period entitled the plaintiff to depose him first."
     tags: "Deposition Priority · Discovery Schedule"
 
   - outcome: "Ex Parte Access to Former Supervisor Preserved"
     date: "March 2019"
     caption: "Lozama v. Samaritan Daytop Village, Inc., et al."
-    court: "Case No. 18-CV-4351 (DLI)(RML) (E.D.N.Y.)"
+    court: "Case No. 18-CV-4351 (DLI)(RML) (E.D.N.Y.) — Hon. Robert M. Levy, Magistrate Judge"
     summary: "Defense moved to bar further communication with a defendant's former supervisor — a key witness — on the theory that former employees whose conduct could be imputed to the corporation are 'parties' represented by company counsel under Rule 4.2. The court rejected the defense reading, applied the bright-line rule of Niesig v. Team I, and preserved direct access to former-employee witnesses across the Eastern District of New York."
     tags: "Discovery · Witness Access · Rule 4.2"
 
