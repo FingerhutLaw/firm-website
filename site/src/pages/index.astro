@@ -336,6 +336,20 @@ const paragraphs = (text: string) =>
             <span>What happened?<span class="max-md:hidden"> A sentence or two is enough.</span></span>
             <textarea id="consult-message" name="message" rows="4" class="v3-field resize-y"></textarea>
           </label>
+          <div class="flex items-start gap-3">
+            {/* Default "no"; the submit script sends exactly one value ("yes" or "no"). */}
+            <input type="hidden" name="sms_consent" value="no" />
+            <input
+              id="consult-sms-consent"
+              name="sms_consent"
+              type="checkbox"
+              value="yes"
+              class="mt-0.5 h-5 w-5 flex-shrink-0 cursor-pointer accent-v3-clay-hover"
+            />
+            <label for="consult-sms-consent" class="text-xs leading-normal text-v3-muted cursor-pointer">
+              I agree to receive text messages from Friedman &amp; Fingerhut, PLLC at the number I provided about my inquiry. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out or HELP for help. Consent is not a condition of service. See our <a href="/privacy" class="underline text-v3-clay-hover">Privacy Policy</a>.
+            </label>
+          </div>
 
           <button type="submit" class="v3-btn min-h-14 text-base">{c.consultSubmitLabel}</button>
           <p id="consult-error" hidden role="alert" class="m-0 text-sm text-v3-clay-hover font-semibold">
@@ -369,6 +383,9 @@ const paragraphs = (text: string) =>
       const data = new FormData(form);
       // Email is optional; don't send an empty one.
       if (!String(data.get('email') ?? '').trim()) data.delete('email');
+      // Send exactly one sms_consent value: "yes" if checked, "no" if not.
+      const sms = form.querySelector<HTMLInputElement>('#consult-sms-consent');
+      data.set('sms_consent', sms?.checked ? 'yes' : 'no');
       if (error) error.hidden = true;
       if (button) {
         button.disabled = true;
