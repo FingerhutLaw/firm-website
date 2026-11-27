@@ -101,6 +101,7 @@ credentialsMemberships:
   - "New York County Lawyers Association"
 
 credentialsRecognition:
+  - "Best Lawyers: Ones to Watch (2025–2026)"
   - "Lifetime Member — Multi-Million Dollar Advocates Forum (invitation-only; membership limited to less than 1% of U.S. attorneys)"
   - "Super Lawyers Rising Star — New York (2018–2026)"
   - "Best Labor & Employment Attorney — American Institute of Legal Counsel"

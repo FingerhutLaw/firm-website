@@ -273,6 +273,16 @@ const c = homepage!.data;
             aria-hidden={copy === 1 ? 'true' : undefined}
           >
             <li class="flex items-center h-28 shrink-0">
+              <a href="https://www.bestlawyers.com/lawyers/steven-fingerhut/261049" tabindex={copy === 1 ? -1 : undefined} class="block max-w-[15rem] text-center font-serif font-semibold text-xl leading-tight text-fl-accent border-b border-fl-clay/40 hover:text-fl-clay transition-colors">
+                Best Lawyers: Ones to Watch
+              </a>
+            </li>
+            <li class="flex items-center h-28 shrink-0">
+              <a href="https://www.lawdragon.com/lawyers/friedman-fingerhut/joshua-m-friedman" tabindex={copy === 1 ? -1 : undefined} class="block max-w-[19rem] text-center font-serif font-semibold text-xl leading-tight text-fl-accent border-b border-fl-clay/40 hover:text-fl-clay transition-colors">
+                2026 Lawdragon 500 Leading Civil Rights &amp; Plaintiff Employment Lawyers
+              </a>
+            </li>
+            <li class="flex items-center h-28 shrink-0">
               <img src="/images/about/badges/super-lawyers-rising-stars.png" alt="Super Lawyers Rising Stars" class="max-h-20 w-auto object-contain" loading="lazy" />
             </li>
             <li class="flex items-center h-28 shrink-0">
@@ -315,12 +325,14 @@ const c = homepage!.data;
               <p class="text-fl-ink-soft leading-relaxed flex-grow">
                 {item.excerpt}
               </p>
-              <a
-                href={item.href}
-                class="mt-6 text-fl-brass-ink font-medium hover:text-fl-brass transition-colors text-sm"
-              >
-                Read article &rarr;
-              </a>
+              {item.href && item.href !== '#' && (
+                <a
+                  href={item.href}
+                  class="mt-6 text-fl-brass-ink font-medium hover:text-fl-brass transition-colors text-sm"
+                >
+                  Read article &rarr;
+                </a>
+              )}
             </li>
           ))}
         </ul>

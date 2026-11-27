@@ -27,57 +27,81 @@ const site = homepage!.data;
 // JSON-LD structured data — tells Google this is a law firm with these
 // service areas, hours, address, and practice focus. Drives local-pack
 // eligibility for "NYC employment lawyer" style queries.
+// One @graph: the firm plus each partner as a linked Person entity.
+// No aggregateRating / review markup (deliberate).
+const SITE = 'https://friedmanfingerhut.com';
 const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'LegalService',
-  name: 'Friedman & Fingerhut, PLLC',
-  url: 'https://friedmanfingerhut.com',
-  image: 'https://friedmanfingerhut.com/images/steven-and-josh.jpg',
-  telephone: '+1-212-680-4040',
-  email: 'intake@friedmanfingerhut.com',
-  priceRange: 'Contingency fee where appropriate — no fee unless we recover',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '469 7th Avenue, 12th Floor',
-    addressLocality: 'New York',
-    addressRegion: 'NY',
-    postalCode: '10018',
-    addressCountry: 'US',
-  },
-  areaServed: [
-    { '@type': 'State', name: 'New York' },
-    { '@type': 'State', name: 'New Jersey' },
-  ],
-  founders: [
+  '@graph': [
     {
-      '@type': 'Person',
-      name: 'Steven Fingerhut',
-      jobTitle: 'Attorney',
-      image: 'https://friedmanfingerhut.com/images/steven-fingerhut.jpg',
+      '@type': 'LegalService',
+      '@id': `${SITE}/#firm`,
+      name: 'Friedman & Fingerhut, PLLC',
+      url: `${SITE}/`,
+      image: `${SITE}/images/steven-and-josh.jpg`,
+      telephone: '+1-212-680-4040',
+      email: 'intake@friedmanfingerhut.com',
+      description:
+        'Employment law firm representing workers — never employers — in New York and New Jersey in sexual harassment, discrimination, retaliation, and wrongful termination cases.',
+      priceRange: 'Contingency fee where appropriate — no fee unless we recover',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '469 Seventh Avenue, 12th Floor',
+        addressLocality: 'New York',
+        addressRegion: 'NY',
+        postalCode: '10018',
+        addressCountry: 'US',
+      },
+      areaServed: [
+        { '@type': 'State', name: 'New York' },
+        { '@type': 'State', name: 'New Jersey' },
+      ],
+      openingHours: 'Mo-Fr 09:00-18:00',
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
+      knowsAbout: [
+        'Sexual harassment',
+        'Race discrimination',
+        'Retaliation',
+        'Pregnancy discrimination',
+        'Disability discrimination',
+        'Wrongful termination',
+        'New York City Human Rights Law',
+        'New Jersey Law Against Discrimination',
+        'Wage and Hour Violations',
+        'FMLA Retaliation',
+        'Whistleblower Protection',
+        'Severance Negotiation',
+      ],
+      founder: [
+        { '@id': `${SITE}/#steven-fingerhut` },
+        { '@id': `${SITE}/#joshua-friedman` },
+      ],
+      sameAs: ['https://maps.app.goo.gl/9eoZnsizUBWS5knEA'],
     },
     {
       '@type': 'Person',
+      '@id': `${SITE}/#joshua-friedman`,
       name: 'Joshua Friedman',
-      jobTitle: 'Attorney',
-      image: 'https://friedmanfingerhut.com/images/josh-friedman.jpg',
+      jobTitle: 'Founding Partner',
+      url: `${SITE}/josh`,
+      image: `${SITE}/images/josh-friedman.jpg`,
+      worksFor: { '@id': `${SITE}/#firm` },
+    },
+    {
+      '@type': 'Person',
+      '@id': `${SITE}/#steven-fingerhut`,
+      name: 'Steven Fingerhut',
+      jobTitle: 'Founding Partner',
+      url: `${SITE}/about`,
+      image: `${SITE}/images/steven-fingerhut.jpg`,
+      worksFor: { '@id': `${SITE}/#firm` },
     },
   ],
-  knowsAbout: [
-    'Employment Discrimination',
-    'Workplace Sexual Harassment',
-    'Wrongful Termination',
-    'Workplace Retaliation',
-    'Wage and Hour Violations',
-    'FMLA Retaliation',
-    'Whistleblower Protection',
-    'Severance Negotiation',
-  ],
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-    opens: '09:00',
-    closes: '18:00',
-  },
 };
 ---
 
@@ -184,7 +208,7 @@ const structuredData = {
           </svg>
         </button>
       </nav>
-      <div id="fl-mobile-menu" class="hidden md:hidden border-t border-fl-bg-tint bg-fl-bg">
+      <div id="fl-mobile-menu" hidden class="md:hidden border-t border-fl-bg-tint bg-fl-bg">
         <ul class="mx-auto max-w-6xl px-6 py-4 flex flex-col divide-y divide-slate-100 text-base font-semibold text-fl-ink">
           <li class="py-3">
             <div class="mb-1 text-fl-ink-soft uppercase tracking-[0.1em] text-xs font-semibold">About</div>
@@ -210,7 +234,9 @@ const structuredData = {
       const iconOpen = document.getElementById('fl-mobile-menu-icon-open');
       const iconClose = document.getElementById('fl-mobile-menu-icon-close');
       btn?.addEventListener('click', () => {
-        const open = panel?.classList.toggle('hidden') === false;
+        if (!panel) return;
+        const open = panel.hidden;
+        panel.hidden = !open;
         btn.setAttribute('aria-expanded', String(open));
         btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
         iconOpen?.classList.toggle('hidden', open);
@@ -244,7 +270,7 @@ const structuredData = {
             </p>
           </div>
           <div>
-            <h4 class="text-[10.5px] uppercase tracking-[0.22em] font-semibold text-fl-brass-rule mb-3">Office</h4>
+            <h3 class="text-[10.5px] uppercase tracking-[0.22em] font-semibold text-fl-brass-rule mb-3">Office</h3>
             <p class="text-sm text-white/80 leading-relaxed">
               469 Seventh Avenue, 12th Floor<br/>New York, NY 10018
             </p>
@@ -257,7 +283,7 @@ const structuredData = {
             </p>
           </div>
           <div>
-            <h4 class="text-[10.5px] uppercase tracking-[0.22em] font-semibold text-fl-brass-rule mb-3">Explore</h4>
+            <h3 class="text-[10.5px] uppercase tracking-[0.22em] font-semibold text-fl-brass-rule mb-3">Explore</h3>
             <ul class="flex flex-col gap-2 text-sm text-white/90">
               <li><a href="/attorneys" class="hover:text-white">Attorneys</a></li>
               <li><a href="/practice-areas" class="hover:text-white">Practice Areas</a></li>

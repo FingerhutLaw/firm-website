@@ -57,3 +57,8 @@ build/
 # Local image backups (kept on disk for safety, not for repo)
 site/public/images/_backup_*.jpg
 site/public/images/_backup_*.png
+
+# --- Secrets (API keys live in Netlify env vars, never in git) ---
+.env
+.env.*
+!.env.example

@@ -1,0 +1,31 @@
+# Rebuilds the live site once a day so the Google rating/review count
+# (fetched at build time by site/src/lib/googleRating.ts) stays current.
+#
+# Requires a repository secret named NETLIFY_BUILD_HOOK containing the
+# Netlify build hook URL (Site configuration → Build & deploy → Build hooks).
+
+name: Daily rebuild
+
+on:
+  schedule:
+    # 11:00 UTC = 6:00 am New York during standard time (7:00 am during
+    # daylight time). GitHub cron runs in UTC only and can be delayed a bit.
+    - cron: '0 11 * * *'
+  workflow_dispatch: {}
+
+permissions: {}
+
+jobs:
+  trigger-netlify-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$NETLIFY_BUILD_HOOK" ]; then
+            echo "::error::NETLIFY_BUILD_HOOK secret is not set."
+            exit 1
+          fi
+          curl --fail --silent --show-error -X POST -d '{}' "$NETLIFY_BUILD_HOOK"
+          echo "Netlify rebuild triggered."
