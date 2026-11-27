@@ -52,7 +52,7 @@ Pregnancy discrimination can also involve powerful decision-makers. A CEO, owner
 
 No. Federal law, the New York State Human Rights Law, the New York City Human Rights Law, and the New Jersey Law Against Discrimination all prohibit firing you because of pregnancy, childbirth, or a related medical condition. Pregnancy does not have to be the only reason. If it played a role, the firing may still be illegal. New York State and New Jersey law cover employers of any size. An employer can still fire a pregnant employee for a genuine reason unrelated to pregnancy.
 
-Employers rarely admit pregnancy was the reason for a termination. Instead, the firing may be called "restructuring," buried in a round of "layoffs," or explained with reasons that keep shifting. A false explanation used to cover up discrimination is called pretext.
+Employers rarely admit pregnancy was the reason for a termination. Instead, the firing may be called "[restructuring](/blog/laid-off-while-pregnant-restructuring)," buried in a round of "layoffs," or explained with reasons that keep shifting. A false explanation used to cover up discrimination is called pretext.
 
 Figuring out whether a termination was based on pregnancy discrimination can leave an employee guessing what they did wrong. In our experience, when an employee believes pregnancy may have played a role in their termination, that instinct is usually worth trusting.
 

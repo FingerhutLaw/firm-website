@@ -52,6 +52,8 @@ The recurring scenarios that produce cases:
 
 **Demotion, pay cut, or restructuring during or after leave.** Employers sometimes wait for a maternity leave to make changes they would not have made otherwise. A position that is quietly restructured to be less prestigious, less compensated, or lower on the org chart, and offered to the returning worker as "the same job," is often a demotion in fact and may violate FMLA and PFL reinstatement rights as well as state and local antidiscrimination law.
 
+*Laid off in a so-called restructuring? See [how to tell a real layoff from pretext](/blog/laid-off-while-pregnant-restructuring).*
+
 **Retaliation for asking about pregnancy accommodations or leave.** Retaliating against a worker for asserting rights under the PWFA, FMLA, PFL, NYSHRL, NYCHRL, or NJLAD is separately actionable and often produces stronger claims than the underlying denial.
 
 **Refusal to accommodate lactation.** The PUMP Act, 29 U.S.C. § 218d, expanded federal lactation-accommodation requirements in 2022. New York and New Jersey have parallel and, in some respects, broader requirements.

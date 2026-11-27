@@ -263,6 +263,63 @@ html {
   border-bottom-color: var(--color-fl-clay-ink);
 }
 
+/* Blog: shaded "Key takeaways" box and "Quick checklist" box. */
+.prose-fl-page .key-takeaways,
+.prose-fl-page .checklist {
+  margin: 0 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-fl-bg-tint);
+  border: 1px solid var(--color-fl-brass-rule);
+  border-radius: 4px;
+}
+.prose-fl-page .checklist { margin: 1.5rem 0 2rem; }
+.prose-fl-page .key-takeaways__title,
+.prose-fl-page .checklist__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-fl-accent);
+}
+.prose-fl-page .key-takeaways ul,
+.prose-fl-page .checklist ul { margin: 0; }
+.prose-fl-page .checklist ul li::before {
+  content: "";
+  width: 0.95rem;
+  height: 0.95rem;
+  top: 0.4rem;
+  border: 1.5px solid var(--color-fl-accent);
+  border-radius: 2px;
+  background: #fff;
+}
+
+/* Blog: comparison table (e.g. federal vs. NY vs. NJ standards). */
+.prose-fl-page .law-table { margin: 2rem 0; overflow-x: auto; }
+.prose-fl-page .law-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.prose-fl-page .law-table th,
+.prose-fl-page .law-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-fl-brass-rule);
+  color: var(--color-fl-ink-soft);
+}
+.prose-fl-page .law-table thead th {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-fl-accent);
+  background: var(--color-fl-bg-tint);
+}
+.prose-fl-page .law-table tbody th { font-weight: 600; color: var(--color-fl-ink); width: 45%; }
+
 /* Smooth scroll + leave room above anchored headings so jump links don't
    land them under the fixed header. */
 html { scroll-behavior: smooth; }

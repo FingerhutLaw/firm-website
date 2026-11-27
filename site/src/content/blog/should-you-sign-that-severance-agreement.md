@@ -12,6 +12,8 @@ relatedPracticeAreas:
   - sexual-harassment
 ---
 
+*Pregnant or on maternity leave? Read [Laid Off While Pregnant or on Maternity Leave](/blog/laid-off-while-pregnant-restructuring) first.*
+
 A severance agreement is a contract in which the employer pays money — often a few weeks or a few months of pay — in exchange for a general release of all claims the worker might otherwise bring. The offer is presented as generous. The value of what is being given up is often much greater than the amount being paid.
 
 Workers regularly sign these documents in the room where they are terminated, sometimes within an hour of being told they are losing their jobs. Almost every time, that is a mistake. There is nearly always time to read the agreement, evaluate the claims being released, and negotiate the terms. Federal and state laws sometimes require it.
