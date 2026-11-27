@@ -75,6 +75,33 @@ faqCategories:
         linkText: "Read more on hostile work environment claims"
         linkHref: "/practice-areas/hostile-work-environment"
 
+  - title: "Pregnancy and maternity leave"
+    items:
+      - q: "Can I be laid off while on maternity leave in New York?"
+        a: >-
+          Yes, you can be laid off even while you’re pregnant or on leave. But you cannot be
+          laid off, restructured out or fired if your pregnancy played a role in, or motivated,
+          that decision. Figuring out whether it did can be very tricky.
+        linkText: "Read more: how to tell a real layoff from pretext"
+        linkHref: "/blog/laid-off-while-pregnant-restructuring"
+
+      - q: "My employer said it was a restructuring. Do I have a case?"
+        a: >-
+          Possibly. Restructuring is a common cover story, because it makes it very hard to
+          uncover or prove that pregnancy was the real reason. Warning signs include being the
+          only person laid off, someone being hired to replace you, and reasons that keep
+          shifting.
+        linkText: "See all 7 signs"
+        linkHref: "/blog/laid-off-while-pregnant-restructuring#7-signs-your-layoff-was-pretext-for-pregnancy-discrimination"
+
+      - q: "Was I fired for being pregnant, or just while pregnant?"
+        a: >-
+          Being laid off while pregnant can be legal. Being laid off, restructured out or fired
+          because your pregnancy played a role is not. Timing, shifting reasons and duties
+          reassigned after your announcement can point to the difference.
+        linkText: "Learn what to look for"
+        linkHref: "/blog/laid-off-while-pregnant-restructuring"
+
   - title: "Deadlines and timing"
     description: "Employment claims can expire in as little as 180 days. Do not assume you have time."
     items:
