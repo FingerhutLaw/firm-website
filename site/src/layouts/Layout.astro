@@ -158,7 +158,7 @@ const structuredData = {
   </head>
   <body class:list={["min-h-screen bg-fl-bg text-fl-ink font-sans antialiased overflow-x-hidden", mobileActionBar && "max-md:pb-[calc(58px+env(safe-area-inset-bottom))]"]}>
     <header class="on-dark md:sticky md:top-0 z-40 border-b border-v3-gold/25 bg-fl-ink-navy">
-      <nav aria-label="Main" class="mx-auto max-w-[1200px] px-5 md:px-6 py-3.5 flex items-center justify-between gap-4 lg:gap-6">
+      <nav aria-label="Main" class="mx-auto max-w-[1320px] px-5 md:px-6 py-3.5 flex items-center justify-between gap-4 lg:gap-6">
         <a href="/" class="inline-flex items-center gap-3" aria-label="Friedman & Fingerhut — home">
           <!-- Double-line brass monogram on midnight: brass rule holds,
                F|F letters shift to white so they read on the dark bar. -->
@@ -168,11 +168,11 @@ const structuredData = {
               <span class="inline-block -scale-x-100">F</span><span class="inline-block">F</span>
             </span>
           </span>
-          <span class="inline-block font-didot uppercase tracking-[0.14em] text-[13px] sm:text-[15px] xl:text-[17px] text-white leading-none pt-0.5 whitespace-nowrap">
+          <span class="inline-block font-didot uppercase tracking-[0.14em] text-[13px] sm:text-[15px] min-[1440px]:text-[17px] text-white leading-none pt-0.5 whitespace-nowrap">
             Friedman &amp; Fingerhut
           </span>
         </a>
-        <ul class="hidden xl:flex items-center gap-7 whitespace-nowrap text-xs uppercase tracking-[0.1em] font-semibold text-white/80">
+        <ul class="hidden min-[1360px]:flex items-center gap-6 whitespace-nowrap text-xs uppercase tracking-[0.1em] font-semibold text-white/80">
           <li class="relative group">
             <button type="button" class="inline-flex items-center gap-1 uppercase tracking-[0.1em] font-semibold text-white/80 hover:text-fl-clay-peach transition-colors" aria-haspopup="true">
               About
@@ -191,6 +191,7 @@ const structuredData = {
           </li>
           <li><a href="/practice-areas" class="hover:text-fl-clay-peach transition-colors">Practice Areas</a></li>
           <li><a href="/results" class="hover:text-fl-clay-peach transition-colors">Results</a></li>
+          <li><a href="/#results" class="hover:text-fl-clay-peach transition-colors">Reviews</a></li>
           <li class="relative group">
             <button type="button" class="inline-flex items-center gap-1 uppercase tracking-[0.1em] font-semibold text-white/80 hover:text-fl-clay-peach transition-colors" aria-haspopup="true">
               Resources
@@ -210,7 +211,7 @@ const structuredData = {
         </ul>
         <!-- Phone (light clay text) + solid clay "Free consultation" button.
              Clay is reserved for actions. -->
-        <div class="hidden md:flex items-center gap-5 shrink-0 ml-auto xl:ml-0">
+        <div class="hidden md:flex items-center gap-5 shrink-0 ml-auto min-[1360px]:ml-0">
           <a href="tel:+12126804040" class="text-fl-clay-peach font-semibold text-[15px] whitespace-nowrap hover:text-white transition-colors">
             (212) 680-4040
           </a>
@@ -221,7 +222,7 @@ const structuredData = {
         <button
           id="fl-mobile-menu-button"
           type="button"
-          class="xl:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 text-white"
+          class="min-[1360px]:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 text-white"
           aria-label="Open menu"
           aria-controls="fl-mobile-menu"
           aria-expanded="false"
@@ -234,7 +235,7 @@ const structuredData = {
           </svg>
         </button>
       </nav>
-      <div id="fl-mobile-menu" hidden class="xl:hidden border-t border-fl-bg-tint bg-fl-bg max-h-[calc(100vh-72px)] overflow-y-auto">
+      <div id="fl-mobile-menu" hidden class="min-[1360px]:hidden border-t border-fl-bg-tint bg-fl-bg max-h-[calc(100vh-72px)] overflow-y-auto">
         <ul class="mx-auto max-w-6xl px-6 py-4 flex flex-col divide-y divide-slate-100 text-base font-semibold text-fl-ink">
           <li class="py-3">
             <div class="mb-1 text-fl-ink-soft uppercase tracking-[0.1em] text-xs font-semibold">About</div>
@@ -245,6 +246,7 @@ const structuredData = {
           </li>
           <li><a href="/practice-areas" class="block py-3 hover:text-fl-clay transition-colors">Practice Areas</a></li>
           <li><a href="/results" class="block py-3 hover:text-fl-clay transition-colors">Results</a></li>
+          <li><a href="/#results" data-close-menu class="block py-3 hover:text-fl-clay transition-colors">Reviews</a></li>
           <li><a href="/faq" class="block py-3 hover:text-fl-clay transition-colors">FAQ</a></li>
           <li><a href="/blog" class="block py-3 hover:text-fl-clay transition-colors">Blog</a></li>
           <li><a href="/press" class="block py-3 hover:text-fl-clay transition-colors">Press</a></li>

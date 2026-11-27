@@ -32,15 +32,17 @@ const paragraphs = (text: string) =>
   <section class="on-dark bg-linear-to-b from-v3-navy to-v3-navy-deep">
     <div class="mx-auto max-w-[1200px] px-5 md:px-10 pt-[26px] pb-5 md:pt-[72px] md:pb-16 flex flex-col lg:flex-row gap-5 lg:gap-14 lg:items-center">
       <div class="lg:flex-[1_1_480px] flex flex-col gap-3.5 md:gap-5">
-        <p class="v3-eyebrow text-v3-gold text-[12px] md:text-[13px]">{c.heroEyebrow}</p>
+        <p class="v3-eyebrow text-v3-gold text-[12px] md:text-[13px] max-md:tracking-[0.14em]">
+          <span class="md:hidden">{c.heroEyebrowShort ?? c.heroEyebrow}</span><span class="max-md:hidden">{c.heroEyebrow}</span>
+        </p>
         <!-- One H1. Phones see the short lead ("NY & NJ"); screen readers and
              search engines always get the full "New York & New Jersey". -->
         <h1 class="m-0 font-serif font-medium text-white text-[34px] md:text-[52px] lg:text-[60px] leading-[1.06] text-balance">
           <span class="max-md:sr-only">{c.heroH1Lead}</span><span class="md:hidden" aria-hidden="true">{c.heroH1LeadShort}</span>
           {c.heroH1Rest}
         </h1>
-        <p class="m-0 text-base md:text-lg leading-[1.55] text-v3-on-navy max-w-[460px]">
-          {c.heroDescription}
+        <p class="m-0 text-base md:text-lg leading-[1.5] md:leading-[1.55] text-v3-on-navy max-w-[460px]">
+          <span class="md:hidden">{c.heroDescriptionShort ?? c.heroDescription}</span><span class="max-md:hidden">{c.heroDescription}</span>
         </p>
         <div class="flex flex-wrap items-center gap-5 mt-1 md:mt-2">
           <a href={c.heroCTAHref ?? CONSULT} class="v3-btn max-md:w-full min-h-[54px] md:min-h-14 px-8 text-base">
@@ -62,7 +64,7 @@ const paragraphs = (text: string) =>
           fetchpriority="high"
           class="w-full h-[190px] sm:h-auto sm:aspect-[3/2] object-cover object-[center_30%] sm:object-center rounded-lg border border-v3-gold/50"
         />
-        <figcaption class="text-[13px] text-v3-on-navy-soft">{c.heroCaption}</figcaption>
+        <figcaption class="max-md:hidden text-[13px] text-v3-on-navy-soft">{c.heroCaption}</figcaption>
       </figure>
     </div>
   </section>
@@ -73,11 +75,11 @@ const paragraphs = (text: string) =>
     <ul class="mx-auto max-w-[1200px] px-5 md:px-10 pt-1 pb-6 md:py-6 grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 text-center list-none m-0">
       <li class="order-1">
         <p class="m-0 font-serif font-semibold text-2xl md:text-4xl leading-tight text-v3-gold-figure md:text-v3-navy">$60M+</p>
-        <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase">Recovered for workers</p>
+        <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase"><span class="md:hidden">recovered</span><span class="max-md:hidden">Recovered for workers</span></p>
       </li>
       <li class="order-3 md:order-2">
         <p class="m-0 font-serif font-semibold text-2xl md:text-4xl leading-tight text-v3-gold-figure md:text-v3-navy">25+</p>
-        <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase">Years combined experience</p>
+        <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase"><span class="md:hidden">years combined</span><span class="max-md:hidden">Years combined experience</span></p>
       </li>
       <li class="order-2 md:order-3">
         <a href="#results" class="block no-underline">
@@ -280,7 +282,9 @@ const paragraphs = (text: string) =>
           <span class="md:hidden">{c.finalCtaHeadingShort ?? c.finalCtaHeading}</span>
           <span class="max-md:hidden">{c.finalCtaHeading}</span>
         </h2>
-        <p class="m-0 text-[15px] md:text-[17px] leading-[1.6] text-v3-ink-soft">{c.finalCtaBody}</p>
+        <p class="m-0 text-[15px] md:text-[17px] leading-normal md:leading-[1.6] text-v3-ink-soft">
+          <span class="md:hidden">{c.finalCtaBodyShort ?? c.finalCtaBody}</span><span class="max-md:hidden">{c.finalCtaBody}</span>
+        </p>
         {c.consultPoints && (
           <ul class="max-md:hidden flex flex-col gap-2.5 text-base text-v3-ink list-none m-0 p-0">
             {c.consultPoints.map((point) => (

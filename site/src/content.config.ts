@@ -27,11 +27,13 @@ const pages = defineCollection({
       // Homepage hero
       heroHeadline: z.string().optional(),
       heroEyebrow: z.string().optional(),
+      heroEyebrowShort: z.string().optional(), // phones only
       // H1 is "<heroH1Lead> <heroH1Rest>"; phones show heroH1LeadShort instead.
       heroH1Lead: z.string().optional(),
       heroH1LeadShort: z.string().optional(),
       heroH1Rest: z.string().optional(),
       heroDescription: z.string().optional(),
+      heroDescriptionShort: z.string().optional(), // phones only
       heroNote: z.string().optional(),
       heroCaption: z.string().optional(),
       heroSubheadline: z.string().optional(),
@@ -140,6 +142,7 @@ const pages = defineCollection({
       finalCtaHref: z.string().optional(),
       // Consultation section (homepage, id="consult")
       finalCtaHeadingShort: z.string().optional(),
+      finalCtaBodyShort: z.string().optional(), // phones only
       consultPoints: z.array(z.string()).optional(),
       consultFormHeading: z.string().optional(),
       consultSubmitLabel: z.string().optional(),

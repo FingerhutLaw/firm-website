@@ -14,12 +14,14 @@
 
 # --- HERO SECTION (top of homepage) ---
 heroEyebrow: "For workers, never employers · NY & NJ"
+heroEyebrowShort: "Workers only · NY & NJ" # phones only
 # The H1 reads "<heroH1Lead> <heroH1Rest>". On phones, heroH1LeadShort
 # is shown instead of heroH1Lead (screen readers always get the full one).
 heroH1Lead: "New York & New Jersey"
 heroH1LeadShort: "NY & NJ"
 heroH1Rest: "Employment Lawyers"
 heroDescription: "A focused practice for workers facing harassment, discrimination, retaliation, or a wrongful firing. The partners handle every case themselves."
+heroDescriptionShort: "Harassment, discrimination, retaliation, wrongful firing. The partners handle every case themselves." # phones only
 heroCTAText: "Get a free consultation"
 heroCTAHref: "#consult"
 heroNote: "Free and confidential · No fee unless we win"
@@ -148,6 +150,7 @@ finalCtaHeading: "If your rights at work have been violated, do not wait."
 # Shown instead of finalCtaHeading on phones.
 finalCtaHeadingShort: "Do not wait. Some deadlines are short."
 finalCtaBody: "Employment claims have strict filing deadlines, and some run in months, not years. Tell us what happened and a partner will review it — free and confidential."
+finalCtaBodyShort: "Tell us what happened. A partner reviews every request — free, confidential, no fee unless we win." # phones only
 consultPoints:
   - "Free, confidential consultation"
   - "No fee unless we win"
