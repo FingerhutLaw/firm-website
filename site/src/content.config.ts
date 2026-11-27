@@ -434,9 +434,12 @@ const blog = defineCollection({
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     draft: z.boolean().optional().default(false),
-    // Optional byline + schema fields. Posts without `author` keep the
+    // Optional byline + schema fields. Posts without `authors` keep the
     // old behavior (no byline; schema author = Steven Fingerhut).
-    author: z.string().optional(),
+    authors: z.array(z.string()).optional(),
+    // Header image under the byline; path under public/ (e.g. /images/blog/x.jpg).
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
     reviewedBy: z.string().optional(),
     // Q&As that also appear in the body; emitted as FAQPage schema.
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),

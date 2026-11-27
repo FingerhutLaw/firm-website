@@ -3,8 +3,11 @@ title: "Laid Off While Pregnant or on Maternity Leave in New York? How to Tell a
 description: "How to tell a real restructuring from pretext if you were laid off while pregnant or on maternity leave in New York: 7 warning signs, the documents that matter, and what to do before you sign severance."
 publishDate: 2026-11-27
 category: "Discrimination"
-author: "Joshua Friedman"
-reviewedBy: "Steven Fingerhut"
+authors:
+  - "Joshua Friedman"
+  - "Steven Fingerhut"
+heroImage: "/images/blog/laid-off-while-pregnant.jpg"
+heroImageAlt: "Pregnant employee reviewing a layoff notice at her desk in a New York office"
 seoTitle: "Laid Off While Pregnant in NY? | Friedman & Fingerhut"
 seoDescription: "Laid off while pregnant or on maternity leave in a NY \"restructuring\"? Learn 7 signs the layoff was pretext and get a free, confidential consultation."
 relatedPracticeAreas:

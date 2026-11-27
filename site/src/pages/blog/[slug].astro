@@ -32,12 +32,17 @@ const seoDescription = post.data.seoDescription ?? post.data.description;
 
 const canonical = `https://friedmanfingerhut.com/blog/${post.id}`;
 
-// Author pages: Josh has /josh; everyone else falls back to /about.
-const authorName = post.data.author ?? 'Steven Fingerhut';
-const authorUrl =
-  authorName === 'Joshua Friedman'
-    ? 'https://friedmanfingerhut.com/josh'
-    : 'https://friedmanfingerhut.com/about';
+// Author pages: Josh has /josh; Steven's bio is /about.
+const authorPages: Record<string, string> = {
+  'Joshua Friedman': '/josh',
+  'Steven Fingerhut': '/about',
+};
+const authorNames = post.data.authors ?? ['Steven Fingerhut'];
+const authorSchema = authorNames.map((name) => ({
+  '@type': 'Person',
+  name,
+  url: `https://friedmanfingerhut.com${authorPages[name] ?? '/about'}`,
+}));
 const lastUpdated = post.data.updatedDate ?? post.data.publishDate;
 const lastUpdatedLabel = lastUpdated.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -72,11 +77,7 @@ const articleSchema = {
   description: post.data.description,
   datePublished: post.data.publishDate.toISOString(),
   dateModified: lastUpdated.toISOString(),
-  author: {
-    '@type': 'Person',
-    name: authorName,
-    url: authorUrl,
-  },
+  author: authorSchema.length === 1 ? authorSchema[0] : authorSchema,
   ...(post.data.reviewedBy && {
     reviewedBy: { '@type': 'Person', name: post.data.reviewedBy },
   }),
@@ -86,10 +87,11 @@ const articleSchema = {
   },
   mainEntityOfPage: canonical,
   articleSection: post.data.category,
+  ...(post.data.heroImage && { image: `https://friedmanfingerhut.com${post.data.heroImage}` }),
 };
 ---
 
-<Layout title={seoTitle} description={seoDescription}>
+<Layout title={seoTitle} description={seoDescription} {...(post.data.heroImage && { image: post.data.heroImage })}>
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
@@ -104,14 +106,32 @@ const articleSchema = {
     <h1 class="font-serif font-medium text-4xl md:text-5xl leading-[1.15] tracking-tight">
       {post.data.title}
     </h1>
-    {post.data.author && (
+    {post.data.authors && (
       <p class="mt-6 text-sm text-fl-ink-soft">
-        By <a href={authorUrl.replace('https://friedmanfingerhut.com', '')} class="text-fl-ink font-medium hover:text-fl-clay">{authorName}</a>
+        By {authorNames.map((name, i) => (
+          <>
+            {i > 0 && (i === authorNames.length - 1 ? ' and ' : ', ')}
+            <a href={authorPages[name] ?? '/about'} class="text-fl-ink font-medium hover:text-fl-clay">{name}</a>
+          </>
+        ))}
         {post.data.reviewedBy && <> &middot; Reviewed by {post.data.reviewedBy}</>}
         &middot; Last updated <time datetime={lastUpdated.toISOString().slice(0, 10)}>{lastUpdatedLabel}</time>
       </p>
     )}
   </section>
+
+  {post.data.heroImage && (
+    <figure class="mx-auto max-w-4xl px-6 pb-10">
+      <img
+        src={post.data.heroImage}
+        alt={post.data.heroImageAlt ?? ''}
+        width="1600"
+        height="900"
+        fetchpriority="high"
+        class="w-full h-auto rounded"
+      />
+    </figure>
+  )}
 
   <!-- Body -->
   <section class="mx-auto max-w-3xl px-6 pb-20">
