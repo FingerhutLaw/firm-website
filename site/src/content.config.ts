@@ -26,6 +26,16 @@ const pages = defineCollection({
 
       // Homepage hero
       heroHeadline: z.string().optional(),
+      heroEyebrow: z.string().optional(),
+      heroEyebrowShort: z.string().optional(), // phones only
+      // H1 is "<heroH1Lead> <heroH1Rest>"; phones show heroH1LeadShort instead.
+      heroH1Lead: z.string().optional(),
+      heroH1LeadShort: z.string().optional(),
+      heroH1Rest: z.string().optional(),
+      heroDescription: z.string().optional(),
+      heroDescriptionShort: z.string().optional(), // phones only
+      heroNote: z.string().optional(),
+      heroCaption: z.string().optional(),
       heroSubheadline: z.string().optional(),
       heroCTAText: z.string().optional(),
       heroCTAHref: z.string().optional(),
@@ -39,13 +49,19 @@ const pages = defineCollection({
 
       // Press strip
       pressLabel: z.string().optional(),
-      pressLogos: z.array(z.string()).optional(),
+      // Each entry is a plain name, or { name, href } to make it a link.
+      pressLogos: z
+        .array(z.union([z.string(), z.object({ name: z.string(), href: z.string().optional() })]))
+        .optional(),
 
       // Practice areas grid (homepage 6-tile preview)
       practiceAreasLabel: z.string().optional(),
       practiceAreasHeading: z.string().optional(),
       practiceAreasCTA: z.string().optional(),
       practiceAreasCTAHref: z.string().optional(),
+      practiceAreasOtherHeading: z.string().optional(),
+      practiceAreasOtherBody: z.string().optional(),
+      practiceAreasOtherCTA: z.string().optional(),
       practiceAreas: z
         .array(
           z.object({
@@ -70,6 +86,30 @@ const pages = defineCollection({
         )
         .optional(),
 
+      priorResultsNote: z.string().optional(),
+
+      // Client reviews (homepage) — quote exactly as the client wrote it.
+      reviewsLabel: z.string().optional(),
+      reviews: z
+        .array(z.object({ name: z.string(), quote: z.string() }))
+        .optional(),
+
+      // How We Practice teaser (homepage)
+      howWePracticeLabel: z.string().optional(),
+      howWePracticeHeading: z.string().optional(),
+      howWePracticeQuote: z.string().optional(),
+      howWePracticeBody: z.string().optional(),
+      howWePracticeCTA: z.string().optional(),
+      howWePracticeCTAHref: z.string().optional(),
+      howWePracticeImage: z.string().optional(),
+      howWePracticeImageAlt: z.string().optional(),
+
+      // Recognition row (homepage)
+      recognitionLabel: z.string().optional(),
+      recognition: z
+        .array(z.object({ name: z.string(), href: z.string().optional() }))
+        .optional(),
+
       // Homepage portrait / Steven section
       meetStevenName: z.string().optional(),
       meetStevenTitle: z.string().optional(),
@@ -86,10 +126,11 @@ const pages = defineCollection({
         .array(
           z.object({
             publication: z.string(),
+            tag: z.string().optional(),
             date: z.string().optional(),
             headline: z.string(),
-            excerpt: z.string(),
-            href: z.string(),
+            excerpt: z.string().optional(),
+            href: z.string().optional(),
           }),
         )
         .optional(),
@@ -99,6 +140,14 @@ const pages = defineCollection({
       finalCtaBody: z.string().optional(),
       finalCtaButton: z.string().optional(),
       finalCtaHref: z.string().optional(),
+      // Consultation section (homepage, id="consult")
+      finalCtaHeadingShort: z.string().optional(),
+      finalCtaBodyShort: z.string().optional(), // phones only
+      consultPoints: z.array(z.string()).optional(),
+      consultFormHeading: z.string().optional(),
+      consultSubmitLabel: z.string().optional(),
+      consultDisclaimer: z.string().optional(),
+      consultSuccess: z.string().optional(),
 
       // Results page
       resultsHeroLabel: z.string().optional(),

@@ -1,376 +1,398 @@
 ---
+// Homepage — v3 design (approved Nov 2026). Copy lives in
+// src/content/pages/homepage.md; the consultation form posts to the same
+// Formspree endpoint as /contact (formAction in contact.md).
 import Layout from '../layouts/Layout.astro';
 import { getEntry } from 'astro:content';
+import { getGoogleRating, GOOGLE_REVIEWS_URL } from '../lib/googleRating';
 
 const homepage = await getEntry('pages', 'homepage');
 const c = homepage!.data;
+const contact = (await getEntry('pages', 'contact'))!.data;
+
+const google = await getGoogleRating();
+const filledStars = Math.max(0, Math.min(5, Math.round(Number(google.rating))));
+const stars = '★'.repeat(filledStars) + '☆'.repeat(5 - filledStars);
+const reviewWord = google.count === 1 ? 'review' : 'reviews';
+
+const CONSULT = '#consult';
+const hasLink = (href?: string) => Boolean(href && href !== '#');
+const paragraphs = (text: string) =>
+  text.trim().split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 ---
 
 <Layout
   title="New York & New Jersey Employment Lawyers | Friedman & Fingerhut"
   description="Friedman & Fingerhut represents New York and New Jersey employees in workplace discrimination, harassment, retaliation, and wrongful termination claims. $60 million-plus recovered. Free confidential consultation."
+  consultHref={CONSULT}
+  mobileActionBar
+  flushFooter
 >
-  <!-- Hero — two-column: content left, partner portrait right.
-       Midnight background with white H1 frames the brand statement;
-       the ivory stats band at the bottom of the hero viewport breaks
-       the dark expanse and draws the eye downward into the page. -->
-  <section class="bg-fl-accent">
-    <div class="max-w-[1120px] mx-auto px-6 pt-4 md:pt-6 pb-6 md:pb-7 grid grid-cols-1 md:grid-cols-[1fr_1.25fr] gap-6 md:gap-7 items-start md:items-center">
-      <!-- Left: eyebrow, H1, big brand statement, descriptor, CTAs -->
-      <div>
-        {c.heroEyebrow && (
-          <p class="text-[11px] md:text-xs uppercase tracking-[0.22em] text-fl-gold font-semibold mb-3">
-            {c.heroEyebrow}
-          </p>
-        )}
-        {c.heroBrandStatement && (
-          <h1 class="font-serif font-medium text-white leading-[1.08] tracking-tight m-0 text-balance"
-              style="font-size: clamp(26px, 3.6vw, 42px);">
-            {c.heroBrandStatement.trim().split(/\n+/).map((line: string, i: number) => (
-              <>{i > 0 && <br />}{line.trim()}</>
-            ))}
-          </h1>
-        )}
-        <p class="mt-4 md:mt-5 text-sm md:text-base leading-relaxed text-white/85 max-w-[32em]">
-          {c.heroDescription ?? c.heroSubheadline}
+  <!-- ============ HERO ============ -->
+  <section class="on-dark bg-linear-to-b from-v3-navy to-v3-navy-deep">
+    <div class="mx-auto max-w-[1200px] px-5 md:px-10 pt-[26px] pb-5 md:pt-[72px] md:pb-16 flex flex-col lg:flex-row gap-5 lg:gap-14 lg:items-center">
+      <div class="lg:flex-[1_1_480px] flex flex-col gap-3.5 md:gap-5">
+        <p class="v3-eyebrow text-v3-gold text-[12px] md:text-[13px] max-md:tracking-[0.14em]">
+          <span class="md:hidden">{c.heroEyebrowShort ?? c.heroEyebrow}</span><span class="max-md:hidden">{c.heroEyebrow}</span>
         </p>
-        <div class="mt-5 md:mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
-          <a
-            href={c.heroCTAHref}
-            class="inline-block bg-transparent text-fl-clay-peach border border-fl-clay-peach px-7 py-4 text-sm font-semibold uppercase tracking-[0.08em] hover:bg-fl-clay-peach hover:text-fl-accent transition-colors"
-          >
+        <!-- One H1. Phones see the short lead ("NY & NJ"); screen readers and
+             search engines always get the full "New York & New Jersey". -->
+        <h1 class="m-0 font-serif font-medium text-white text-[34px] md:text-[52px] lg:text-[60px] leading-[1.06] text-balance">
+          <span class="max-md:sr-only">{c.heroH1Lead}</span><span class="md:hidden" aria-hidden="true">{c.heroH1LeadShort}</span>
+          {c.heroH1Rest}
+        </h1>
+        <p class="m-0 text-base md:text-lg leading-[1.5] md:leading-[1.55] text-v3-on-navy max-w-[460px]">
+          <span class="md:hidden">{c.heroDescriptionShort ?? c.heroDescription}</span><span class="max-md:hidden">{c.heroDescription}</span>
+        </p>
+        <div class="flex flex-wrap items-center gap-5 mt-1 md:mt-2">
+          <a href={c.heroCTAHref ?? CONSULT} class="v3-btn max-md:w-full min-h-[54px] md:min-h-14 px-8 text-base">
             {c.heroCTAText}
           </a>
-          <span class="text-sm text-white/70">
-            or call
-            <a href={c.phoneHref} class="font-semibold text-fl-clay-peach hover:underline">
-              {c.phone}
-            </a>
+          <span class="hidden md:inline text-[15px] text-v3-on-navy">
+            or call / text <a href={c.phoneHref} class="text-white font-semibold no-underline hover:text-v3-clay-light">{c.phone}</a>
           </span>
         </div>
-        {c.feeNote && (
-          <p class="mt-3 text-xs italic text-white/60 max-w-[28em]">
-            {c.feeNote}
-          </p>
-        )}
+        <p class="m-0 text-[13px] md:text-sm text-v3-on-navy-soft max-md:text-center">{c.heroNote}</p>
       </div>
 
-      <!-- Right: full partner portrait, framed. max-h ties the image to
-           viewport height so the whole picture lives above the fold on
-           typical laptop screens, leaving room for the stats band below. -->
-      <div class="relative flex justify-center">
+      <figure class="lg:flex-[1_1_440px] m-0 flex flex-col gap-2.5 mt-1.5 lg:mt-0">
         <img
           src={c.portraitImage}
           alt={c.portraitAlt}
-          class="w-full max-h-[64vh] md:max-h-[72vh] h-auto object-contain rounded-lg shadow-[0_28px_56px_-28px_rgba(0,0,0,0.55),0_12px_24px_-14px_rgba(0,0,0,0.35)]"
+          width="1253"
+          height="853"
+          fetchpriority="high"
+          class="w-full h-[190px] sm:h-auto sm:aspect-[3/2] object-cover object-[center_30%] sm:object-center rounded-lg border border-v3-gold/50"
         />
-      </div>
-    </div>
-
-    <!-- Stats band — ivory, brass dividers, sits at bottom of the hero
-         viewport to draw the eye downward -->
-    <div class="border-y border-fl-brass-rule/50 bg-fl-bg-tint">
-      <div id="fl-stats" class="fl-stats mx-auto max-w-[1240px] px-6 py-5 md:py-6 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-fl-brass-rule/40">
-        <div class="fl-stat flex flex-col items-center text-center py-3 md:py-0 md:px-6">
-          <div class="font-serif font-medium text-fl-accent text-[32px] md:text-[40px] leading-none">
-            <span class="fl-count" data-to="60" data-pre="$" data-suf="M+">$60M+</span>
-          </div>
-          <div class="mt-2 text-[11px] uppercase tracking-[0.18em] text-fl-ink-soft font-semibold">
-            Recovered for workers
-          </div>
-        </div>
-        <div class="fl-stat flex flex-col items-center text-center py-3 md:py-0 md:px-6">
-          <div class="font-serif font-medium text-fl-accent text-[32px] md:text-[40px] leading-none">
-            <span class="fl-count" data-to="25" data-suf="+">25+</span>
-          </div>
-          <div class="mt-2 text-[11px] uppercase tracking-[0.18em] text-fl-ink-soft font-semibold">
-            Years combined experience
-          </div>
-        </div>
-        <div class="fl-stat flex flex-col items-center text-center py-3 md:py-0 md:px-6">
-          <div class="font-serif font-medium text-fl-accent text-[32px] md:text-[40px] leading-none">NY · NJ</div>
-          <div class="mt-2 text-[11px] uppercase tracking-[0.18em] text-fl-ink-soft font-semibold">
-            Workers only — never employers
-          </div>
-        </div>
-      </div>
+        <figcaption class="max-md:hidden text-[13px] text-v3-on-navy-soft">{c.heroCaption}</figcaption>
+      </figure>
     </div>
   </section>
 
+  <!-- ============ STATS + AS FEATURED IN ============
+       Phones: three stats continue the navy hero. Desktop: four stats on cream. -->
+  <section aria-label="The firm at a glance" class="on-dark-mobile bg-v3-navy-deep md:bg-v3-cream-light md:border-b md:border-v3-rule">
+    <ul class="mx-auto max-w-[1200px] px-5 md:px-10 pt-1 pb-6 md:py-6 grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-4 text-center list-none m-0">
+      <li class="order-1">
+        <p class="m-0 font-serif font-semibold text-2xl md:text-4xl leading-tight text-v3-gold-figure md:text-v3-navy">$60M+</p>
+        <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase"><span class="md:hidden">recovered</span><span class="max-md:hidden">Recovered for workers</span></p>
+      </li>
+      <li class="order-3 md:order-2">
+        <p class="m-0 font-serif font-semibold text-2xl md:text-4xl leading-tight text-v3-gold-figure md:text-v3-navy">25+</p>
+        <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase"><span class="md:hidden">years combined</span><span class="max-md:hidden">Years combined experience</span></p>
+      </li>
+      <li class="order-2 md:order-3">
+        <a href="#results" class="block no-underline">
+          <p class="m-0 font-serif font-semibold text-2xl md:text-4xl leading-tight text-v3-gold-figure md:text-v3-navy">
+            {google.rating} <span class="md:text-v3-star" aria-hidden="true">★</span><span class="sr-only"> out of 5 stars on Google</span>
+          </p>
+          <p class="m-0 text-[11px] md:text-xs text-v3-on-navy md:text-v3-brass md:font-semibold md:tracking-[0.12em] md:uppercase">{google.count} Google {reviewWord}</p>
+        </a>
+      </li>
+      <li class="order-4 max-md:hidden">
+        <p class="m-0 font-serif font-semibold text-4xl leading-tight text-v3-navy">No fee</p>
+        <p class="m-0 text-xs text-v3-brass font-semibold tracking-[0.12em] uppercase">Unless we win</p>
+      </li>
+    </ul>
+  </section>
+
   {c.pressLogos && c.pressLogos.length > 0 && (
-    <section class="bg-fl-bg border-b border-fl-brass-rule/30 py-5" aria-label={c.pressLabel ?? 'As Featured In'}>
-      <div class="max-w-[1180px] mx-auto px-6 flex items-center justify-center flex-wrap gap-x-9 gap-y-3">
-        <span class="text-[10.5px] font-sans font-semibold uppercase tracking-[0.22em] text-fl-brass md:pr-6 md:border-r md:border-fl-brass-rule/40">
-          {c.pressLabel ?? 'As Featured In'}
-        </span>
-        <ul class="flex items-center justify-center flex-wrap gap-x-7 gap-y-2 list-none m-0 p-0">
-          {c.pressLogos.map((logo: string) => (
-            <li class="font-serif text-[15px] text-fl-ink-soft whitespace-nowrap">{logo}</li>
-          ))}
+    <section aria-label={c.pressLabel ?? 'As featured in'} class="bg-v3-cream-light border-b border-v3-rule">
+      <div class="mx-auto max-w-[1200px] px-5 md:px-10 py-4 md:pt-3.5 md:pb-[22px] flex flex-wrap items-center justify-center gap-x-9 gap-y-2">
+        <p class="v3-eyebrow text-v3-brass text-xs w-full md:w-auto text-center">{c.pressLabel ?? 'As featured in'}</p>
+        <ul class="flex flex-wrap items-center justify-center gap-x-7 md:gap-x-9 gap-y-1 list-none m-0 p-0">
+          {c.pressLogos.map((logo) => {
+            const item = typeof logo === 'string' ? { name: logo, href: undefined } : logo;
+            return (
+              <li class="font-serif font-medium text-[17px] md:text-[19px] text-[#4A4F5A] whitespace-nowrap">
+                {hasLink(item.href) ? (
+                  <a href={item.href} class="text-inherit no-underline border-b border-v3-clay-hover/35 hover:text-v3-clay-hover">{item.name}</a>
+                ) : (
+                  item.name
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
   )}
 
-  <script>
-    const flStats = document.getElementById('fl-stats');
-    if (flStats) {
-      const counts = flStats.querySelectorAll('.fl-count');
-      const fmt = (el, v) => (el.dataset.pre || '') + v + (el.dataset.suf || '');
-      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        const run = () => counts.forEach((el) => {
-          const to = Number(el.dataset.to), start = performance.now(), dur = 1100;
-          const tick = (now) => {
-            const p = Math.min(1, (now - start) / dur);
-            el.textContent = fmt(el, Math.round((1 - Math.pow(1 - p, 3)) * to));
-            if (p < 1) requestAnimationFrame(tick);
-          };
-          requestAnimationFrame(tick);
-        });
-        new IntersectionObserver((entries, obs) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              counts.forEach((el) => { el.textContent = fmt(el, 0); });
-              flStats.classList.add('fl-in');
-              run();
-              obs.disconnect();
-            }
-          });
-        }, { threshold: 0.4 }).observe(flStats);
-      }
-    }
-  </script>
-
-  <!-- Practice areas grid (3 x 2) — moved up so visitors see what we handle quickly -->
+  <!-- ============ PRACTICE AREAS ============ -->
   {c.practiceAreas && c.practiceAreas.length > 0 && (
-    <section class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-6">
-        {c.practiceAreasLabel}
-      </p>
-      <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink max-w-3xl mb-16">
-        {c.practiceAreasHeading}
-      </h2>
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-fl-brass-rule/40 border border-fl-brass-rule/40">
+    <section class="mx-auto max-w-[1200px] px-5 md:px-10 py-14 md:py-[72px] flex flex-col gap-7">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h2 class="m-0 font-serif font-medium text-[30px] md:text-[40px] leading-[1.1] text-v3-navy">{c.practiceAreasHeading}</h2>
+        <a href={c.practiceAreasCTAHref} class="v3-link">{c.practiceAreasCTA} &rarr;</a>
+      </div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none m-0 p-0">
         {c.practiceAreas.map((area) => (
-          <li class="bg-white">
-            <a
-              href={area.href}
-              class="relative block h-full px-8 py-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-fl-clay/10 transition duration-300 group"
-            >
-              <h3 class="font-serif font-medium text-2xl text-fl-ink mb-3 group-hover:text-fl-clay transition-colors">
-                {area.name}
-              </h3>
-              <p class="text-fl-ink-soft leading-relaxed">
-                {area.tagline}
-              </p>
-              <span class="mt-4 inline-block text-sm font-medium text-fl-brass-ink group-hover:text-fl-brass transition-transform duration-300 group-hover:translate-x-1">Learn more &rarr;</span>
+          <li class="flex">
+            <a href={area.href} class="v3-card w-full">
+              <h3 class="m-0 font-serif font-semibold text-2xl text-v3-navy">{area.name}</h3>
+              <span class="text-[15px] leading-normal text-v3-ink-soft">{area.tagline}</span>
+              <span class="v3-link self-start mt-1">Learn more &rarr;</span>
             </a>
           </li>
         ))}
       </ul>
-      {c.practiceAreasCTA && (
-        <div class="mt-12">
-          <a
-            href={c.practiceAreasCTAHref}
-            class="text-fl-brass-ink font-medium border-b-2 border-fl-brass-rule pb-1 hover:text-fl-brass hover:border-fl-brass transition-colors"
-          >
-            {c.practiceAreasCTA} &rarr;
-          </a>
+      <a href={CONSULT} class="v3-card bg-v3-sand md:flex-row md:items-center md:justify-between md:gap-4">
+        <span class="text-base text-v3-ink">
+          <strong class="font-serif font-semibold text-[22px] text-v3-navy mr-2.5">{c.practiceAreasOtherHeading}</strong>
+          {c.practiceAreasOtherBody}
+        </span>
+        <span class="v3-link self-start md:self-auto whitespace-nowrap">{c.practiceAreasOtherCTA} &rarr;</span>
+      </a>
+    </section>
+  )}
+
+  <!-- ============ RESULTS + REVIEWS ============ -->
+  <section id="results" class="on-dark scroll-mt-20 bg-linear-to-b from-v3-navy to-v3-navy-deep">
+    <div class="mx-auto max-w-[1200px] px-5 md:px-10 py-14 md:py-[72px] flex flex-col lg:flex-row gap-12">
+      <div class="lg:flex-[3_1_560px] flex flex-col gap-5">
+        <p class="v3-eyebrow text-v3-gold">{c.resultsLabel}</p>
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <h2 class="m-0 font-serif font-medium text-[32px] md:text-[40px] leading-tight text-white">{c.resultsHeading}</h2>
+          <a href={c.resultsCTAHref} class="v3-link-dark">{c.resultsCTA} &rarr;</a>
+        </div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 list-none m-0 p-0">
+          {c.results?.map((r) => (
+            <li class="p-[22px] bg-white/5 border-t-2 border-v3-gold">
+              <p class="m-0 font-serif font-semibold text-4xl text-v3-gold-figure">{r.figure}</p>
+              <p class="m-0 text-[15px] leading-normal text-v3-on-navy">{r.description}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="m-0 text-[13px] text-v3-on-navy-muted">{c.priorResultsNote}</p>
+      </div>
+
+      <div class="lg:flex-[2_1_340px] flex flex-col gap-3.5">
+        <h3 class="v3-eyebrow text-v3-gold">{c.reviewsLabel}</h3>
+        <div class="p-[22px] bg-v3-cream-light rounded-lg flex items-center gap-[18px]">
+          <p class="m-0 font-serif font-semibold text-[52px] leading-none text-v3-navy">{google.rating}</p>
+          <div class="flex flex-col gap-1">
+            <p class="m-0 text-v3-star text-xl tracking-[2px]" aria-hidden="true">{stars}</p>
+            <p class="m-0 text-sm text-v3-ink-soft">
+              <span class="sr-only">Rated {google.rating} out of 5 from </span>{google.count} {reviewWord} on Google
+            </p>
+          </div>
+        </div>
+        {c.reviews?.map((review) => (
+          <figure class="m-0 p-[22px] bg-v3-cream-light rounded-lg flex flex-col gap-2.5">
+            <p class="m-0 text-v3-star tracking-[2px]" aria-hidden="true">★★★★★</p>
+            <span class="sr-only">Five-star Google review</span>
+            <blockquote class="m-0 flex flex-col gap-[1.35em] font-serif italic font-medium text-xl leading-[1.35] text-v3-ink">
+              {paragraphs(review.quote).map((para) => <p class="m-0">{para}</p>)}
+            </blockquote>
+            <figcaption class="text-[13px] text-v3-brass font-semibold">{review.name}</figcaption>
+          </figure>
+        ))}
+        <p class="m-0 text-[13px] text-v3-on-navy-muted">{c.priorResultsNote}</p>
+        <a href={GOOGLE_REVIEWS_URL} class="v3-link-dark self-start">
+          Read all {google.count} {reviewWord} on Google &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE PRACTICE ============ -->
+  <section class="mx-auto max-w-[1200px] px-5 md:px-10 py-14 md:py-[72px] flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-center">
+    <div class="lg:flex-[1_1_480px] flex flex-col gap-[18px]">
+      <p class="v3-eyebrow text-v3-brass">{c.howWePracticeLabel}</p>
+      <h2 class="m-0 font-serif font-medium text-[32px] md:text-[40px] leading-[1.1] text-v3-navy">{c.howWePracticeHeading}</h2>
+      {c.howWePracticeQuote && (
+        <blockquote class="my-1 mx-0 pl-5 border-l-[3px] border-v3-gold font-serif italic font-medium text-[22px] md:text-[26px] leading-[1.3] text-v3-navy">
+          {c.howWePracticeQuote}
+        </blockquote>
+      )}
+      <p class="m-0 text-base leading-[1.65] text-v3-ink-soft">{c.howWePracticeBody}</p>
+      <a href={c.howWePracticeCTAHref ?? '/how-we-practice'} class="v3-link self-start">{c.howWePracticeCTA} &rarr;</a>
+    </div>
+    {c.howWePracticeImage && (
+      <img
+        src={c.howWePracticeImage}
+        alt={c.howWePracticeImageAlt}
+        width="1213"
+        height="914"
+        loading="lazy"
+        class="lg:flex-[1_1_400px] min-w-0 w-full aspect-[4/3] object-cover rounded-lg border border-[#D9C9A3]"
+      />
+    )}
+  </section>
+
+  <!-- ============ RECOGNITION + IN THE NEWS ============ -->
+  <section class="bg-v3-sand">
+    <div class="mx-auto max-w-[1200px] px-5 md:px-10 py-12 md:py-14 flex flex-col gap-6">
+      {c.recognition && c.recognition.length > 0 && (
+        <div class="flex flex-wrap items-center gap-x-7 gap-y-3">
+          <h2 class="v3-eyebrow text-v3-brass">{c.recognitionLabel}</h2>
+          <ul class="v3-dotlist">
+            {c.recognition.map((item) => (
+              <li class="font-serif font-semibold text-lg text-v3-navy">
+                {hasLink(item.href) ? (
+                  <a href={item.href} class="text-v3-navy no-underline border-b-[1.5px] border-v3-clay-hover/35 hover:text-v3-clay-hover hover:border-current">{item.name}</a>
+                ) : (
+                  item.name
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
-    </section>
-  )}
 
-  <!-- How We Practice — preview on homepage; full text lives at /how-we-practice -->
-  <section class="bg-fl-bg-tint border-y border-fl-brass-rule/40">
-    <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <div class="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-12 md:gap-16 items-center">
-        <div>
-          <a href={c.howWePracticeCTAHref ?? '/how-we-practice'} class="inline-block">
-            <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-8 hover:text-fl-brass-ink transition-colors">
-              {c.howWePracticeLabel ?? 'How We Practice'} &rarr;
-            </p>
-          </a>
-          <h2 class="font-serif font-medium text-4xl md:text-5xl leading-[1.1] tracking-tight text-fl-ink mb-10">
-            {c.howWePracticeHeading ?? 'We stand with workers. We believe survivors.'}
-          </h2>
-          {c.howWePracticePreview && (
-            <div class="space-y-5 text-lg text-fl-ink-soft leading-relaxed">
-              {c.howWePracticePreview.trim().split(/\n\n+/).map((para: string) => (
-                <p>{para.trim()}</p>
-              ))}
-            </div>
-          )}
-          <a
-            href={c.howWePracticeCTAHref ?? '/how-we-practice'}
-            class="mt-10 inline-block text-fl-brass-ink font-medium border-b-2 border-fl-brass-rule pb-1 hover:text-fl-brass hover:border-fl-brass transition-colors"
-          >
-            {c.howWePracticeCTA ?? 'Read our full approach'} &rarr;
-          </a>
-        </div>
-        {c.howWePracticeImage && (
-          <div class="flex justify-center">
-            <img
-              src={c.howWePracticeImage}
-              alt={c.howWePracticeImageAlt ?? 'Steven Fingerhut and Joshua Friedman'}
-              class="w-full max-w-xl rounded-lg shadow-[0_28px_56px_-28px_rgba(0,33,71,0.32),0_12px_24px_-14px_rgba(0,33,71,0.22)] object-cover"
-              loading="lazy"
-            />
+      {c.news && c.news.length > 0 && (
+        <>
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <h2 class="m-0 font-serif font-medium text-[30px] md:text-[34px] text-v3-navy">{c.newsHeading}</h2>
+            <a href={c.newsCTAHref} class="v3-link">{c.newsCTA} &rarr;</a>
           </div>
-        )}
-      </div>
-    </div>
-  </section>
-
-  <!-- Results strip (dark band) -->
-  {c.results && c.results.length > 0 && (
-    <section class="bg-fl-accent text-white">
-      <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <p class="text-xs uppercase tracking-[0.22em] text-fl-brass-rule font-semibold mb-6">
-          {c.resultsLabel}
-        </p>
-        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight mb-16 max-w-3xl">
-          {c.resultsHeading}
-        </h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {c.results.map((result) => (
-            <li>
-              <p class="font-serif text-4xl md:text-5xl font-medium tracking-tight mb-4 text-fl-gold">
-                {result.figure}
-              </p>
-              <p class="text-sm md:text-base text-white/80 leading-relaxed">
-                {result.description}
-              </p>
-            </li>
-          ))}
-        </ul>
-        {c.resultsCTA && (
-          <div class="mt-16">
-            <a
-              href={c.resultsCTAHref}
-              class="text-fl-brass-rule font-medium border-b-2 border-fl-brass-rule/60 pb-1 hover:text-white hover:border-white transition-colors"
-            >
-              {c.resultsCTA} &rarr;
-            </a>
-          </div>
-        )}
-      </div>
-    </section>
-  )}
-
-  <!-- Recognition marquee — moved here to sit next to Meet Steven as supporting credibility -->
-  <section class="bg-fl-bg border-b border-fl-brass-rule/40 overflow-hidden">
-    <div class="mx-auto max-w-6xl px-6 pt-10 pb-2">
-      <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold text-center">
-        Recognition
-      </p>
-    </div>
-    <div class="overflow-hidden py-8">
-      <div class="fl-marquee-track">
-        {[0, 1].map((copy) => (
-          <ul
-            class="flex items-center gap-28 px-14 shrink-0"
-            aria-hidden={copy === 1 ? 'true' : undefined}
-          >
-            <li class="flex items-center h-28 shrink-0">
-              <img src="/images/about/badges/super-lawyers-rising-stars.png" alt="Super Lawyers Rising Stars" class="max-h-20 w-auto object-contain" loading="lazy" />
-            </li>
-            <li class="flex items-center h-28 shrink-0">
-              <img src="/images/about/badges/multi-million-dollar-advocates-forum.png" alt="Multi-Million Dollar Advocates Forum lifetime member" class="max-h-28 w-auto object-contain" loading="lazy" />
-            </li>
-            <li class="flex items-center h-28 shrink-0">
-              <img src="/images/about/badges/american-institute-10-best.png" alt="American Institute of Legal Counsel — 10 Best" class="max-h-20 w-auto object-contain" loading="lazy" />
-            </li>
-            <li class="flex items-center h-28 shrink-0">
-              <img src="/images/about/badges/lead-counsel-rated.png" alt="Lead Counsel Rated" class="max-h-20 w-auto object-contain" loading="lazy" />
-            </li>
-            <li class="flex items-center h-28 shrink-0">
-              <img src="/images/about/badges/national-trial-lawyers-top-40-under-40.jpg" alt="The National Trial Lawyers — Top 40 Under 40" class="max-h-24 w-auto object-contain" loading="lazy" />
-            </li>
+          <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 list-none m-0 p-0">
+            {c.news.map((item) => {
+              const kicker = [item.publication, item.tag].filter(Boolean).join(' · ');
+              const inner = (
+                <>
+                  <span class="text-xs tracking-[0.14em] uppercase text-v3-brass font-semibold">{kicker}</span>
+                  <h3 class="m-0 font-serif font-semibold text-[22px] leading-[1.2] text-v3-navy">{item.headline}</h3>
+                </>
+              );
+              return (
+                <li class="flex">
+                  {hasLink(item.href) ? (
+                    <a href={item.href} class="v3-card w-full">
+                      {inner}
+                      <span class="v3-link self-start">Read article &rarr;</span>
+                    </a>
+                  ) : (
+                    <div class="v3-card w-full">{inner}</div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
-        ))}
+        </>
+      )}
+    </div>
+  </section>
+
+  <!-- ============ CONSULTATION (every consultation button lands here) ============ -->
+  <section id="consult" class="scroll-mt-20 bg-v3-cream-light border-t-[3px] border-v3-gold">
+    <div class="mx-auto max-w-[1200px] px-5 md:px-10 py-[22px] md:py-20 flex flex-col lg:flex-row gap-4 md:gap-14 lg:items-start">
+      <div class="lg:flex-[1_1_420px] flex flex-col gap-3.5 md:gap-[18px]">
+        <h2 class="m-0 font-serif font-medium text-[30px] md:text-[46px] leading-[1.08] text-v3-navy">
+          <span class="md:hidden">{c.finalCtaHeadingShort ?? c.finalCtaHeading}</span>
+          <span class="max-md:hidden">{c.finalCtaHeading}</span>
+        </h2>
+        <p class="m-0 text-[15px] md:text-[17px] leading-normal md:leading-[1.6] text-v3-ink-soft">
+          <span class="md:hidden">{c.finalCtaBodyShort ?? c.finalCtaBody}</span><span class="max-md:hidden">{c.finalCtaBody}</span>
+        </p>
+        {c.consultPoints && (
+          <ul class="max-md:hidden flex flex-col gap-2.5 text-base text-v3-ink list-none m-0 p-0">
+            {c.consultPoints.map((point) => (
+              <li><span aria-hidden="true">✓&nbsp; </span>{point}</li>
+            ))}
+          </ul>
+        )}
+        <p class="max-md:hidden m-0 text-base text-v3-ink-soft">
+          Prefer to talk? Call or text <a href={c.phoneHref} class="font-semibold text-v3-clay-hover">{c.phone}</a>
+        </p>
+      </div>
+
+      <div class="lg:flex-[1_1_440px] md:p-8 md:bg-white md:border md:border-v3-rule md:rounded-[10px] md:shadow-[0_10px_30px_rgba(11,31,63,0.08)]">
+        <form
+          id="consult-form"
+          action={contact.formAction}
+          method="POST"
+          class="flex flex-col gap-3.5 md:gap-4"
+        >
+          <h3 class="max-md:sr-only m-0 font-serif font-semibold text-[26px] text-v3-navy">{c.consultFormHeading}</h3>
+
+          {/* Same Formspree endpoint + field names as the /contact form. */}
+          {contact.formSubject && <input type="hidden" name="_subject" value={contact.formSubject} />}
+          {contact.formSuccessRedirect && <input type="hidden" name="_next" value={contact.formSuccessRedirect} />}
+          <input
+            type="text"
+            name="_gotcha"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+            style="position:absolute;left:-9999px;height:0;width:0;opacity:0;"
+          />
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+            <label class="v3-label" for="consult-name">
+              Full name
+              <input id="consult-name" name="name" type="text" required autocomplete="name" class="v3-field" />
+            </label>
+            <label class="v3-label" for="consult-phone">
+              Phone
+              <input id="consult-phone" name="phone" type="tel" required autocomplete="tel" class="v3-field" />
+            </label>
+          </div>
+          <label class="v3-label" for="consult-email">
+            <span>Email <span class="font-normal text-v3-muted">(optional)</span></span>
+            <input id="consult-email" name="email" type="email" autocomplete="email" class="v3-field" />
+          </label>
+          <label class="v3-label" for="consult-message">
+            <span>What happened?<span class="max-md:hidden"> A sentence or two is enough.</span></span>
+            <textarea id="consult-message" name="message" rows="4" class="v3-field resize-y"></textarea>
+          </label>
+
+          <button type="submit" class="v3-btn min-h-14 text-base">{c.consultSubmitLabel}</button>
+          <p id="consult-error" hidden role="alert" class="m-0 text-sm text-v3-clay-hover font-semibold">
+            Something went wrong sending your request. Please try again, or call or text {c.phone}.
+          </p>
+          <p class="m-0 text-xs leading-normal text-v3-muted">{c.consultDisclaimer}</p>
+        </form>
+
+        <div id="consult-success" hidden tabindex="-1" role="status" class="flex flex-col gap-3">
+          <p class="m-0 font-serif font-semibold text-[26px] text-v3-navy">Request received.</p>
+          <p class="m-0 text-base leading-relaxed text-v3-ink-soft">{c.consultSuccess}</p>
+          <p class="m-0 text-base text-v3-ink-soft">
+            Need us sooner? Call or text <a href={c.phoneHref} class="font-semibold text-v3-clay-hover">{c.phone}</a>.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- In the news (3 cards) -->
-  {c.news && c.news.length > 0 && (
-    <section class="bg-fl-bg-tint border-y border-fl-brass-rule/40">
-      <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <p class="text-xs uppercase tracking-[0.22em] text-fl-brass font-semibold mb-6">
-          {c.newsLabel}
-        </p>
-        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight text-fl-ink mb-16">
-          {c.newsHeading}
-        </h2>
-        <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {c.news.map((item) => (
-            <li class="bg-white border border-fl-brass-rule/30 p-8 flex flex-col">
-              <p class="text-xs uppercase tracking-[0.18em] text-fl-brass font-semibold mb-3">
-                {item.publication}{item.date ? ` · ${item.date}` : ''}
-              </p>
-              <h3 class="font-serif font-medium text-xl leading-snug text-fl-ink mb-4">
-                {item.headline}
-              </h3>
-              <p class="text-fl-ink-soft leading-relaxed flex-grow">
-                {item.excerpt}
-              </p>
-              <a
-                href={item.href}
-                class="mt-6 text-fl-brass-ink font-medium hover:text-fl-brass transition-colors text-sm"
-              >
-                Read article &rarr;
-              </a>
-            </li>
-          ))}
-        </ul>
-        {c.newsCTA && (
-          <div class="mt-12">
-            <a
-              href={c.newsCTAHref}
-              class="text-fl-brass-ink font-medium border-b-2 border-fl-brass-rule pb-1 hover:text-fl-brass hover:border-fl-brass transition-colors"
-            >
-              {c.newsCTA} &rarr;
-            </a>
-          </div>
-        )}
-      </div>
-    </section>
-  )}
-
-  <!-- Final CTA (dark band) -->
-  {c.finalCtaHeading && (
-    <section class="bg-fl-accent text-white">
-      <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
-        <h2 class="font-serif font-medium text-4xl md:text-5xl leading-tight tracking-tight mb-8">
-          {c.finalCtaHeading}
-        </h2>
-        <p class="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-6">
-          {c.finalCtaBody}
-        </p>
-        <p class="text-sm text-white/80 italic max-w-2xl mx-auto mb-4">
-          Free, confidential consultation — no obligation.
-        </p>
-        {c.feeNote && (
-          <p class="text-sm text-white/70 italic max-w-2xl mx-auto mb-12">
-            {c.feeNote}
-          </p>
-        )}
-        <div class="flex flex-wrap items-center justify-center gap-6">
-          <a
-            href={c.finalCtaHref}
-            class="inline-block bg-fl-brass text-white px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] hover:bg-fl-brass-ink transition-colors"
-          >
-            {c.finalCtaButton}
-          </a>
-          <span class="text-white/80 text-sm">
-            or call
-            <a href={c.phoneHref} class="text-white font-medium hover:underline">
-              {c.phone}
-            </a>
-          </span>
-        </div>
-      </div>
-    </section>
-  )}
+  <script>
+    // Submit the consultation form in place (Formspree JSON API) so the
+    // visitor sees a success message without leaving the page. Without JS
+    // the form still posts normally and Formspree redirects to /contact/thanks.
+    const form = document.getElementById('consult-form') as HTMLFormElement | null;
+    const success = document.getElementById('consult-success');
+    const error = document.getElementById('consult-error');
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      const label = button?.textContent ?? '';
+      const data = new FormData(form);
+      // Email is optional; don't send an empty one.
+      if (!String(data.get('email') ?? '').trim()) data.delete('email');
+      if (error) error.hidden = true;
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Sending…';
+      }
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' },
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        if (success) {
+          success.hidden = false;
+          success.focus();
+        }
+      } catch {
+        if (error) error.hidden = false;
+        if (button) {
+          button.disabled = false;
+          button.textContent = label;
+        }
+      }
+    });
+  </script>
 </Layout>
