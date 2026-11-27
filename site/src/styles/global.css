@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-fl-bg: #F4EDE1;
+  --color-fl-bg: #F4EEE2;
   --color-fl-bg-tint: #ECE4D3;
   --color-fl-bg-soft: #F1F5F9;
   --color-fl-ink: #111111;
@@ -11,7 +11,7 @@
   /* ink-navy is a deeper navy used for the top nav bar — one shade darker
      than fl-accent so the header reads as a distinct frame above the
      midnight hero. */
-  --color-fl-ink-navy: #001433;
+  --color-fl-ink-navy: #061A33;
   --color-fl-brass: #8A7A4A;
   /* fl-brass-ink is a darker brass for body-text use — passes WCAG AA
      (~4.8:1) against the ivory fl-bg while staying unmistakably brass. */
@@ -22,9 +22,31 @@
   /* Clay (terracotta) — the one tap color. fl-clay for buttons/pills on
      ivory; fl-clay-ink for hover; fl-clay-peach lightens for the same role
      on midnight surfaces so contrast ratios hold on dark. */
-  --color-fl-clay: #B8532F;
-  --color-fl-clay-ink: #AD4D2B;
-  --color-fl-clay-peach: #F2A27C;
+  --color-fl-clay: #B0532F;
+  --color-fl-clay-ink: #8E3D20;
+  --color-fl-clay-peach: #F2B394;
+
+  /* Homepage v3 palette (approved Nov 2026). */
+  --color-v3-navy: #0B2550;
+  --color-v3-navy-deep: #071C3D;
+  --color-v3-header: #061A33;
+  --color-v3-gold: #D9B867;
+  --color-v3-gold-figure: #E2C47A;
+  --color-v3-star: #B8862B;
+  --color-v3-cream: #F4EEE2;
+  --color-v3-cream-light: #FBF8F1;
+  --color-v3-sand: #EFE6D4;
+  --color-v3-rule: #E3D8C3;
+  --color-v3-clay: #B0532F;
+  --color-v3-clay-hover: #8E3D20;
+  --color-v3-clay-light: #F2B394;
+  --color-v3-ink: #1B2433;
+  --color-v3-ink-soft: #3E4654;
+  --color-v3-muted: #5A6170;
+  --color-v3-brass: #6D5E35;
+  --color-v3-on-navy: #D5DCE8;
+  --color-v3-on-navy-soft: #AEB9CC;
+  --color-v3-on-navy-muted: #9FAAC0;
 
   --font-serif: 'Cormorant Garamond', Garamond, Georgia, 'Times New Roman', serif;
   --font-didot: 'GFS Didot', 'Playfair Display', Didot, 'Bodoni 72', Georgia, serif;
@@ -246,59 +268,113 @@ html {
 html { scroll-behavior: smooth; }
 .prose-fl-page h2[id] { scroll-margin-top: 96px; }
 
-/* Left-to-right badge marquee on the homepage. Pauses on hover; respects
-   prefers-reduced-motion. The track holds the badge list duplicated twice,
-   then animates between -50% (showing the second copy) and 0% (showing the
-   first copy) so the loop is seamless and the visible items shift rightward. */
-@keyframes fl-marquee-rtl-to-ltr {
-  0%   { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+/* ---------------------------------------------------------------
+   Focus rings — visible on every link, button and form control.
+   Clay-brown on light surfaces; light clay on dark (.on-dark) and
+   white on clay (.on-clay) so the ring always reads.
+   --------------------------------------------------------------- */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-v3-clay-hover);
+  outline-offset: 3px;
 }
-.fl-marquee-track {
-  display: flex;
-  width: max-content;
-  animation: fl-marquee-rtl-to-ltr 55s linear infinite;
+.on-dark :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline-color: var(--color-v3-clay-light);
 }
-.fl-marquee-track:hover {
-  animation-play-state: paused;
+@media (max-width: 767.98px) {
+  .on-dark-mobile :where(a, button):focus-visible { outline-color: var(--color-v3-clay-light); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .fl-marquee-track { animation: none; }
+.on-clay :where(a, button):focus-visible {
+  outline-color: #fff;
+  outline-offset: -5px;
 }
 
-/* Homepage hero reveal (kinetic serif) + credibility stats band.
-   All hidden initial states live inside `no-preference`, so users with
-   reduced-motion enabled see fully visible, static content by default. */
-@media (prefers-reduced-motion: no-preference) {
-  .fl-mask {
-    display: block;
-    overflow: hidden;
-    padding: 0.06em 0.03em;
-    margin: -0.06em -0.03em;
+/* ---------------------------------------------------------------
+   Homepage v3 building blocks. In @layer components so Tailwind
+   utilities on the same element can still override them.
+   --------------------------------------------------------------- */
+@layer components {
+  /* Primary action: solid clay, white text. */
+  .v3-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 26px;
+    background: var(--color-v3-clay);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    font: 600 15px/1 var(--font-sans);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
   }
-  .fl-rise {
-    display: block;
-    transform: translateY(110%);
-    animation: fl-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s forwards;
-  }
-  .fl-fade {
-    opacity: 0;
-    animation: fl-fade 1s ease forwards;
-  }
-  .fl-fade-1 { animation-delay: 0.7s; }
-  .fl-fade-2 { animation-delay: 0.95s; }
-  @keyframes fl-rise { to { transform: translateY(0); } }
-  @keyframes fl-fade { to { opacity: 1; } }
+  .v3-btn:hover { background: var(--color-v3-clay-hover); color: #fff; }
+  .v3-btn:disabled { opacity: 0.7; cursor: progress; }
+  .v3-btn:focus-visible { outline-color: var(--color-v3-clay-light); }
 
-  .fl-stat {
-    opacity: 0;
-    transform: translateY(18px);
+  /* Text links with an underline rule. .v3-link on light, .v3-link-dark on navy. */
+  .v3-link,
+  .v3-link-dark {
+    font: 600 15px var(--font-sans);
+    text-decoration: none;
+    border-bottom: 1.5px solid;
   }
-  .fl-stats.fl-in .fl-stat {
-    animation: fl-fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  .v3-link { color: var(--color-v3-clay-hover); border-color: rgb(142 61 32 / 0.35); }
+  .v3-link:hover { color: #6E2D15; border-color: currentColor; }
+  .v3-link-dark { color: var(--color-v3-clay-light); border-color: rgb(242 179 148 / 0.4); }
+  .v3-link-dark:hover { color: #fff; border-color: currentColor; }
+
+  /* Small uppercase section label. */
+  .v3-eyebrow {
+    font: 600 13px var(--font-sans);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin: 0;
   }
-  .fl-stats.fl-in .fl-stat:nth-child(2) { animation-delay: 0.1s; }
-  .fl-stats.fl-in .fl-stat:nth-child(3) { animation-delay: 0.2s; }
-  .fl-stats.fl-in .fl-stat:nth-child(4) { animation-delay: 0.3s; }
-  @keyframes fl-fade-up { to { opacity: 1; transform: translateY(0); } }
+
+  /* Cream card (practice areas, press). */
+  .v3-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    background: var(--color-v3-cream-light);
+    border: 1px solid var(--color-v3-rule);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-v3-ink);
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  a.v3-card:hover { border-color: var(--color-v3-clay); box-shadow: 0 6px 20px rgb(11 31 63 / 0.08); }
+
+  /* Form fields. */
+  .v3-label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font: 600 13px var(--font-sans);
+    color: var(--color-v3-ink);
+  }
+  .v3-field {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid #C9BBA0;
+    border-radius: 6px;
+    background: #fff;
+    font: 400 16px var(--font-sans);
+    color: var(--color-v3-ink);
+  }
+  .v3-field:focus { border-color: var(--color-v3-clay-hover); }
+
+  /* Inline list separated by gold middots (Recognition row). */
+  .v3-dotlist { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 0; list-style: none; margin: 0; padding: 0; }
+  .v3-dotlist > li + li::before { content: "·"; color: #B8A57A; margin: 0 14px; }
+  @media (max-width: 767.98px) {
+    .v3-dotlist { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .v3-dotlist > li + li::before { content: none; }
+  }
 }
